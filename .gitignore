@@ -1,0 +1,4 @@
+#Environment
+.env
+openai_db
+huggingface_db

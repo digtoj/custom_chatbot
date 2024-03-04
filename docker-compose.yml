@@ -1,0 +1,31 @@
+version: '3'
+services:
+  chromedb_instance1:
+    build: .
+    volumes:
+      - "chromedb_data_instance1:/app/data" # Ensure this path matches your data storage path in the app
+    networks:
+      - app-network
+
+  chromedb_instance2:
+    build: .
+    volumes:
+      - "chromedb_data_instance2:/app/data" # Ensure this path matches your data storage path in the app
+    networks:
+      - app-network
+
+  other-service:
+    image: other-service-image
+    depends_on:
+      - chromedb_instance1
+      - chromedb_instance2
+    networks:
+      - app-network
+
+volumes:
+  chromedb_data_instance1:
+  chromedb_data_instance2:
+
+networks:
+  app-network:
+    driver: bridge

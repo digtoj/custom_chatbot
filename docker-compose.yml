@@ -14,10 +14,15 @@ services:
     networks:
       - app-network
 
-  other-service:
-    image: other-service-image
+  openai_chatbot:
+    image: openai_chatbot
     depends_on:
       - chromedb_instance1
+    networks:
+      - app-network
+  alternative_chatbot:
+    image: alternative_chatbot
+    depends_on:
       - chromedb_instance2
     networks:
       - app-network

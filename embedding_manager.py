@@ -21,9 +21,9 @@ load_dotenv()
 report_json = './data/report.json'
 
 #Vector database directory
-openai_vectordb_directory = './openai_db'
-open_vectordb = './huggingface_db'
-client_open = chromadb.PersistentClient(path=open_vectordb)
+openai_db_uri = 'chromadb://localhost:8000/openai'
+alternative_db_uri = 'chromadb://localhost:8000/openai/huggingface_db'
+client_open = chromadb.PersistentClient(host=openai_db_uri)
 
 #Embeddings Model
 openai_embeddings = OpenAIEmbeddings()
@@ -75,11 +75,11 @@ def create_vector_with_openai(urls):
                 logging.info('Start Openai Embedding for the page:'+url)
                 document_chunks = get_data_from_url(url)
                  # create a vectorstore from the chunks
-                vector_store = Chroma.from_documents(document_chunks, openai_embeddings, persist_directory=openai_vectordb_directory)
+                vector_store = Chroma.from_documents(document_chunks, openai_embeddings, host=openai_db_uri)
                 vector_store.persist()
                 logging.info('Successful creation of  Openai Embedding for the page:'+url)
     except:
-       logging.exception('Error by creation vector for '+openai_vectordb_directory)
+       logging.exception('Error by creation vector for '+openai_db_uri)
     return None
 
 #Create and save the vector by using HuggingfaceEmbedding
@@ -92,11 +92,11 @@ def create_vector_with_huggingface(urls):
             document_chunks = get_data_from_url(url)
             # create a vectorstore from the chunks
             
-            vector_store = Chroma.from_documents(document_chunks, hf, persist_directory=open_vectordb)
+            vector_store = Chroma.from_documents(document_chunks, hf, host=alternative_db_uri)
             vector_store.persist()
             logging.info('Successful creation of  Huggingsface Embedding for the page:'+url)
     except:
-      logging.exception('Error by creation vector for '+ open_vectordb)
+      logging.exception('Error by creation vector for '+ alternative_db_uri)
     return None
 
 #Get saved embedding from disk
@@ -110,16 +110,16 @@ def get_vector_from_directory(persist_directory, embeddings):
 #Get openai saved embedding
 def get_openai_embeddings():
     logging.info('Start get Openai embeddings vector.')
-    if openai_vectordb_directory:
-     return get_vector_from_directory(openai_vectordb_directory, openai_embeddings )
+    if openai_db_uri:
+     return get_vector_from_directory(openai_db_uri, openai_embeddings )
     else:
       logging.error('The embedding database for openai dont exist.')
       return None
 
 def get_huggingFace_embeddings():
     logging.info('Start get Huggingface embeddings vector.')
-    if open_vectordb:
-       return get_vector_from_directory(open_vectordb, hf)
+    if alternative_db_uri:
+       return get_vector_from_directory(alternative_db_uri, hf)
     else:
        logging.error('The embedding database for hugginsface dont exist.')
        return None

@@ -2,6 +2,7 @@ import streamlit as st
 import threading
 from init import *
 
+message=""
 
 #create Vector by using openAI embedding for urls
 def create_openai_embeddings(url_type):
@@ -78,8 +79,12 @@ def app():
     if st.button(f'Erstellen {embedding_type} für {category} URLs'):
         if embedding_type == 'OpenAI Embedding':
             create_openai_embeddings (category)
+            message=st.text('Das Embedding für {category} wurde erfolgreich erstellt.')
         elif embedding_type == 'HuggingFace Embedding':
             create_huggingface_embeddings(category)
+            message=st.text('Das Embedding für {category} wurde erfolgreich erstellt.')
+    
+    message=st.text("")
 
 if __name__ == '__main__':
     app()

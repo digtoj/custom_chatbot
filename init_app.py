@@ -23,20 +23,23 @@ def create_openai_embeddings(url_type):
 
 #create Vector by using HuggingFace Embedding for urls
 def create_huggingface_embeddings(url_type):
-    if url_type=='Kontakte':
-        hugging_create_vect_contact()
-    elif url_type=='Glossar':
-        hugging_create_vect_glossar()
-    elif url_type=='News':
-        hugging_create_vec_news()
-    elif url_type=='Press':
-        hugging_create_vec_press()
-    elif url_type=='Projekt':
-        hugging_create_vec_project()
-    elif url_type=='Studiengangsbeschreibung':
-        hugging_create_vec_studycourses() 
-    elif url_type=='Vorlesungsverzeichnis':
-        hugging_create_vect_courses()
+    try:
+        if url_type=='Kontakte':
+            hugging_create_vect_contact()
+        elif url_type=='Glossar':
+            hugging_create_vect_glossar()
+        elif url_type=='News':
+            hugging_create_vec_news()
+        elif url_type=='Press':
+            hugging_create_vec_press()
+        elif url_type=='Projekt':
+            hugging_create_vec_project()
+        elif url_type=='Studiengangsbeschreibung':
+            hugging_create_vec_studycourses() 
+        elif url_type=='Vorlesungsverzeichnis':
+            hugging_create_vect_courses()
+    except:
+      logging.error("Error by creation of {url_type} embedding with a huggingface model")
 
 
 def app():
@@ -81,8 +84,11 @@ def app():
             create_openai_embeddings (category)
             message=st.text('Das Embedding für {category} wurde erfolgreich erstellt.')
         elif embedding_type == 'HuggingFace Embedding':
-            create_huggingface_embeddings(category)
-            message=st.text('Das Embedding für {category} wurde erfolgreich erstellt.')
+            try:
+                create_huggingface_embeddings(category)
+                message=st.text('Das Embedding für {category} wurde erfolgreich erstellt.')
+            except:
+                logging("Error by Hugginface embedding process.")
     
     message=st.text("")
 

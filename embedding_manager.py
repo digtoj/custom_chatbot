@@ -91,8 +91,11 @@ def create_vector_with_huggingface(urls):
             logging.info('Start Sentence Embedding for the page:'+url)
             document_chunks = get_data_from_url(url)
             # create a vectorstore from the chunks
-            
-            vector_store = save_vector(huggingFaceEmbeddings, document_chunks)
+            alternative_host = 'localhost'
+            chromadb_client = chromadb.HttpClient(host=alternative_host, port=8000)
+            vector_store = Chroma(chromadb_client)
+            vector_store = Chroma.from_documents(document_chunks, huggingFaceEmbeddings)
+           
             vector_store.persist()
             logging.info('Successful creation of  Huggingsface Embedding for the page:'+url)
     except:
@@ -128,6 +131,5 @@ def get_huggingFace_embeddings():
 
 #To save the vector to 
 def save_vector(embedding, document_chunks, client):
-   vector_store = Chroma(client)
-   vector_store = Chroma.from_documents(document_chunks, embedding)
+ 
    return vector_store

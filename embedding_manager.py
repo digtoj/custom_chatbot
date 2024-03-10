@@ -21,16 +21,16 @@ load_dotenv()
 report_json = './data/report.json'
 
 #Vector database directory
-openai_db_uri = 'chromadb://localhost:8000/openai'
-alternative_db_uri = 'chromadb://localhost:8000/openai/huggingface_db'
-client_open = chromadb.PersistentClient(host=openai_db_uri)
+openai_db_uri = 'http://localhost:8000/openai'
+alternative_host = 'localhost'
+chromadb_client = chromadb.HttpClient(host=alternative_host, port=8000)
 
 #Embeddings Model
 openai_embeddings = OpenAIEmbeddings()
 model_name = "sentence-transformers/all-MiniLM-L6-v2"
 model_kwargs = {'device': 'cpu'}
 encode_kwargs = {'normalize_embeddings': False}
-hf = HuggingFaceEmbeddings(
+huggingFaceEmbeddings = HuggingFaceEmbeddings(
     model_name=model_name,
     model_kwargs=model_kwargs,
     encode_kwargs=encode_kwargs
@@ -44,7 +44,7 @@ def timeit(func):
         end_time = time.time()  # End time
         print(f"{func.__name__} took {end_time - start_time:.4f} seconds to execute.")
         current_datetime = datetime.now()
-        timer_report = f"on {current_datetime} : {func.__name__} took {end_time - start_time:.4f} seconds to execute."
+        timer_report = f"on {current_datetime} : {func.__name__} took {end_time - start_time:.4f} seconds to execute." 
         
       #  json.dump(timer_report, report_json)
         return result
@@ -75,7 +75,7 @@ def create_vector_with_openai(urls):
                 logging.info('Start Openai Embedding for the page:'+url)
                 document_chunks = get_data_from_url(url)
                  # create a vectorstore from the chunks
-                vector_store = Chroma.from_documents(document_chunks, openai_embeddings, host=openai_db_uri)
+                vector_store = save_vector(openai_embeddings, document_chunks)
                 vector_store.persist()
                 logging.info('Successful creation of  Openai Embedding for the page:'+url)
     except:
@@ -92,18 +92,19 @@ def create_vector_with_huggingface(urls):
             document_chunks = get_data_from_url(url)
             # create a vectorstore from the chunks
             
-            vector_store = Chroma.from_documents(document_chunks, hf, host=alternative_db_uri)
+            vector_store = save_vector(huggingFaceEmbeddings, document_chunks)
             vector_store.persist()
             logging.info('Successful creation of  Huggingsface Embedding for the page:'+url)
     except:
-      logging.exception('Error by creation vector for '+ alternative_db_uri)
+      logging.exception('Error by creation vector for '+ alternative_host)
     return None
 
 #Get saved embedding from disk
 def get_vector_from_directory(persist_directory, embeddings):
     if persist_directory:
         logging.info('Get Vector from : '+ persist_directory)
-    vector_store = Chroma(persist_directory=persist_directory, embedding_function=embeddings)
+    vector_store = Chroma(chromadb_client)
+    vector_store = Chroma(persist_directory=persist_directory)
     vector_store.get()
     return vector_store
  
@@ -118,12 +119,15 @@ def get_openai_embeddings():
 
 def get_huggingFace_embeddings():
     logging.info('Start get Huggingface embeddings vector.')
-    if alternative_db_uri:
-       return get_vector_from_directory(alternative_db_uri, hf)
+    if alternative_host:
+       return get_vector_from_directory(alternative_host, huggingFaceEmbeddings)
     else:
        logging.error('The embedding database for hugginsface dont exist.')
        return None
 
 
-
-
+#To save the vector to 
+def save_vector(embedding, document_chunks, client):
+   vector_store = Chroma(client)
+   vector_store = Chroma.from_documents(document_chunks, embedding)
+   return vector_store

@@ -100,10 +100,4 @@ def app():
         with open(os.path.join(pdf_directory, uploaded_file.name), "wb") as f:
             f.write(uploaded_file.getbuffer())
         st.success(f"Datei '{uploaded_file.name}' erfolgreich hochgeladen.")
-
-   
-    
     message=st.text("")
-
-if __name__ == '__main__':
-    app()

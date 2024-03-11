@@ -11,3 +11,6 @@ venv
 
 #Chromadatabase
 chroma_db
+
+#PDF Files
+data/documents/

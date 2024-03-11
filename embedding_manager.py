@@ -21,9 +21,9 @@ load_dotenv()
 report_json = './data/report.json'
 
 #Vector database directory
-openai_db_uri = 'http://localhost:8000/openai'
-alternative_host = 'localhost'
-chromadb_client = chromadb.HttpClient(host=alternative_host, port=8000)
+openai_vectordb_directory = './openai_store'
+alternative_vectordb_directory = './alternative_store'
+
 
 #Embeddings Model
 openai_embeddings = OpenAIEmbeddings()
@@ -46,7 +46,9 @@ def timeit(func):
         current_datetime = datetime.now()
         timer_report = f"on {current_datetime} : {func.__name__} took {end_time - start_time:.4f} seconds to execute." 
         
-      #  json.dump(timer_report, report_json)
+        with open(report_json, 'w') as json_file:
+            json.dump(timer_report, json_file)
+            print(f"Sitemap URLs have been saved to {report_json}.")
         return result
     return wrapper
 
@@ -75,11 +77,13 @@ def create_vector_with_openai(urls):
                 logging.info('Start Openai Embedding for the page:'+url)
                 document_chunks = get_data_from_url(url)
                  # create a vectorstore from the chunks
-                vector_store = save_vector(openai_embeddings, document_chunks)
+                client_open = chromadb.PersistentClient(path=openai_vectordb_directory)
+                vector_store = Chroma(client_open)
+                vector_store = Chroma.from_documents(document_chunks, openai_embeddings, persist_directory=openai_vectordb_directory)
                 vector_store.persist()
                 logging.info('Successful creation of  Openai Embedding for the page:'+url)
     except:
-       logging.exception('Error by creation vector for '+openai_db_uri)
+       logging.exception('Error by creation vector for '+openai_vectordb_directory)
     return None
 
 #Create and save the vector by using HuggingfaceEmbedding
@@ -91,45 +95,40 @@ def create_vector_with_huggingface(urls):
             logging.info('Start Sentence Embedding for the page:'+url)
             document_chunks = get_data_from_url(url)
             # create a vectorstore from the chunks
-            alternative_host = 'localhost'
-            chromadb_client = chromadb.HttpClient(host=alternative_host, port=8000)
-            vector_store = Chroma(chromadb_client)
+            client_open = chromadb.PersistentClient(path=alternative_vectordb_directory)
+            vector_store = Chroma(client_open)
             vector_store = Chroma.from_documents(document_chunks, huggingFaceEmbeddings)
            
             vector_store.persist()
             logging.info('Successful creation of  Huggingsface Embedding for the page:'+url)
-    except:
-      logging.exception('Error by creation vector for '+ alternative_host)
+    except Exception as e:
+      logging.exception('Error by creation vector for '+ str(e))
     return None
 
 #Get saved embedding from disk
 def get_vector_from_directory(persist_directory, embeddings):
     if persist_directory:
         logging.info('Get Vector from : '+ persist_directory)
-    vector_store = Chroma(chromadb_client)
-    vector_store = Chroma(persist_directory=persist_directory)
+    vector_store = Chroma(persist_directory=persist_directory, embedding_function=embeddings)
     vector_store.get()
     return vector_store
  
 #Get openai saved embedding
 def get_openai_embeddings():
     logging.info('Start get Openai embeddings vector.')
-    if openai_db_uri:
-     return get_vector_from_directory(openai_db_uri, openai_embeddings )
+    if openai_vectordb_directory:
+     return get_vector_from_directory(openai_vectordb_directory, openai_embeddings )
     else:
       logging.error('The embedding database for openai dont exist.')
       return None
 
 def get_huggingFace_embeddings():
     logging.info('Start get Huggingface embeddings vector.')
-    if alternative_host:
-       return get_vector_from_directory(alternative_host, huggingFaceEmbeddings)
+    if alternative_vectordb_directory:
+       return get_vector_from_directory(alternative_vectordb_directory, huggingFaceEmbeddings)
     else:
-       logging.error('The embedding database for hugginsface dont exist.')
+       logging.error('The embedding database for huggingface dont exist.')
        return None
 
 
-#To save the vector to 
-def save_vector(embedding, document_chunks, client):
- 
-   return vector_store
+

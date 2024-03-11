@@ -49,24 +49,24 @@ def openai_create_vect_project():
     
 
 def hugging_create_vect_courses():
-    print('Start courses urls embedding process with HuggingFaceEMbedding')
+    print('Start courses urls embedding process with HuggingFaceEmbedding')
     create_vector_with_huggingface(courses_urls)
 def hugging_create_vect_contact():
-    print('Start contact urls embedding process with HuggingFaceEMbedding')
+    print('Start contact urls embedding process with HuggingFaceEmbedding')
     create_vector_with_huggingface(contact_urls)
 def hugging_create_vect_glossar():
-    print('Start glossar urls embedding process with HuggingFaceEMbedding')
+    print('Start glossar urls embedding process with HuggingFaceEmbedding')
     create_vector_with_huggingface(glossar_urls)
 def  hugging_create_vec_news():
-    print('Start news urls embedding process with HuggingFaceEMbedding')
+    print('Start news urls embedding process with HuggingFaceEmbedding')
     create_vector_with_huggingface(news_urls)
 def  hugging_create_vec_press():
-    print('Start press urls embedding process with HuggingFaceEMbedding')
+    print('Start press urls embedding process with HuggingFaceEmbedding')
     create_vector_with_huggingface(press_urls)
 def hugging_create_vec_studycourses():
-    print('Start studycourses urls embedding process with HuggingFaceEMbedding')
+    print('Start studycourses urls embedding process with HuggingFaceEmbedding')
     create_vector_with_huggingface(studycourses_urls)
 def hugging_create_vec_project():
-    print('Start Project urls embedding process with HuggingFaceEMbedding')
+    print('Start Project urls embedding process with HuggingFaceEmbedding')
     create_vector_with_huggingface(project_urls)
 

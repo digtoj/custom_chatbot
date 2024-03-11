@@ -1,8 +1,9 @@
 import streamlit as st
-import threading
+import os
 from init import *
 
 message=""
+pdf_directory="./data/documents"
 
 #create Vector by using openAI embedding for urls
 def create_openai_embeddings(url_type):
@@ -77,8 +78,8 @@ def app():
 
     # Placeholder for loading symbol and messages
     placeholder = st.empty()
-    
-    # 
+
+     # 
     if st.button(f'Erstellen {embedding_type} für {category} URLs'):
         if embedding_type == 'OpenAI Embedding':
             create_openai_embeddings (category)
@@ -89,6 +90,18 @@ def app():
                 message=st.text('Das Embedding für {category} wurde erfolgreich erstellt.')
             except:
                 logging("Error by Hugginface embedding process.")
+    
+     # Upload PDF file
+    uploaded_file = st.file_uploader("PDF Datei Hochladen", type="pdf")
+
+    if uploaded_file is not None:
+        # Save PDF file to data/documents folder
+        os.makedirs(pdf_directory, exist_ok=True)
+        with open(os.path.join(pdf_directory, uploaded_file.name), "wb") as f:
+            f.write(uploaded_file.getbuffer())
+        st.success(f"Datei '{uploaded_file.name}' erfolgreich hochgeladen.")
+
+   
     
     message=st.text("")
 

@@ -70,7 +70,6 @@ def get_response(user_input):
 
 def app():
     # app config
-    st.set_page_config(page_title="ChatBot B (SentenceTransformer-Embedding)", page_icon="🤖")
     st.title("ChatBot B (SentenceTransformer-Embedding)")
 
     # sidebar

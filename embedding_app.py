@@ -44,6 +44,8 @@ def create_huggingface_embeddings(url_type):
 
 
 def app():
+    # Set page config at the top of your main app
+    st.set_page_config(page_title="Embedding Erstellen", page_icon="⚙️")
     # Use sidebar for embedding selection and dropdown
     embedding_type = st.sidebar.radio(
         "Wählen Sie den Embedding Typ:",
@@ -101,3 +103,6 @@ def app():
             f.write(uploaded_file.getbuffer())
         st.success(f"Datei '{uploaded_file.name}' erfolgreich hochgeladen.")
     message=st.text("")
+
+if __name__ == '__main__':
+    app()

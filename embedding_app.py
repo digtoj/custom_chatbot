@@ -7,20 +7,23 @@ pdf_directory="./data/documents"
 
 #create Vector by using openAI embedding for urls
 def create_openai_embeddings(url_type):
-    if url_type=='Kontakte':
-        openai_create_vect_contact()
-    elif url_type=='Glossar':
-        openai_create_vect_glossar()
-    elif url_type=='News':
-        openai_create_vect_news()
-    elif url_type=='Press':
-        openai_create_vect_press()
-    elif url_type=='Projekt':
-        openai_create_vect_project()
-    elif url_type=='Studiengangsbeschreibung':
-        openai_create_vect_studycourses()
-    elif url_type=='Vorlesungsverzeichnis':
-        openai_create_vect_courses()
+    try:
+        if url_type=='Kontakte':
+            openai_create_vect_contact()
+        elif url_type=='Glossar':
+            openai_create_vect_glossar()
+        elif url_type=='News':
+            openai_create_vect_news()
+        elif url_type=='Press':
+            openai_create_vect_press()
+        elif url_type=='Projekt':
+            openai_create_vect_project()
+        elif url_type=='Studiengangsbeschreibung':
+            openai_create_vect_studycourses()
+        elif url_type=='Vorlesungsverzeichnis':
+            openai_create_vect_courses()
+    except Exception as e:
+        logging.error("Error by creation of {url_type} embedding with a openai model")
 
 #create Vector by using HuggingFace Embedding for urls
 def create_huggingface_embeddings(url_type):
@@ -39,7 +42,7 @@ def create_huggingface_embeddings(url_type):
             hugging_create_vec_studycourses() 
         elif url_type=='Vorlesungsverzeichnis':
             hugging_create_vect_courses()
-    except:
+    except Exception as e:
       logging.error("Error by creation of {url_type} embedding with a huggingface model")
 
 
@@ -85,13 +88,11 @@ def app():
     if st.button(f'Erstellen {embedding_type} für {category} URLs'):
         if embedding_type == 'OpenAI Embedding':
             create_openai_embeddings (category)
-            message=st.text('Das Embedding für {category} wurde erfolgreich erstellt.')
+           
         elif embedding_type == 'HuggingFace Embedding':
-            try:
-                create_huggingface_embeddings(category)
-                message=st.text('Das Embedding für {category} wurde erfolgreich erstellt.')
-            except:
-                logging("Error by Hugginface embedding process.")
+            create_huggingface_embeddings(category)
+           
+           
     
      # Upload PDF file
     uploaded_file = st.file_uploader("PDF Datei Hochladen", type="pdf")

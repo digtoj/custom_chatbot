@@ -18,6 +18,15 @@ load_dotenv()
 llm = ChatOpenAI()
 embeddings = OpenAIEmbeddings()
 
+model_name = "sentence-transformers/all-MiniLM-L6-v2"
+model_kwargs = {'device': 'cpu'}
+encode_kwargs = {'normalize_embeddings': False}
+embeddings = HuggingFaceEmbeddings(
+    model_name=model_name,
+    model_kwargs=model_kwargs,
+    encode_kwargs=encode_kwargs
+)
+
 def get_context_retriever_chain(vector_store):
     
     retriever = vector_store.as_retriever()

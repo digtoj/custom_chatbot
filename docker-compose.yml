@@ -1,19 +1,9 @@
 services:
-  frontend:
-    image: example/webapp
+  embeddingapp:
+    image: embedding-app-image:latest
     ports:
-      - "443:8043"
-    networks:
-      - front-tier
-      - back-tier
-    configs:
-      - httpd-config
-    secrets:
-      - server-certificate
-
-  backend:
-    image: example/database
+      - "8051:8501"
     volumes:
-      - db-data:/etc/data
-    networks:
-      - back-tier
+      - ./data:/usr/src/app/data
+      - ./openai_db:/usr/src/app/openai_db
+      - ./alternative_db:/usr/src/app/alternative_db

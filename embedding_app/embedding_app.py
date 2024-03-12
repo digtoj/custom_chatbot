@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from embedding_app.init import *
+from init import *
 
 message=""
 pdf_directory="../data/documents"

@@ -1,5 +1,5 @@
 
-from embedding_app.website_url_extractor import load_urls_from_json
+from website_url_extractor import load_urls_from_json
 from embedding_manager import *
 
 

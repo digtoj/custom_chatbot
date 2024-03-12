@@ -1,13 +1,11 @@
 import streamlit as st
 from embedding_manager import *
 from langchain_core.messages import AIMessage, HumanMessage
-from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.chains.question_answering import load_qa_chain
 
 
 

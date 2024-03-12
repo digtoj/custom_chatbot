@@ -1,5 +1,4 @@
 #This script is created to init, create and save the vector from the embedding model.
-from langchain_core.messages import AIMessage, HumanMessage
 from langchain_community.document_loaders import WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
@@ -7,11 +6,9 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_openai import OpenAIEmbeddings
 from dotenv import load_dotenv
 from datetime import datetime
-from sentence_transformers import SentenceTransformer
 import logging
 import time
 import json
-import chromadb
 import logging
 
 

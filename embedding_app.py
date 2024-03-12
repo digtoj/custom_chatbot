@@ -3,7 +3,7 @@ import os
 from init import *
 
 message=""
-pdf_directory="../data/documents"
+pdf_directory="./data/documents"
 
 #create Vector by using openAI embedding for urls
 def create_openai_embeddings(url_type):

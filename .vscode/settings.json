@@ -3,5 +3,8 @@
         "basierte",
         "glossar",
         "hugginsface"
+    ],
+    "python.analysis.extraPaths": [
+        "./embedding_app"
     ]
 }

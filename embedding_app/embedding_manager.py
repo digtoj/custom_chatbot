@@ -18,11 +18,11 @@ import logging
 load_dotenv()
 
 #Report
-report_json = './data/report.json'
+report_json = '/app/data/report.json'
 
 #Vector database directory
-openai_vectordb_directory = './openai_store'
-alternative_vectordb_directory = './alternative_store'
+openai_vectordb_directory = '/app/openai_store'
+alternative_vectordb_directory = '/app/alternative_store'
 
 
 #Embeddings Model

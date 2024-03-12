@@ -1,5 +1,5 @@
 
-from website_url_extrator import *
+from embedding_app.website_url_extractor import load_urls_from_json
 from embedding_manager import *
 
 
@@ -11,9 +11,6 @@ press_json = './data/press.json'
 project_json = './data/project.json'
 studycourses_json = './data/studycourses.json'
 
-
-#Extract and save all urls. 
-#extract_urls_from_sitemap()
 
 #Get the saved url on the json file
 courses_urls = load_urls_from_json(courses_json)
@@ -69,4 +66,3 @@ def hugging_create_vec_studycourses():
 def hugging_create_vec_project():
     print('Start Project urls embedding process with HuggingFaceEmbedding')
     create_vector_with_huggingface(project_urls)
-

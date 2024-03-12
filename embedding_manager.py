@@ -21,8 +21,8 @@ load_dotenv()
 report_json = './data/report.json'
 
 #Vector database directory
-openai_vectordb_directory = './data/openai_store'
-alternative_vectordb_directory = './data/alternative_store'
+openai_vectordb_directory = './openai_db'
+alternative_vectordb_directory = './data/alternative_db'
 
 #Embeddings Model
 openai_embeddings = OpenAIEmbeddings()

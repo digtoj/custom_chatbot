@@ -2,7 +2,7 @@
 .env
 openai_store
 openai_db
-huggingface_db
+alternative_db
 
 #lokale llm model
 LaMini-T5-738M

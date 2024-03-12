@@ -5,10 +5,10 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, urljoin
 
-json_file_path = '/app/data/'
+json_file_path = '../data/'
 
 
-sitemaps_dir = '/app/data/sitemaps/'
+sitemaps_dir = '../data/sitemaps/'
 
 site_map_files =['contact.xml', 'glossar.xml', 'news.xml', 'press.xml', 'project.xml', 'studycourses.xml']
 
@@ -73,7 +73,7 @@ def extract_urls_from_sitemap():
 
     faculty4 = get_all_course_from_faculty(url_course_faculty4)
     if faculty4:
-        json_url = '/app/data/courses.json'
+        json_url = '../data/courses.json'
         save_urls_on_json(json_url, faculty4)
 
 

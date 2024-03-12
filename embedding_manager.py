@@ -24,7 +24,6 @@ report_json = './data/report.json'
 openai_vectordb_directory = './data/openai_store'
 alternative_vectordb_directory = './data/alternative_store'
 
-
 #Embeddings Model
 openai_embeddings = OpenAIEmbeddings()
 model_name = "sentence-transformers/all-MiniLM-L6-v2"
@@ -77,8 +76,6 @@ def create_vector_with_openai(urls):
                 logging.info('Start Openai Embedding for the page:'+url)
                 document_chunks = get_data_from_url(url)
                  # create a vectorstore from the chunks
-                client_open = chromadb.PersistentClient(path=openai_vectordb_directory)
-                vector_store = Chroma(client_open)
                 vector_store = Chroma.from_documents(document_chunks, openai_embeddings, persist_directory=openai_vectordb_directory)
                 vector_store.persist()
                 logging.info('Successful creation of  Openai Embedding for the page:'+url)
@@ -95,10 +92,7 @@ def create_vector_with_huggingface(urls):
             logging.info('Start Sentence Embedding for the page:'+url)
             document_chunks = get_data_from_url(url)
             # create a vectorstore from the chunks
-            client_open = chromadb.PersistentClient(path=alternative_vectordb_directory)
-            vector_store = Chroma(client_open)
-            vector_store = Chroma.from_documents(document_chunks, huggingFaceEmbeddings)
-           
+            vector_store = Chroma.from_documents(document_chunks, huggingFaceEmbeddings, persist_directory=alternative_vectordb_directory)
             vector_store.persist()
             logging.info('Successful creation of  Huggingsface Embedding for the page:'+url)
     except Exception as e:

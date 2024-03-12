@@ -94,3 +94,6 @@ def app():
         elif isinstance(message, HumanMessage):
             with st.chat_message("Human"):
                 st.write(message.content)
+            
+if __name__ == '__main__':
+    app()

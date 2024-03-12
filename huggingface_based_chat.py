@@ -1,4 +1,5 @@
-import streamlit as st
+import streamlit as sth
+
 import threading
 from embedding_manager import *
 from langchain_core.messages import AIMessage, HumanMessage
@@ -62,7 +63,7 @@ def get_response(user_input):
     conversation_rag_chain = get_conversational_rag_chain(retriever_chain)
     
     response = conversation_rag_chain.invoke({
-        "chat_history": st.session_state.chat_history,
+        "chat_history": sth.session_state.chat_history,
         "input": user_input
     })
     
@@ -70,7 +71,7 @@ def get_response(user_input):
 
 def app():
     # app config
-    st.title("ChatBot B (SentenceTransformer-Embedding)")
+    sth.title("ChatBot B (SentenceTransformer-Embedding)")
 
     # sidebar
    # with st.sidebar:
@@ -82,27 +83,30 @@ def app():
    #     )
 
     # session state
-    if "chat_history" not in st.session_state:
-        st.session_state.chat_history = [
+    if "chat_history" not in sth.session_state:
+        sth.session_state.chat_history = [
             AIMessage(content="Hallo, Ich bin ein bot. Wie kann dir helfen?"),
         ]
    
-    st.session_state.vector_store = get_openai_embeddings()
+    sth.session_state.vector_store = get_openai_embeddings()
 
 
     # user input
-    user_query = st.chat_input("Schreiben ihre Nachricht hier...")
+    user_query = sth.chat_input("Schreiben ihre Nachricht hier...")
     if user_query is not None and user_query != "":
         response = get_response(user_query)
-        st.session_state.chat_history.append(HumanMessage(content=user_query))
-        st.session_state.chat_history.append(AIMessage(content=response))
+        sth.session_state.chat_history.append(HumanMessage(content=user_query))
+        sth.session_state.chat_history.append(AIMessage(content=response))
         
 
     # conversation
     for message in st.session_state.chat_history:
         if isinstance(message, AIMessage):
-            with st.chat_message("AI"):
-                st.write(message.content)
+            with sth.chat_message("AI"):
+                sth.write(message.content)
         elif isinstance(message, HumanMessage):
-            with st.chat_message("Human"):
-                st.write(message.content)
+            with sth.chat_message("Human"):
+                sth.write(message.content)
+
+if __name__ == '__main__':
+    app()

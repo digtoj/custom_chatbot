@@ -1,23 +1,32 @@
-#The App where the user should be able to start the embedding app, the openai chatbot and the alternative version.
+
+#The App where the user should be able to start the openai chatbot and the alternative version.
 import streamlit as st
+from dotenv import load_dotenv
 
-# Set page config at the top of your main app
-st.set_page_config(page_title="Chat Mit der Hochschule Bremen", page_icon="💬")
+load_dotenv()
 
-from openai_based_chat import app as openai_chat
-from huggingface_based_chat import app as alternative_chat
+# Set page config
+st.set_page_config(page_title="Hauptseite", page_icon="📁")
 
+# Main title for the page
+st.title("Hauptanwendung")
 
-st.title("Chat Mit Eigenen Daten")
+# HTML template for the button that opens a link in a new tab
+button_template = """
+<a href="{url}" target="_blank">
+    <button style="background-color: #4CAF50; border: none; color: white; padding: 10px 24px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">
+        {button_text}
+    </button>
+</a>
+"""
 
-st.text("Starten sie eine von die 2 Chatbot Anwendungen.")
+# OpenAI Chat App Button
+openai_chat_app_url = "https://your_openai_chat_app_url.com" 
+openai_chat_button_html = button_template.format(url=openai_chat_app_url, button_text="Openai-basierte Chatbot")
+st.markdown(openai_chat_button_html, unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns(2, gap="big") 
+# Open source App Button
+open_source_chat_app_url = "https://your_embedding_app_url.com" 
+open_source_button_html = button_template.format(url=open_source_chat_app_url, button_text="Open-Source-basierte Chatbot")
+st.markdown(open_source_button_html, unsafe_allow_html=True)
 
-with col2:
-    if st.button("Chatbot A: Openai basierte Model", key="2"):
-        openai_chat()
-
-with col3:
-    if st.button("Chatbot B: Open source basierte Model", key="3"):
-        alternative_chat()

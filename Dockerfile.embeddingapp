@@ -2,13 +2,10 @@ FROM python-base:latest
 
 WORKDIR /user/src/app
 
-COPY embedding_app.py ./
-COPY website_url_extractor.py ./
-COPY embedding_manager.py ./
 COPY init.py ./
+COPY const.py ./
 COPY .env ./
 COPY ./data ./data
-
 
 EXPOSE 8501
 

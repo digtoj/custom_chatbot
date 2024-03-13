@@ -1,0 +1,14 @@
+FROM python-base:latest
+
+WORKDIR /user/src/app
+
+COPY init.py ./
+COPY website_url_extractor.py ./
+COPY embedding_manager.py ./
+COPY const.py ./
+COPY .env ./
+COPY ./data ./data
+
+EXPOSE 5000
+
+CMD ["flask", "run", "embedding_app.py", "--host=0.0.0.0"]

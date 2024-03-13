@@ -1,10 +1,6 @@
-from flask import Flask, request, jsonify
 import logging
 from const import *
 from init import *
-
-app = Flask(__name__)
-
 
 #create Vector by using openAI embedding for urls
 def create_openai_embeddings(url_type):
@@ -29,26 +25,11 @@ def create_embeddings(embedding_type, category):
     try:
         if(embedding_type == openai_embedding_text):
             create_openai_embeddings(category)
-            success = True
+            return  True
         elif embedding_type == alternative_embedding_text:
             create_huggingface_embeddings(category)
-            success = True
+            return  True
     except Exception as e:
      logging.error('Error by creating embedding for '+embedding_type+' and '+category)
      logging.error(e)
-     return success  # Return True if successful, False otherwise
-
-@app.route('/create_embeddings', methods=['POST'])
-def handle_create_embeddings():
-    data = request.get_json()
-    embedding_type = data.get('embedding_type')
-    category = data.get('category')
-
-    success = create_embeddings(embedding_type, category)
-    if success:
-        return jsonify({"message": "Embedding successfully created"}), 200
-    else:
-        return jsonify({"error": "Error creating embedding"}), 500
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+     return False  # Return True if successful, False otherwise

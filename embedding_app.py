@@ -2,11 +2,41 @@ import streamlit as st
 import requests
 import os
 from const import *
+from embedding_function import *
 
 message=""
 pdf_directory="./data/documents/"
 
-FLASK_BACKEND_URL = os.getenv('FLASK_BACKEND_URL', 'http://localhost:5000')
+#create Vector by using openAI embedding for urls
+def create_openai_embeddings(url_type):
+        if url_type== study_program_text:
+            openai_create_vect_studycourses()
+        elif url_type==courses_planning_text:
+            openai_create_vect_courses()
+   
+
+#create Vector by using HuggingFace Embedding for urls
+def create_huggingface_embeddings(url_type):
+        if url_type==study_program_text:
+            hugging_create_vec_studycourses() 
+        elif url_type==courses_planning_text:
+            hugging_create_vect_courses()
+
+# Function to handle embedding creation (logic from your Streamlit app)
+def create_embeddings(embedding_type, category):
+    success=False
+    try:
+        if(embedding_type == openai_embedding_text):
+            create_openai_embeddings(category)
+            success = True
+        elif embedding_type == alternative_embedding_text:
+            create_huggingface_embeddings(category)
+            success = True
+    except Exception as e:
+     logging.error('Error by creating embedding for '+embedding_type+' and '+category)
+     logging.error(e)
+     return success  # Return True if successful, False otherwise
+
 
 def app():
     # Set page config at the top of your main app
@@ -45,8 +75,8 @@ def app():
      # 
     if st.button(f'Erstellen {embedding_type} für {category} URLs'):
         # Use the environment variable for the Flask backend endpoint
-        response = requests.post(f"{FLASK_BACKEND_URL}/create_embeddings", json={"embedding_type": embedding_type, "category": category})
-        if response.ok:
+        response = create_embeddings(embedding_type, category)
+        if response:
             st.success("Embedding erfolgreich erstellt.")
         else:
             st.error("Fehler beim Erstellen des Embeddings.")

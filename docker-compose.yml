@@ -1,20 +1,8 @@
 services:
-  flask_backend:
-    image: embedding-backend:latest
-    ports:
-      - "5000:5000"
-    user: "0:0"
-    volumes:
-      - ./data:/usr/src/app/data
-      - ./openai_db:/usr/src/app/openai_db
-      - ./alternative_db:/usr/src/app/alternative_db
-
-  embeddingfrontend:
+  embeddingapp:
     image: embedding-app-image:latest
     ports:
       - "8501:8501"
-    environment:
-      - FLASK_BACKEND_URL=http://flask_backend:5000
     depends_on:
       - flask_backend
     user: "0:0" #Replace with your UID:GID (echo $(id -u):$(id -g): cmd to get it)

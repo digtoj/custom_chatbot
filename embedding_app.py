@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 import os
-from init import *
 from const import *
 
 message=""

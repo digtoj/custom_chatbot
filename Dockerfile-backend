@@ -6,9 +6,14 @@ COPY init.py ./
 COPY website_url_extractor.py ./
 COPY embedding_manager.py ./
 COPY const.py ./
+COPY embedding_backend.py ./
 COPY .env ./
 COPY ./data ./data
 
 EXPOSE 5000
+# Set environment variables
+ENV FLASK_APP=embedding-backend.py
+ENV FLASK_RUN_HOST=0.0.0.0
 
-CMD ["flask", "run", "embedding-backend.py", "--host=0.0.0.0"]
+# Command to run the Flask application
+CMD ["flask", "run"]

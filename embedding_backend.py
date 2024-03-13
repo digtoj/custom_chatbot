@@ -51,4 +51,4 @@ def handle_create_embeddings():
         return jsonify({"error": "Error creating embedding"}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)

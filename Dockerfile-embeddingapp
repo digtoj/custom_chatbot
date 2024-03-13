@@ -6,6 +6,7 @@ COPY website_url_extractor.py ./
 COPY init.py ./
 COPY const.py ./
 COPY embedding_app.py ./
+COPY embedding_manager.py ./
 COPY .env ./
 COPY ./data ./data
 

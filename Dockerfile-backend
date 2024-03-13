@@ -12,7 +12,7 @@ COPY ./data ./data
 
 EXPOSE 5000
 # Set environment variables
-ENV FLASK_RUN_HOST=0.0.0.0
+ENV FLASK_ENV=development
 
 # Command to run the Flask application
-CMD ["flask", "run"]
+CMD ["python", "embedding_backend.py"]

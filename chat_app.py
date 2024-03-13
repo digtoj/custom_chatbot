@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
-
+from const import *
 
 
 
@@ -67,14 +67,27 @@ def app():
     # app config
     st.title("ChatBot A (Openai-Embedding)")
 
-    # sidebar
-   # with st.sidebar:
-   #     st.header("Einstellungen")
+     #sidebar
+    with st.sidebar:
+        st.header("Einstellungen")
         # Use sidebar for embedding selection and dropdown
-   #     embedding_type = st.sidebar.radio(
-   #         "Wählen Sie den Embedding Typ:",
-   #         ("OpenAI Embedding", "HuggingFace Embedding")
-   #     )
+        embedding_type = st.sidebar.radio(
+            "Wählen Sie den Embedding model:",
+            (openai_embedding_text, alternative_embedding_text)
+        )
+    
+    st.text('Die URLs wurden aus dem Sitemap Datei: https://www.hs-bremen.de/sitemap.xml extrahiert')
+
+    texts = [
+        "- [481 URLs] Die Vorlesungsverzeichnis der Fakultät 4 wurde aus: https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ws23&team=4 für der Wi 23/24 ",
+        "- [76 URLs] Die Studiengänge wurde aus: https://www.hs-bremen.de/sitemap.xml?sitemap=studycourses&cHash=fd9afa2bc1b3673281c5cdc14ee21f1e extrahiert.",
+    ]
+
+     # Display each text in the list
+    text_to_display = "\n".join(texts)
+
+    # Display the text area with a scrollbar
+    st.text_area("Datenquellen: ", text_to_display, height=200, disabled=True)
 
     # session state
     if "chat_history" not in st.session_state:

@@ -2,6 +2,20 @@ import logging
 from const import *
 from init import *
 
+
+def list_pdf_files(directory_path):
+    """
+    List all PDF files in the given directory.
+
+    Args:
+    - directory_path (str): Path to the directory to search for PDF files.
+
+    Returns:
+    - List[str]: A list of filenames (including the relative path) for all PDF files in the directory.
+    """
+    pdf_files = [file for file in os.listdir(directory_path) if file.endswith('.pdf')]
+    return pdf_files
+
 #create Vector by using openAI embedding for urls
 def create_openai_embeddings(url_type):
         if url_type== study_program_text:
@@ -19,7 +33,7 @@ def create_huggingface_embeddings(url_type):
    
 
 
-# Function to handle embedding creation (logic from your Streamlit app)
+# Function to handle embedding creation
 def create_embeddings(embedding_type, category):
     success=False
     try:
@@ -33,3 +47,16 @@ def create_embeddings(embedding_type, category):
      logging.error('Error by creating embedding for '+embedding_type+' and '+category)
      logging.error(e)
      return False  # Return True if successful, False otherwise
+
+#Function to handle embedding creation for a pdf file
+def create_pdf_embedding_by_embedding_type(embedding_type, pdf_directory):
+    try: 
+        if embedding_type == openai_embedding_text:
+            create_pdf_embedding_with_openai(pdf_directory=pdf_directory)
+            return True
+        elif embedding_type == alternative_embedding_text:
+            create_pdf_embedding_with_alternative(pdf_directory=pdf_directory)
+            return True
+    except Exception as e:
+        logging.error(e)
+        return False

@@ -2,40 +2,12 @@ import streamlit as st
 import requests
 import os
 from const import *
-from embedding_function import *
+from embedding_app_function import *
 
 message=""
 pdf_directory="./data/documents/"
 
-#create Vector by using openAI embedding for urls
-def create_openai_embeddings(url_type):
-        if url_type== study_program_text:
-            openai_create_vect_studycourses()
-        elif url_type==courses_planning_text:
-            openai_create_vect_courses()
-   
-
-#create Vector by using HuggingFace Embedding for urls
-def create_huggingface_embeddings(url_type):
-        if url_type==study_program_text:
-            hugging_create_vec_studycourses() 
-        elif url_type==courses_planning_text:
-            hugging_create_vect_courses()
-
-# Function to handle embedding creation (logic from your Streamlit app)
-def create_embeddings(embedding_type, category):
-    success=False
-    try:
-        if(embedding_type == openai_embedding_text):
-            create_openai_embeddings(category)
-            success = True
-        elif embedding_type == alternative_embedding_text:
-            create_huggingface_embeddings(category)
-            success = True
-    except Exception as e:
-     logging.error('Error by creating embedding for '+embedding_type+' and '+category)
-     logging.error(e)
-     return success  # Return True if successful, False otherwise
+pdf_files = list_pdf_files(pdf_directory)
 
 
 def app():
@@ -63,6 +35,7 @@ def app():
         "- [76 URLs] Die Studiengänge wurde aus: https://www.hs-bremen.de/sitemap.xml?sitemap=studycourses&cHash=fd9afa2bc1b3673281c5cdc14ee21f1e extrahiert.",
     ]
 
+    texts.extend(pdf_files)
     # Display each text in the list
     text_to_display = "\n".join(texts)
     
@@ -76,7 +49,7 @@ def app():
     if st.button(f'Erstellen {embedding_type} für {category} URLs'):
         # Use the environment variable for the Flask backend endpoint
         response = create_embeddings(embedding_type, category)
-        if response:
+        if response == True:
             st.success("Embedding erfolgreich erstellt.")
         else:
             st.error("Fehler beim Erstellen des Embeddings.")
@@ -92,7 +65,22 @@ def app():
         with open(os.path.join(pdf_directory, uploaded_file.name), "wb") as f:
             f.write(uploaded_file.getbuffer())
         st.success(f"Datei '{uploaded_file.name}' erfolgreich hochgeladen.")
-    message=st.text("")
+    
+        if st.button(f'Erstellen das {embedding_type} Embedding des Pdf'):
+            file_directory = os.path.join(pdf_directory, uploaded_file.name)
+            if file_directory:
+                isCreated=False
+                try:
+                    isCreated = create_pdf_embedding_by_embedding_type(embedding_type, file_directory)
+                except Exception as e:
+                    st.error(e)
+                if isCreated == True:
+                    st.success("Embedding mit "+ embedding_type+" von "+ uploaded_file.name+" wurde erfolgreich erstellt.")       
+                else:
+                    st.error("Fehler bei der Erstellung des Embeddings")
+            else:
+                st.error("Error by file directory path")
+
 
 if __name__ == '__main__':
     app()

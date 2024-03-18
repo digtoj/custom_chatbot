@@ -5,9 +5,6 @@ from const import *
 from embedding_app_function import *
 
 message=""
-pdf_directory="./data/documents/"
-
-
 
 
 def app():
@@ -77,10 +74,6 @@ def app():
     # Placeholder for loading symbol and messages
     placeholder = st.empty()
 
-     # 
-      
-           
-    
      # Upload PDF file
     uploaded_file = st.file_uploader("PDF Datei Hochladen", type="pdf")
 

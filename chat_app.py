@@ -63,9 +63,13 @@ def get_response(user_input):
     
     return response['answer']
 
+pdf_files = list_pdf_files(pdf_directory)
+
 def app():
+
+    st.set_page_config(page_title="Dein HsB Chatbot", page_icon="💬")
     # app config
-    st.title("ChatBot A (Openai-Embedding)")
+    st.title("Dein HsB Chatbot.")
 
      #sidebar
     with st.sidebar:
@@ -76,12 +80,17 @@ def app():
             (openai_embedding_text, alternative_embedding_text)
         )
     
-    st.text('Die URLs wurden aus dem Sitemap Datei: https://www.hs-bremen.de/sitemap.xml extrahiert')
+    st.text('Die URLs wurden aus dem Sitemap der Webseite der Hs Bremen extrahiert: https://www.hs-bremen.de/sitemap.xml ')
 
     texts = [
-        "- [481 URLs] Die Vorlesungsverzeichnis der Fakultät 4 wurde aus: https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ws23&team=4 für der Wi 23/24 ",
-        "- [76 URLs] Die Studiengänge wurde aus: https://www.hs-bremen.de/sitemap.xml?sitemap=studycourses&cHash=fd9afa2bc1b3673281c5cdc14ee21f1e extrahiert.",
+        "- [481 HTML Seiten]  aus: https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ws23&team=4 ",
+        "- [76 HTML Seiten]  aus: https://www.hs-bremen.de/sitemap.xml?sitemap=studycourses&cHash=fd9afa2bc1b3673281c5cdc14ee21f1e ",
+        "- Die folgende Modulbeschreibungen von jeden Studiengänge der Fakultät 4:",
+        " ",
+        
     ]
+
+    texts.extend(pdf_files)
 
      # Display each text in the list
     text_to_display = "\n".join(texts)
@@ -92,10 +101,10 @@ def app():
     # session state
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = [
-            AIMessage(content="Hallo, Ich bin ein bot. Wie kann dir helfen?"),
+            AIMessage(content="Hallo, Ich bin das HSB Chatbot. Wie kann dir helfen?"),
         ]
    
-    st.session_state.vector_store = get_openai_embeddings()
+    st.session_state.vector_store = get_choised_vector(embedding_type=embedding_type)
 
 
     # user input

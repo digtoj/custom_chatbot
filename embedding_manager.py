@@ -108,6 +108,15 @@ def get_vector_from_directory(persist_directory, embeddings):
     vector_store = Chroma(persist_directory=persist_directory, embedding_function=embeddings)
     vector_store.get()
     return vector_store
+
+def get_choised_vector(embedding_type):
+    if embedding_type:
+        if embedding_type==openai_embedding_text:
+            return get_openai_embeddings()
+        elif embedding_type==alternative_embedding_text:
+            return get_alternative_embeddings()
+    else:
+        logging.error("Give a existing value for the embedding typ.")
  
 #Get openai saved embedding
 def get_openai_embeddings():
@@ -118,7 +127,7 @@ def get_openai_embeddings():
       logging.error('The embedding database for openai dont exist.')
       return None
 
-def get_huggingFace_embeddings():
+def get_alternative_embeddings():
     logging.info('Start get Huggingface embeddings vector.')
     if alternative_vectordb_directory:
        return get_vector_from_directory(alternative_vectordb_directory, alternative_Embeddings)

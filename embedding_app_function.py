@@ -3,18 +3,6 @@ from const import *
 from init import *
 
 
-def list_pdf_files(directory_path):
-    """
-    List all PDF files in the given directory.
-
-    Args:
-    - directory_path (str): Path to the directory to search for PDF files.
-
-    Returns:
-    - List[str]: A list of filenames (including the relative path) for all PDF files in the directory.
-    """
-    pdf_files = [file for file in os.listdir(directory_path) if file.endswith('.pdf')]
-    return pdf_files
 
 #create Vector by using openAI embedding for urls
 def create_openai_embeddings(url_type):

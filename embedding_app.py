@@ -7,10 +7,12 @@ from embedding_app_function import *
 message=""
 pdf_directory="./data/documents/"
 
-pdf_files = list_pdf_files(pdf_directory)
+
 
 
 def app():
+    pdf_files = list_pdf_files(pdf_directory)
+    #Sidebar
     # Set page config at the top of your main app
     st.set_page_config(page_title="Embedding Erstellen", page_icon="⚙️")
     # Use sidebar for embedding selection and dropdown
@@ -24,6 +26,36 @@ def app():
         ("--",study_program_text, courses_planning_text)
     )
 
+    if st.sidebar.button(f'Erstellen {embedding_type} Embedding für {category} URLs'):
+        if embedding_type and category!="--":
+            # Use the environment variable for the Flask backend endpoint
+            response = create_embeddings(embedding_type, category)
+            if response == True:
+                st.success("Embedding erfolgreich erstellt.")
+            else:
+                st.error("Fehler beim Erstellen des Embeddings.")
+        else:
+            st.error("Bitte wählen sie eine Kategorie von URL aus.") 
+
+    # SelectBox for uploaded PDFs, in the sidebar
+    selected_pdf = st.sidebar.selectbox("Wählen Sie ein PDF zur Erstellung des Embeddings:", pdf_files)
+
+    if st.sidebar.button(f'Erstellen {embedding_type} Embedding des pdf'):
+            file_directory = os.path.join(pdf_directory, selected_pdf)
+            if file_directory:
+                isCreated=False
+                try:
+                    isCreated = create_pdf_embedding_by_embedding_type(embedding_type, file_directory)
+                except Exception as e:
+                    st.error(e)
+                if isCreated == True:
+                    st.success("Embedding mit "+ embedding_type+" von "+ uploaded_file.name+" wurde erfolgreich erstellt.")       
+                else:
+                    st.error("Fehler bei der Erstellung des Embeddings")
+            else:
+                st.error("Error by file directory path")
+
+    #Main page 
     st.title('Embedding Manager')
 
     # Texts
@@ -46,16 +78,7 @@ def app():
     placeholder = st.empty()
 
      # 
-    if st.button(f'Erstellen {embedding_type} für {category} URLs'):
-        if embedding_type and category!="--":
-            # Use the environment variable for the Flask backend endpoint
-            response = create_embeddings(embedding_type, category)
-            if response == True:
-                st.success("Embedding erfolgreich erstellt.")
-            else:
-                st.error("Fehler beim Erstellen des Embeddings.")
-        else:
-            st.error("Bitte wählen sie eine Kategorie von URL aus.")   
+      
            
     
      # Upload PDF file
@@ -67,22 +90,9 @@ def app():
         with open(os.path.join(pdf_directory, uploaded_file.name), "wb") as f:
             f.write(uploaded_file.getbuffer())
         st.success(f"Datei '{uploaded_file.name}' erfolgreich hochgeladen.")
-    
-        if st.button(f'Erstellen das {embedding_type} Embedding des Pdf'):
-            file_directory = os.path.join(pdf_directory, uploaded_file.name)
-            if file_directory:
-                isCreated=False
-                try:
-                    isCreated = create_pdf_embedding_by_embedding_type(embedding_type, file_directory)
-                except Exception as e:
-                    st.error(e)
-                if isCreated == True:
-                    st.success("Embedding mit "+ embedding_type+" von "+ uploaded_file.name+" wurde erfolgreich erstellt.")       
-                else:
-                    st.error("Fehler bei der Erstellung des Embeddings")
-            else:
-                st.error("Error by file directory path")
-
-
+        # Update the list of PDF files after uploading
+        pdf_files.append(uploaded_file.name)
+        pdf_files = sorted(set(pdf_files))  # Ensure the list is unique and sorted
+            
 if __name__ == '__main__':
     app()

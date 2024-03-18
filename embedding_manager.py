@@ -1,8 +1,6 @@
 #This script is created to init, create and save the vector from the embedding model.
 from langchain_community.document_loaders import WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.document_loaders import UnstructuredMarkdownLoader
-from langchain_community.document_loaders import UnstructuredPDFLoader
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_openai import OpenAIEmbeddings

@@ -80,6 +80,15 @@ def app():
             (openai_embedding_text, alternative_embedding_text)
         )
     
+     # Check if embedding_type has changed, reset chat if it has
+    if 'previous_embedding_type' not in st.session_state:
+        st.session_state.previous_embedding_type = embedding_type
+    elif embedding_type != st.session_state.previous_embedding_type:
+        st.session_state.chat_history = [
+            AIMessage(content="Hallo, Ich bin das HSB Chatbot. Wie kann dir helfen?"),
+        ]
+        st.session_state.previous_embedding_type = embedding_type
+    
     st.text('Die URLs wurden aus dem Sitemap der Webseite der Hs Bremen extrahiert: https://www.hs-bremen.de/sitemap.xml ')
 
     texts = [

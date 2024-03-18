@@ -8,7 +8,7 @@ COPY embedding_manager.py ./
 COPY init.py ./
 COPY const.py ./
 COPY embedding_app.py ./
-COPY embedding_function.py ./
+COPY embedding_app_function.py ./
 COPY .env ./
 COPY ./data ./data
 

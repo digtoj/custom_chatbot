@@ -21,7 +21,7 @@ def app():
     
     category = st.sidebar.selectbox(
         "Wählen Sie die URLs Quelle:",
-        (study_program_text, courses_planning_text)
+        ("--",study_program_text, courses_planning_text)
     )
 
     st.title('Embedding Manager')
@@ -47,13 +47,15 @@ def app():
 
      # 
     if st.button(f'Erstellen {embedding_type} für {category} URLs'):
-        # Use the environment variable for the Flask backend endpoint
-        response = create_embeddings(embedding_type, category)
-        if response == True:
-            st.success("Embedding erfolgreich erstellt.")
+        if embedding_type and category!="--":
+            # Use the environment variable for the Flask backend endpoint
+            response = create_embeddings(embedding_type, category)
+            if response == True:
+                st.success("Embedding erfolgreich erstellt.")
+            else:
+                st.error("Fehler beim Erstellen des Embeddings.")
         else:
-            st.error("Fehler beim Erstellen des Embeddings.")
-           
+            st.error("Bitte wählen sie eine Kategorie von URL aus.")   
            
     
      # Upload PDF file

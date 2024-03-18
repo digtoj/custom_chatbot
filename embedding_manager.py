@@ -6,6 +6,8 @@ from langchain_community.document_loaders import UnstructuredPDFLoader
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_openai import OpenAIEmbeddings
+from langchain.document_loaders import PyPDFLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
 from datetime import datetime
 from const import *
@@ -134,10 +136,15 @@ def create_embedding_from_pdf_file(pdf_directory, embeddings, persist_directory)
     
         if os.path.exists(pdf_directory):
             print('Start embedding for '+ pdf_directory)
-            loader = UnstructuredPDFLoader(pdf_directory, mode="elements")
-            pages = loader.load_and_split()
+            loader = PyPDFLoader(pdf_directory)
 
-            vectordb = Chroma.from_documents(documents=pages, embedding=embeddings, persist_directory=persist_directory)
+            data = loader.load()
+             # Split  data up into smaller documents with Chunks
+            text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
+
+            documents = text_splitter.split_documents(data)
+
+            vectordb = Chroma.from_documents(documents=documents, embedding=embeddings, persist_directory=persist_directory)
             vectordb.persist()
         else:
             print("The Given path dont exist.")

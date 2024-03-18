@@ -3,7 +3,7 @@
 openai_store
 openai_db
 alternative_db
-
+data\documents
 #lokale llm model
 LaMini-T5-738M
 
@@ -12,9 +12,5 @@ venv
 
 #Chromadatabase
 chroma_db
-
-#PDF Files
-data/documents/
-
 #pycaches
 _pycache_

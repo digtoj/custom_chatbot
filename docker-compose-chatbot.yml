@@ -1,8 +1,8 @@
 services:
   embeddingapp:
-    image: embedding-app-image:latest
+    image: chatbot-app-image:latest
     ports:
-      - "8501:8501"
+      - "80:8501"
     user: "0:0" #Replace with your UID:GID (echo $(id -u):$(id -g): cmd to get it)
     volumes:
       - ./data:/usr/src/app/data

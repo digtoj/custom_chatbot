@@ -5,6 +5,9 @@ WORKDIR /user/src/app
 COPY const.py ./
 COPY .env ./
 COPY chat_app.py ./
+COPY website_url_extractor.py ./
+COPY embedding_manager.py ./
+COPY init.py ./
 
 EXPOSE 8501
 

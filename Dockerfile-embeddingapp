@@ -2,7 +2,6 @@ FROM python-base:latest
 
 WORKDIR /user/src/app
 
-
 COPY website_url_extractor.py ./
 COPY embedding_manager.py ./
 COPY init.py ./

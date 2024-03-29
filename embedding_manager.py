@@ -2,6 +2,7 @@
 from langchain_community.document_loaders import WebBaseLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
+
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.document_loaders import PyPDFLoader
@@ -28,7 +29,7 @@ alternative_vectordb_directory = './alternative_db'
 
 #Embeddings Model
 openai_embeddings = OpenAIEmbeddings()
-model_name = "sentence-transformers/all-MiniLM-L6-v2"
+
 model_kwargs = {'device': 'cpu'}
 encode_kwargs = {'normalize_embeddings': False}
 alternative_Embeddings = HuggingFaceEmbeddings(

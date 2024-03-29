@@ -14,16 +14,6 @@ load_dotenv()
 
 #llm = HuggingFaceEndpoint(repo_id="google/flan-t5-xl",temperature=0)
 llm = ChatOpenAI()
-embeddings = OpenAIEmbeddings()
-
-model_name = "sentence-transformers/all-MiniLM-L6-v2"
-model_kwargs = {'device': 'cpu'}
-encode_kwargs = {'normalize_embeddings': False}
-embeddings = HuggingFaceEmbeddings(
-    model_name=model_name,
-    model_kwargs=model_kwargs,
-    encode_kwargs=encode_kwargs
-)
 
 def get_context_retriever_chain(vector_store):
     
@@ -89,7 +79,7 @@ def app():
         ]
         st.session_state.previous_embedding_type = embedding_type
     
-    st.text('Die URLs wurden aus dem Sitemap der Webseite der Hs Bremen extrahiert: https://www.hs-bremen.de/sitemap.xml ')
+    st.sidebar.text('Die URLs stammen aus der Webseite der Hs Bremen ')
 
     texts = [
         "- [481 HTML Seiten]  aus: https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ws23&team=4 ",
@@ -105,7 +95,7 @@ def app():
     text_to_display = "\n".join(texts)
 
     # Display the text area with a scrollbar
-    st.text_area("Datenquellen: ", text_to_display, height=200, disabled=True)
+    st.sidebar.text_area("Datenquellen: ", text_to_display, height=400, disabled=True)
 
     # session state
     if "chat_history" not in st.session_state:
@@ -128,7 +118,8 @@ def app():
     for message in st.session_state.chat_history:
         if isinstance(message, AIMessage):
             with st.chat_message("AI"):
-                st.write(message.content)
+                 with st.spinner("Embeddings wird erstellt....."):
+                    st.write(message.content)
         elif isinstance(message, HumanMessage):
             with st.chat_message("Human"):
                 st.write(message.content)

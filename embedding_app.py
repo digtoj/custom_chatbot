@@ -5,6 +5,7 @@ import base64
 from const import *
 from embedding_app_function import *
 
+st.set_page_config(layout="wide", page_title="Embedding Erstellen", page_icon="⚙️")
 
 message=""
 
@@ -24,7 +25,6 @@ def app():
     pdf_files = list_pdf_files(pdf_directory)
     #Sidebar
     # Set page config at the top of your main app
-    st.set_page_config(page_title="Embedding Erstellen", page_icon="⚙️")
     # Use sidebar for embedding selection and dropdown
     embedding_type = st.sidebar.radio(
         "Wählen Sie den Embedding Typ:",
@@ -74,7 +74,24 @@ def app():
             st.error("Bitte wählen sie eine Kategorie von URL aus.") 
 
         
-         
+      # SelectBox for uploaded PDFs, now reflecting the updated list
+    selected_pdf = st.sidebar.selectbox("Wählen Sie ein PDF zur Erstellung des Embeddings:", pdf_files)
+
+    if st.sidebar.button(f'Erstellen {embedding_type} Embedding des pdf'):
+                file_directory = os.path.join(pdf_directory, selected_pdf)
+                if file_directory:
+                    isCreated=False
+                    try:
+                        with st.spinner("Embeddings wird erstellt....."):
+                         isCreated = create_pdf_embedding_by_embedding_type(embedding_type, file_directory)
+                    except Exception as e:
+                        st.error(e)
+                    if isCreated == True:
+                        st.success("Embedding mit "+ embedding_type+" von "+selected_pdf+" wurde erfolgreich erstellt.")       
+                    else:
+                        st.error("Fehler bei der Erstellung des Embeddings")
+                else:
+                    st.error("Error by file directory path")      
 
 
 
@@ -100,24 +117,7 @@ def app():
         displayPDF(os.path.join(pdf_directory, uploaded_file.name))
              
     
-     # SelectBox for uploaded PDFs, now reflecting the updated list
-    selected_pdf = st.sidebar.selectbox("Wählen Sie ein PDF zur Erstellung des Embeddings:", pdf_files)
-
-    if st.sidebar.button(f'Erstellen {embedding_type} Embedding des pdf'):
-                file_directory = os.path.join(pdf_directory, selected_pdf)
-                if file_directory:
-                    isCreated=False
-                    try:
-                        with st.spinner("Embeddings wird erstellt....."):
-                         isCreated = create_pdf_embedding_by_embedding_type(embedding_type, file_directory)
-                    except Exception as e:
-                        st.error(e)
-                    if isCreated == True:
-                        st.success("Embedding mit "+ embedding_type+" von "+selected_pdf+" wurde erfolgreich erstellt.")       
-                    else:
-                        st.error("Fehler bei der Erstellung des Embeddings")
-                else:
-                    st.error("Error by file directory path")
+  
 
         
 if __name__ == '__main__':

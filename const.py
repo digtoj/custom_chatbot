@@ -1,10 +1,12 @@
 import os
+
+
 openai_embedding_text="OpenAI Embedding model"
-alternative_embedding_text="all-MiniLM-L6-v2 model"
+alternative_embedding_text="bge-m3"
 study_program_text="Studiengangsbeschreibung"
 courses_planning_text="Vorlesungsverzeichnis"
 pdf_directory="./data/documents/"
-
+model_name = "E:/bge-m3"
 
 def list_pdf_files(directory_path):
     """

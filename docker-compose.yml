@@ -1,19 +1,9 @@
 services:
-  embeddingapp:
-    image: embedding-app-image:latest
+  customchatbot:
+    image: customchatbot:latest
     ports:
       - "8501:8501"
-    user: "0:0" #Replace with your UID:GID (echo $(id -u):$(id -g): cmd to get it)
+      - "80:8502"
+    user: "0:0" 
     volumes:
-      - ./data:/usr/src/app/data
-      - ./openai_db:/usr/src/app/openai_db
-      - ./alternative_db:/usr/src/app/alternative_db
-  chatbotapp:
-      image: chatbot-app-image:latest
-      ports:
-        - "80:8501"
-      user: "0:0" #Replace with your UID:GID (echo $(id -u):$(id -g): cmd to get it)
-      volumes:
-        - ./data:/usr/src/app/data
-        - ./openai_db:/usr/src/app/openai_db
-        - ./alternative_db:/usr/src/app/alternative_db
+      - ./model:/user/src/app/model

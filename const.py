@@ -6,7 +6,7 @@ alternative_embedding_text="bge-m3"
 study_program_text="Studiengangsbeschreibung"
 courses_planning_text="Vorlesungsverzeichnis"
 pdf_directory="./data/documents/"
-model_name = "E:/bge-m3"
+model_name = "./model/bge-m3"
 
 def list_pdf_files(directory_path):
     """

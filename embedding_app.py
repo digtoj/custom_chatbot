@@ -3,7 +3,7 @@ import requests
 import os
 import base64
 from const import *
-from embedding_app_function import *
+from embedding_app_function import list_pdf_files
 
 st.set_page_config(layout="wide", page_title="Embedding Erstellen", page_icon="⚙️")
 
@@ -19,7 +19,32 @@ def  displayPDF(file):
      st.markdown(pdf_display, unsafe_allow_html=True)
 
 
+def create_embeddings(embedding_type, category):
+    response = requests.post('http://localhost:5000/create_embeddings', json={
+        'embedding_type': embedding_type,
+        'category': category
+    })
+    if response.status_code == 200:
+        return response.json().get('success', False)
+    return False
 
+def create_embeddings(embedding_type, category):
+    response = requests.post('http://localhost:5000/create_embeddings', json={
+        'embedding_type': embedding_type,
+        'category': category
+    })
+    if response.status_code == 200:
+        return response.json().get('success', False)
+    return False
+
+def create_pdf_embedding_by_embedding_type(embedding_type, file_directory):
+     response = requests.post('http://localhost:5000/create_pdf_embedding', json={
+        'embedding_type': embedding_type,
+        'pdf_filename': file_directory
+    })
+     if response.status_code == 200:
+        return response.json().get('success', False)
+     return False
 
 def app():
     pdf_files = list_pdf_files(pdf_directory)
@@ -65,7 +90,8 @@ def app():
     if st.sidebar.button(f'Erstellen {embedding_type} Embedding für {category} URLs'):
         if embedding_type and category!="--":
             # Use the environment variable for the Flask backend endpoint
-            response = create_embeddings(embedding_type, category)
+            with st.spinner("Embeddings wird erstellt....."):
+                response = create_embeddings(embedding_type, category)
             if response == True:
                 st.success("Embedding erfolgreich erstellt.")
             else:
@@ -117,8 +143,5 @@ def app():
         displayPDF(os.path.join(pdf_directory, uploaded_file.name))
              
     
-  
-
-        
 if __name__ == '__main__':
     app()

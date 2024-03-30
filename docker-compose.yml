@@ -7,3 +7,5 @@ services:
     user: "0:0" 
     volumes:
       - ./model:/user/src/app/model
+      - ./openai_db:/user/src/app/openai_db
+      - ./alternative_db:/user/src/app/alternative_db

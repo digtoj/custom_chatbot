@@ -1,6 +1,6 @@
 services:
   customchatbot:
-    image: customchatbot:latest
+    image: custom_chatbot:latest
     ports:
       - "8501:8501"
       - "80:8502"

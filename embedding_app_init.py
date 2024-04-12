@@ -1,16 +1,7 @@
 
 from data_extractor import *
 from embedding_manager import *
-from sitemap_extractor import save_study_courses_url
 from const import study_course_file, courses_file
-
-#Extract the courses information from the website
-extract_urls_from_courses()
-
-#Extract and save some urls
-save_study_courses_url()
-
-
 
 
 

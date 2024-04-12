@@ -56,4 +56,5 @@ def extract_urls_from_courses():
     faculty4 = get_all_course_from_faculty(url_course_faculty4)
     if faculty4:
         json_url = './data/courses.json'
-        add_url_to_json(json_url, faculty4)
+        for value in faculty4:
+            add_url_to_json(json_url, value)

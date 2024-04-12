@@ -14,8 +14,8 @@ def timeit(func):
         print(f"{func.__name__} took {end_time - start_time:.4f} seconds to execute.")
         current_datetime = datetime.now()
         timer_report = f"on {current_datetime} : {func.__name__} took {end_time - start_time:.4f} seconds to execute." 
-        
-        add_or_update_entry_in_json(report_json, current_datetime, timer_report )
+        print(timer_report)
+        add_or_update_entry_in_json(report_json, "{current_datetime}", timer_report )
     
         return result
     return wrapper

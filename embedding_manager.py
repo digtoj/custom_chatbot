@@ -6,7 +6,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter, CharacterTextSplitter
 from dotenv import load_dotenv
 from datetime import datetime
 from const import *
@@ -46,9 +46,9 @@ def get_data_from_url(url):
         logging.info('Starting embedding creation for '+url)
         loader = WebBaseLoader(url)
         document = loader.load()
+
         # split the document into chunks
         text_splitter = RecursiveCharacterTextSplitter()
-        logging.info(document)
         document_chunks = text_splitter.split_documents(document)
     except:
         logging.error("Error by getting data on the url : "+url)
@@ -61,6 +61,7 @@ def create_vector_with_openai(urls):
         if urls:
             for url in urls:
                 logging.info('Start Openai Embedding for the page:'+url)
+                print('Start for '+url)
                 document_chunks = get_data_from_url(url)
                  # create a vectorstore from the chunks
                 vector_store = Chroma.from_documents(document_chunks, openai_embeddings, persist_directory=openai_vectordb_directory)
@@ -76,6 +77,7 @@ def create_vector_with_huggingface(urls):
       if urls:
          for url in urls:
             logging.info('Start Alternative Embedding for the page:'+url)
+            print('Start for '+url)
             document_chunks = get_data_from_url(url)
             # create a vectorstore from the chunks
             vector_store = Chroma.from_documents(document_chunks, alternative_Embeddings, persist_directory=alternative_vectordb_directory)

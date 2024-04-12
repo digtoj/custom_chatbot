@@ -3,7 +3,7 @@
 openai_store
 openai_db
 alternative_db
-data
+data\documents
 e5-base-sts-en-de
 #lokale embedding
 model

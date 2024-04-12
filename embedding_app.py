@@ -4,6 +4,7 @@ import os
 import base64
 from const import *
 from embedding_app_function import list_pdf_files
+import validators
 
 st.set_page_config(layout="wide", page_title="Embedding Erstellen", page_icon="⚙️")
 
@@ -46,6 +47,18 @@ def create_pdf_embedding_by_embedding_type(embedding_type, file_directory):
         return response.json().get('success', False)
      return False
 
+def add_or_update_pdf_documents(pdf_key, pdf_url):
+    response = requests.post('http://localhost:5000/add_pdf_url', json={
+        'pdf_key':  pdf_key,
+        'pdf_url': pdf_key
+    })
+
+    if response.status_code == 200:
+        return response.json().get('success', False)
+    else:
+        return response.json().get('error', False)
+    return False
+
 def app():
     pdf_files = list_pdf_files(pdf_directory)
     #Sidebar
@@ -70,7 +83,7 @@ def app():
     st.text('Die URLs wurden aus dem Sitemap Datei: https://www.hs-bremen.de/sitemap.xml extrahiert')
 
     texts = [
-        "- [481 URLs] Die Vorlesungsverzeichnis der Fakultät 4 wurde aus: https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ws23&team=4 für der Wi 23/24 ",
+        "- [481 URLs] Die Vorlesungsverzeichnis der Fakultät 4 wurde aus: https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ss24&team=4 für den SoSe 2024 ",
         "- [76 URLs] Die Studiengänge wurde aus: https://www.hs-bremen.de/sitemap.xml?sitemap=studycourses&cHash=fd9afa2bc1b3673281c5cdc14ee21f1e extrahiert.",
     ]
 
@@ -141,7 +154,25 @@ def app():
         st.write(files_details)
         st.markdown("<h2 style='text-align:center; color: grey;'> PDF Preview </h2>", unsafe_allow_html=True)
         displayPDF(os.path.join(pdf_directory, uploaded_file.name))
-             
     
+    st.text('Fügen oder aktualisieren Sie eine Modulbeschreibung ein:')
+    st.text('Studiengang-Kürzel:')
+    pdf_key = st.text_input('Studiengang-Kürzel:', placeholder='Studiengang-Kürzel')
+    pdf_url = st.text_input('URL des PDF:',  placeholder='URL des Dokuments')
+
+    pdf_add = st.button("Speichern", type="secondary")
+    if pdf_add:
+        if pdf_key:
+            if validators.url(pdf_url):
+                added = add_or_update_pdf_documents(pdf_key, pdf_url)
+                if added:
+                    st.success('Dokument erfolgreich hinzugefügt.')
+                else:
+                    st.error('Fehler beim Hinzufugen des Dokuments.')
+            else:
+                st.error('Der eingegebe URL ist nicht valid or fehlerhaft.')
+        else:
+            st.error('Der Key muss eingegeben.')
+
 if __name__ == '__main__':
     app()

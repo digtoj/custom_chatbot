@@ -1,25 +1,26 @@
 
-from website_url_extractor import load_urls_from_json
+from data_extractor import *
 from embedding_manager import *
+from sitemap_extractor import save_study_courses_url
+from const import study_course_file
+
+#Extract the courses information from the website
+extract_urls_from_courses()
+
+#Extract and save some urls
+save_study_courses_url()
 
 
-courses_json = './data/courses.json'
-contact_json = './data/contact.json'
-glossar_json = './data/glossar.json'
-news_json = './data/news.json'
-press_json = './data/press.json'
-project_json = './data/project.json'
-studycourses_json = './data/studycourses.json'
+
 
 
 #Get the saved url on the json file
 courses_urls = load_urls_from_json(courses_json)
-contact_urls = load_urls_from_json(contact_json)
-glossar_urls = load_urls_from_json(glossar_json)
-news_urls = load_urls_from_json(news_json)
-press_urls = load_urls_from_json(press_json)
-studycourses_urls = load_urls_from_json(studycourses_json)
+
+studycourses_urls = load_urls_from_json(study_course_file)
 project_urls = load_urls_from_json(project_json)
+
+
 
 
 def openai_create_vect_courses():

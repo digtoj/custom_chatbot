@@ -1,6 +1,6 @@
 import logging
 from const import *
-from init import *
+from init_data import *
 
 
 

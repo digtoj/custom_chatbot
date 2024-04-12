@@ -1,10 +1,22 @@
 from flask import Flask, request, jsonify
 import os
 import base64
-from const import pdf_directory
+from const import pdf_directory, pdf_docs_url
+from utils_function import  save_urls_on_json, add_url_to_json, add_or_update_entry_in_json
 from embedding_app_function import create_embeddings, create_pdf_embedding_by_embedding_type, list_pdf_files
 
 app = Flask(__name__)
+
+@app.route('/add_pdf_url', methods=['POST'])
+def handle_create_pdf_embedding():
+    data = request.json
+    pdf_key = data.get('pdf_key')
+    pdf_url = data.get('pdf_url')
+    if pdf_url:
+        if add_or_update_entry_in_json(pdf_docs_url, pdf_key, pdf_url):
+            return jsonify({"success": "URL wurde erfolgreich hinzugefügt."})
+        else:
+            return jsonify({"error": "URL nicht konform oder existiert schon"})
 
 @app.route('/create_embeddings', methods=['POST'])
 def handle_create_embeddings():

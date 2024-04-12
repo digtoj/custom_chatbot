@@ -1,5 +1,7 @@
 import os
 
+report_json = './data/report.json'
+
 #site map information
 sitemap_name_file='sitemap.xml'
 sitemaps_dir = './data/sitemaps/'

@@ -11,6 +11,7 @@ from dotenv import load_dotenv
 from datetime import datetime
 from const import *
 
+
 import logging
 import time
 import json
@@ -21,7 +22,7 @@ import os
 load_dotenv()
 
 #Report
-report_json = './data/report.json'
+
 
 #Vector database directory
 openai_vectordb_directory = './openai_db'
@@ -37,22 +38,6 @@ alternative_Embeddings = HuggingFaceEmbeddings(
     model_kwargs=model_kwargs,
     encode_kwargs=encode_kwargs
 )
-
-
-def timeit(func):
-    def wrapper(*args, **kwargs):
-        start_time = time.time()  # Start time
-        result = func(*args, **kwargs)  # Execute the function
-        end_time = time.time()  # End time
-        print(f"{func.__name__} took {end_time - start_time:.4f} seconds to execute.")
-        current_datetime = datetime.now()
-        timer_report = f"on {current_datetime} : {func.__name__} took {end_time - start_time:.4f} seconds to execute." 
-        
-        with open(report_json, 'w') as json_file:
-            json.dump(timer_report, json_file)
-            print(f"Report: {timer_report}.")
-        return result
-    return wrapper
 
 #Function to save vector from a url.
 def get_data_from_url(url):
@@ -71,7 +56,6 @@ def get_data_from_url(url):
     return document_chunks
 
 #Create and save the vector by using openai embedding
-@timeit
 def create_vector_with_openai(urls):
     try:
         if urls:
@@ -87,7 +71,6 @@ def create_vector_with_openai(urls):
     return None
 
 #Create and save the vector by using HuggingfaceEmbedding
-@timeit
 def create_vector_with_huggingface(urls):
     try:
       if urls:
@@ -139,7 +122,6 @@ def get_alternative_embeddings():
 
 
 #To create embedding from pdf file
-@timeit
 def create_embedding_from_pdf_file(pdf_directory, embeddings, persist_directory): 
     
         if os.path.exists(pdf_directory):

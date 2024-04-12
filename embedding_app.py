@@ -3,8 +3,10 @@ import requests
 import os
 import base64
 from const import *
+from utils_function import add_or_update_entry_in_json
 from embedding_app_function import list_pdf_files
 import validators
+from embedding_app_function import create_embeddings, create_pdf_embedding_by_embedding_type, list_pdf_files
 
 st.set_page_config(layout="wide", page_title="Embedding Erstellen", page_icon="⚙️")
 
@@ -18,46 +20,6 @@ def  displayPDF(file):
      pdf_display = F'<iframe scr="data:application/pdf;base64,{base64_pdf}" width="100%" height="600" type="application/pdf"></iframe>'
 
      st.markdown(pdf_display, unsafe_allow_html=True)
-
-
-def create_embeddings(embedding_type, category):
-    response = requests.post('http://localhost:5000/create_embeddings', json={
-        'embedding_type': embedding_type,
-        'category': category
-    })
-    if response.status_code == 200:
-        return response.json().get('success', False)
-    return False
-
-def create_embeddings(embedding_type, category):
-    response = requests.post('http://localhost:5000/create_embeddings', json={
-        'embedding_type': embedding_type,
-        'category': category
-    })
-    if response.status_code == 200:
-        return response.json().get('success', False)
-    return False
-
-def create_pdf_embedding_by_embedding_type(embedding_type, file_directory):
-     response = requests.post('http://localhost:5000/create_pdf_embedding', json={
-        'embedding_type': embedding_type,
-        'pdf_filename': file_directory
-    })
-     if response.status_code == 200:
-        return response.json().get('success', False)
-     return False
-
-def add_or_update_pdf_documents(pdf_key, pdf_url):
-    response = requests.post('http://localhost:5000/add_pdf_url', json={
-        'pdf_key':  pdf_key,
-        'pdf_url': pdf_key
-    })
-
-    if response.status_code == 200:
-        return response.json().get('success', False)
-    else:
-        return response.json().get('error', False)
-    return False
 
 def app():
     pdf_files = list_pdf_files(pdf_directory)
@@ -155,8 +117,8 @@ def app():
         st.markdown("<h2 style='text-align:center; color: grey;'> PDF Preview </h2>", unsafe_allow_html=True)
         displayPDF(os.path.join(pdf_directory, uploaded_file.name))
     
+    
     st.text('Fügen oder aktualisieren Sie eine Modulbeschreibung ein:')
-    st.text('Studiengang-Kürzel:')
     pdf_key = st.text_input('Studiengang-Kürzel:', placeholder='Studiengang-Kürzel')
     pdf_url = st.text_input('URL des PDF:',  placeholder='URL des Dokuments')
 
@@ -164,7 +126,7 @@ def app():
     if pdf_add:
         if pdf_key:
             if validators.url(pdf_url):
-                added = add_or_update_pdf_documents(pdf_key, pdf_url)
+                added = add_or_update_entry_in_json(pdf_key, pdf_url)
                 if added:
                     st.success('Dokument erfolgreich hinzugefügt.')
                 else:

@@ -117,24 +117,6 @@ def app():
         st.markdown("<h2 style='text-align:center; color: grey;'> PDF Preview </h2>", unsafe_allow_html=True)
         displayPDF(os.path.join(pdf_directory, uploaded_file.name))
     
-    
-    st.text('Fügen oder aktualisieren Sie eine Modulbeschreibung ein:')
-    pdf_key = st.text_input('Studiengang-Kürzel:', placeholder='Studiengang-Kürzel')
-    pdf_url = st.text_input('URL des PDF:',  placeholder='URL des Dokuments')
-
-    pdf_add = st.button("Speichern", type="secondary")
-    if pdf_add:
-        if pdf_key:
-            if validators.url(pdf_url):
-                added = add_or_update_entry_in_json(pdf_key, pdf_url)
-                if added:
-                    st.success('Dokument erfolgreich hinzugefügt.')
-                else:
-                    st.error('Fehler beim Hinzufugen des Dokuments.')
-            else:
-                st.error('Der eingegebe URL ist nicht valid or fehlerhaft.')
-        else:
-            st.error('Der Key muss eingegeben.')
 
 if __name__ == '__main__':
     app()

@@ -75,7 +75,7 @@ def create_vector_with_huggingface(urls):
     try:
       if urls:
          for url in urls:
-            logging.info('Start Sentence Embedding for the page:'+url)
+            logging.info('Start Alternative Embedding for the page:'+url)
             document_chunks = get_data_from_url(url)
             # create a vectorstore from the chunks
             vector_store = Chroma.from_documents(document_chunks, alternative_Embeddings, persist_directory=alternative_vectordb_directory)

@@ -1,7 +1,7 @@
 import logging
 import time
 from const import *
-from init_data import *
+from embedding_app_init import *
 from utils_function import add_or_update_entry_in_json
 
 urlcate=""
@@ -15,7 +15,7 @@ def timeit(func):
         current_datetime = datetime.now()
         timer_report = f"on {current_datetime} : {func.__name__} took {end_time - start_time:.4f} seconds to execute." 
         
-        add_or_update_entry_in_json(report_json, urlcate, timer_report )
+        add_or_update_entry_in_json(report_json, current_datetime, timer_report )
     
         return result
     return wrapper
@@ -23,6 +23,7 @@ def timeit(func):
 #create Vector by using openAI embedding for urls
 @timeit
 def create_openai_embeddings(url_type):
+        global urlcate 
         urlcate = url_type
         if url_type== study_program_text:
             openai_create_vect_studycourses()

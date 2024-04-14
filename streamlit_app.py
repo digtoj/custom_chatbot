@@ -1,5 +1,5 @@
 import streamlit as st
-from embedding_manager import *
+from embedding_manager import get_choised_vector
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from dotenv import load_dotenv

@@ -1,0 +1,559 @@
+Überschrift: Dualer Studiengang Wirtschafts- und Verwaltungsinformatik B. A.
+Überschrift: Übersicht
+Überschrift: Studien­­INFO­tag
+Überschrift: Perspektiven
+Überschrift: Vorteile eines dualen Studiums
+Überschrift: Für die dualen Studierenden
+Überschrift: Beides in einem: perfekte Ergänzung von Theorie und Praxis
+Überschrift: Kürzere Ausbildungszeit
+Überschrift: Vergütung
+Überschrift: Für die Praxispartner
+Überschrift: Ausbildung verknüpft mit dem Trend zur Akademisierung
+Überschrift: Passgenaue Ausbildung von Fach- und Führungsnachwuchskräften
+Überschrift: Nachhaltige Bindung an das Unternehmen
+Überschrift: Wissenstransfer von der Hochschule ins Unternehmen und zurück
+Überschrift: Studienverlauf
+Überschrift: Betriebswirtschaftslehre - Konzepte und Change
+Überschrift: Externes und Internes Rechnungswesen
+Überschrift: Grundlagen der (Wirtschafts-)Informatik
+Überschrift: Grundlagen der Mathematik
+Überschrift: Wissenschaftliches Arbeiten
+Überschrift: Theorie-Praxis-Transfer 1
+Überschrift: Führung und Teamentwicklung digital
+Überschrift: Grundlagen betrieblicher Anwendungssysteme
+Überschrift: Software-Engineering I: Vorgehensmodelle in der Softwareentwicklung
+Überschrift: Statistik
+Überschrift: Verwaltungsorganisation und institutioneller Aufbau des Staates
+Überschrift: Theorie-Praxis-Transfer 2
+Überschrift: E-Government und digitaler Staat
+Überschrift: IT-Projektmanagement
+Überschrift: Software-Engineering II: Softwareenwurf, -qualität, -tests und -implementierung
+Überschrift: Datenbanksysteme und Dateimanagement
+Überschrift: Public Management, Steuerung und digitales Verwaltungshandeln
+Überschrift: Theorie-Praxis-Transfer 3
+Überschrift: Anforderungsanalyse und Requirement Engineering
+Überschrift: Prozessmanagement
+Überschrift: Programmierung in ERP-Systemen
+Überschrift: Informations- und Wissensmanagement
+Überschrift: Grundlagen Vertragsrecht
+Überschrift: Theorie-Praxis-Transfer 4
+Überschrift: Praxis
+Überschrift: Praxisbegleitung
+Überschrift: Bachelorprojekt
+Überschrift: Theorie-Praxis-Transfer 6
+Überschrift: Wahlpflichtmodule
+Überschrift: Wahlpflichtmodul: Datenschutz und digitale Teilhabe
+Überschrift: Wahlpflichtmodul: Einführung betrieblicher ERP-Anwendungssysteme I
+Überschrift: Wahlpflichtmodul: Architektur und Entwicklung betrieblicher ERP-Anwendungssysteme I
+Überschrift: Wahlpflichtmodul: Digitale Transformation
+Überschrift: Wahlpflichtmodul: Digitale Souveränität und Digital Governance
+Überschrift: Wahlpflichtmodul: ERP-Systeme in der Verwaltung
+Überschrift: Wahlpflichtmodul: Business Intelligence und Business Analytics
+Überschrift: Bachelorthesis
+Überschrift: Wahlpflichtmodule
+Überschrift: Wahlpflichtmodul: Informationssicherheit und Datenschutz
+Überschrift: Wahlpflichtmodul: Einführung betrieblicher ERP-Anwendungssysteme II
+Überschrift: Wahlpflichtmodul: Architektur und Entwicklung betrieblicher ERP-Anwendungssysteme II
+Überschrift: Wahlpflichtmodul: Technologien der Digitalen Transformation
+Überschrift: Wahlpflichtmodul: Smart Cities und Services
+Überschrift: Wahlpflichtmodul: Vertiefung Verwaltungsrecht und Grundlagen Vergaberecht
+Überschrift: Wahlpflichtmodul: Digitale Kommunikation und Partizipation
+Überschrift: Wahlpflichtmodul: Cyber Security des Staates
+Überschrift: Curriculum und Modulhandbuch
+Überschrift: Prüfungsordnung
+Überschrift: Kooperationen
+Überschrift: Praxisbezug
+Überschrift: Internationalität
+Überschrift: Praxispartner werden
+Überschrift: Bewerbung
+Überschrift: Informieren
+Überschrift: Bewerben
+Überschrift: Studienplatz annehmen
+Überschrift: Willkommen an der HSB!
+Überschrift: Kontakt
+Überschrift: Studiengangsleitung
+Überschrift: Programmkoordination
+Überschrift: Allgemeine Kontaktadresse
+Überschrift: Bewerbung, Zulassung, Immatrikulation und Prüfungsangelegenheiten
+Überschrift: Infos & mehr aus der HSB
+Überschrift: Ihre Cookie Einstellungen
+Absatz: Fakultät Wirtschaftswissenschaften
+Absatz: Sie haben eine große IT-Affinität, aber ein Informatikstudium kommt für Sie nicht in Frage? Sie möchten die öffentliche Verwaltung oder Wirtschaftsunternehmen mit der Entwicklung von Digitalisierungsstrategien unterstützen? Sie möchten "mehr" als eine Ausbildung, aber ein Studium ist Ihnen zu theoretisch? Dann studieren Sie den Dualen Studiengang Wirtschaftsinformatik und Verwaltungsinformatik.
+Absatz: 2023
+Absatz: Der Duale Studiengang Wirtschaftsinformatik und Verwaltungsinformatik B. A. (DSWVI) bietet Ihnen eine enge Verknüpfung von Theorie und Praxis durch die Zusammenarbeit mit Praxispartnern und der Nutzung von Praxisbeispielen während der Lehrveranstaltungen.
+Absatz: Während des dualen Studiums bauen Sie Kompetenzen im Bereich des Managements und Verwaltungsrechts auf, erhalten gleichzeitig einen Einblick in die Welt der IT und erwerben zudem neben Fach- und Methodenwissen auch Schlüsselkompetenzen:
+Absatz: 
+Absatz: 04. Juni 2024 Studiengänge stellen sich vor, die Studienberatung informiert über Themen rund um das Studium, Studierende beantworten Fragen zum Hochschulalltag.
+Absatz: Alle Infos
+Absatz: Aktuelle Stellenausschreibung - Jetzt bewerben!
+Absatz: Durch die frühzeitige und enge Bindung an die Praxispartner sind die Berufsaussichten hervorragend. Die Praxispartner investieren in erheblichem Maß in die Studierenden und sind daher von Beginn an einer längerfristigen Zusammenarbeit interessiert. Auch die Qualität und Ausrichtung des Studiums selbst sichern einen erfolgreichen Berufseinstieg.
+Absatz: Das mögliche Berufsbild umfasst alle Funktionen, die in den Bereichen Management und IT liegen. Die Anforderungsprofile für Fach- und Führungsnachwuchskräfte unterliegen einem stetigen Wandel.
+Absatz: Mit dem Studienabschluss sind Sie bestens qualifiziert, zum Beispiel als IT-Consultant in Unternehmen oder Behörden die Digitalisierung von Prozessen zu entwickeln und zu betreuen.
+Absatz: Theoriephasen an der HSB werden flankiert von Praxisphasen beim Praxispartner, in denen Sie das frisch erworbene Wissen direkt anwenden können.
+Absatz: Im Vergleich zu einer Ausbildung in Kombination mit einem späteren Studium ist die Zeit bei einem dualen Studium insgesamt deutlich kürzer, auch wenn Sie bei diesem Studium keinen zusätzlichen Ausbildungsabschluss erhalten. Durch die Praxiszeiten sind die optimal für den direkten Einstieg in die Beschäftigung vorbereitet.
+Absatz: Durch die Kombination aus Studium und Praxisphasen erhalten Sie während der gesamten Studienzeit eine Vergütung durch Ihren Praxispartner
+Absatz: Immer mehr junge Leute entscheiden sich für ein Studium. Das duale Studium bietet ihnen Theorie und Praxis in einem, eine Kombination, die besonders für motivierte und leistungsstarke Nachwuchskräfte sehr attraktiv ist.
+Absatz: Durch die Kombination von Theorie und Praxis erhalten Unternehmen fachlich und akademisch gut ausgebildetes sowie hochqualifiziertes Personal. Die Studierenden sind durch ihre Mitarbeit während der Praxisphasen mit den Abläufen im Unternehmen vertraut und nach Studienabschluss sofort einsetzbar. Eine zeit- und kostenintensive Einarbeitung entfällt.
+Absatz: Unternehmen ermöglichen ihren Auszubildenden ein duales Studium. Im Gegenzug können sie ihre dualen Studierenden langfristig an den Betrieb binden. So bleibt dem Praxispartner die Investition in die zukünftigen Arbeitnehmenden erhalten. Eine zeit- und kostenintensive Personalsuche entfällt.
+Absatz: Die Studierenden im dualen System bringen ihr an der Hochschule erlangtes Wissen unmittelbar in das Unternehmen ein. Umgekehrt kann die Hochschule die Kenntnisse und Fähigkeiten aus der Praxis aufgreifen und sie in die Studieninhalte einfließen lassen.
+Absatz: Motivierte und hochqualifizierte Mitarbeiterinnen und Mitarbeiter sind das Rückgrat eines jeden Unternehmens. Durch sie beugt die Firma/Behörde einem Fachkräftemangel vor. Der duale Studiengang Wirtschafts- und Verwaltungsinformatik der Hochschule Bremen bereitet die Studierenden exzellent auf den Einsatz im Betrieb vor.
+Absatz: Für Studienbeginnende ab dem Wintersemester 2023/24
+Absatz: Dieses Modul ist in zwei Units unterteilt.
+Absatz: In der Unit "Konzepte und Begriffe der Betriebswirtschaftslehre" werden folgende Schwerpunkte bearbeitet:
+Absatz: In der Unit "Change" werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt und auf die betriebliche Praxis übertragen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt und auf die betriebliche Praxis übertragen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt und auf die betriebliche Praxis übertragen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: Beschreibung
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: Im Rahmen dieses Moduls befinden sich die Studierenden in Ihrem Unternehmen.
+Absatz: Während der Praxisphasen haben die Studierenden die Möglichkeit, die in den Theoriephasen gewonnenen Erkenntnisse unmittelbar anzuwenden und zu reflektieren. Dies hat zweifellos einen äußerst günstigen Einfluss auf den Erwerb insbesondere derjenigen Kompetenzen, die sich auf Wissenstransfer und Analysefähigkeit beziehen.
+Absatz: Gleichzeitig werden die Studierenden während der Praxisphasen mit Fragestellungen konfrontiert, die noch nicht Gegenstand des theoretischen Studiums waren. Auf diese Weise gewinnen sie Anregungen für die Erschließung noch unbekannter Stoffgebiete. Insbesondere fördert dies auch die Motivation, sich in späteren Theoriephasen mit solchen Stoffgebieten aktiv auseinanderzusetzen. Zudem nehmen die Studierenden ihre Erfahrungen aus dem Praxisumfeld mit in das nachfolgende Präsenzstudium, wo sie mit Studierenden zusammentreffen, die Erfahrungen aus Unternehmen anderer Branchen und anderer Größen mitbringen. Dieses Aufeinandertreffen von Akteuren aus unterschiedlichen Ausbildungskontexten erzeugt, geleitet von Lehrenden, ein besonders effizientes Lernumfeld mit hohem Lerneffekt. Es entsteht also aus dem Theorie-Praxis-Transfer-Modul ein Transfer sowohl von den Theorie- in die Praxisphasen als auch einen Transfer in umgekehrter Richtung.
+Absatz: In diesem Modul sollen sich die Lerninhalte vorwiegend auf die vorangehenden Module desselben Semesters beziehen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt und auf die betriebliche Praxis übertragen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt und auf die betriebliche Praxis übertragen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt und durch Fallstudien und praktische Übungen auf die betriebliche Praxis übertragen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt und auf die betriebliche Praxis übertragen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: Im Rahmen dieses Moduls befinden sich die Studierenden in Ihrem Unternehmen.
+Absatz: Während der Praxisphasen haben die Studierenden die Möglichkeit, die in den Theoriephasen gewonnenen Erkenntnisse unmittelbar anzuwenden und zu reflektieren. Dies hat zweifellos einen äußerst günstigen Einfluss auf den Erwerb insbesondere derjenigen Kompetenzen, die sich auf Wissenstransfer und Analysefähigkeit beziehen.
+Absatz: Gleichzeitig werden die Studierenden während der Praxisphasen mit Fragestellungen konfrontiert, die noch nicht Gegenstand des theoretischen Studiums waren. Auf diese Weise gewinnen sie Anregungen für die Erschließung noch unbekannter Stoffgebiete. Insbesondere fördert dies auch die Motivation, sich in späteren Theoriephasen mit solchen Stoffgebieten aktiv auseinanderzusetzen. Zudem nehmen die Studierenden ihre Erfahrungen aus dem Praxisumfeld mit in das nachfolgende Präsenzstudium, wo sie mit Studierenden zusammentreffen, die Erfahrungen aus Unternehmen anderer Branchen und anderer Größen mitbringen. Dieses Aufeinandertreffen von Akteuren aus unterschiedlichen Ausbildungskontexten erzeugt, geleitet von Lehrenden, ein besonders effizientes Lernumfeld mit hohem Lerneffekt. Es entsteht also aus dem Theorie-Praxis-Transfer-Modul ein Transfer sowohl von den Theorie- in die Praxisphasen als auch einen Transfer in umgekehrter Richtung.
+Absatz: In diesem Modul sollen sich die Lerninhalte vorwiegend auf die vorangehenden Module desselben Semesters beziehen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: Dieses Modul ist in zwei Units unterteilt.
+Absatz: In der Unit "Public Management" werden folgende Schwerpunkte bearbeitet:
+Absatz: In der Unit "Digitales Verwaltungshandeln" werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: Im Rahmen dieses Moduls befinden sich die Studierenden in Ihrem Unternehmen.
+Absatz: Während der Praxisphasen haben die Studierenden die Möglichkeit, die in den Theoriephasen gewonnenen Erkenntnisse unmittelbar anzuwenden und zu reflektieren. Dies hat zweifellos einen äußerst günstigen Einfluss auf den Erwerb insbesondere derjenigen Kompetenzen, die sich auf Wissenstransfer und Analysefähigkeit beziehen.
+Absatz: Gleichzeitig werden die Studierenden während der Praxisphasen mit Fragestellungen konfrontiert, die noch nicht Gegenstand des theoretischen Studiums waren. Auf diese Weise gewinnen sie Anregungen für die Erschließung noch unbekannter Stoffgebiete. Insbesondere fördert dies auch die Motivation, sich in späteren Theoriephasen mit solchen Stoffgebieten aktiv auseinanderzusetzen. Zudem nehmen die Studierenden ihre Erfahrungen aus dem Praxisumfeld mit in das nachfolgende Präsenzstudium, wo sie mit Studierenden zusammentreffen, die Erfahrungen aus Unternehmen anderer Branchen und anderer Größen mitbringen. Dieses Aufeinandertreffen von Akteuren aus unterschiedlichen Ausbildungskontexten erzeugt, geleitet von Lehrenden, ein besonders effizientes Lernumfeld mit hohem Lerneffekt. Es entsteht also aus dem Theorie-Praxis-Transfer-Modul ein Transfer sowohl von den Theorie- in die Praxisphasen als auch einen Transfer in umgekehrter Richtung.
+Absatz: In diesem Modul sollen sich die Lerninhalte vorwiegend auf die vorangehenden Module desselben Semesters beziehen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: Dieses Modul ist in zwei Units unterteilt.
+Absatz: In der Unit "Wissensmanagement" werden folgende Schwerpunkte bearbeitet:
+Absatz: In der Unit "Informationsmanagement" werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt und auf die betriebliche Praxis übertragen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: Im Rahmen dieses Moduls befinden sich die Studierenden in Ihrem Unternehmen.
+Absatz: Während der Praxisphasen haben die Studierenden die Möglichkeit, die in den Theoriephasen gewonnenen Erkenntnisse unmittelbar anzuwenden und zu reflektieren. Dies hat zweifellos einen äußerst günstigen Einfluss auf den Erwerb insbesondere derjenigen Kompetenzen, die sich auf Wissenstransfer und Analysefähigkeit beziehen.
+Absatz: Gleichzeitig werden die Studierenden während der Praxisphasen mit Fragestellungen konfrontiert, die noch nicht Gegenstand des theoretischen Studiums waren. Auf diese Weise gewinnen sie Anregungen für die Erschließung noch unbekannter Stoffgebiete. Insbesondere fördert dies auch die Motivation, sich in späteren Theoriephasen mit solchen Stoffgebieten aktiv auseinanderzusetzen. Zudem nehmen die Studierenden ihre Erfahrungen aus dem Praxisumfeld mit in das nachfolgende Präsenzstudium, wo sie mit Studierenden zusammentreffen, die Erfahrungen aus Unternehmen anderer Branchen und anderer Größen mitbringen. Dieses Aufeinandertreffen von Akteuren aus unterschiedlichen Ausbildungskontexten erzeugt, geleitet von Lehrenden, ein besonders effizientes Lernumfeld mit hohem Lerneffekt. Es entsteht also aus dem Theorie-Praxis-Transfer-Modul ein Transfer sowohl von den Theorie- in die Praxisphasen als auch einen Transfer in umgekehrter Richtung.
+Absatz: In diesem Modul sollen sich die Lerninhalte vorwiegend auf die vorangehenden Module desselben Semesters beziehen.
+Absatz: Im Rahmen dieses Moduls befinden sich die Student:innen in ihrem Unternehmen. Die Inhalte der Intensivpraxisphase sollen auf dem theoretischen Wissenstand der Student:innen aufbauen und diesen praxisgerecht ergänzen. Sie machen vertraut mit den Elementen der Arbeitsmethodik, den betrieblichen Organisationsstrukturen und Informationsflüssen, den Bedeutungen von Unternehmenskultur für den Erfolg eines Unternehmens und geben einen vertieften Einblick in Tätigkeiten des Unternehmens.
+Absatz: Wenn ein Auslandsaufenthalt angestrebt wird, empfiehlt es sich diese Praxisphase im Ausland zu verbringen. Oder es kann eine Projektarbeit mit internationaler Themenstellung durchgeführt. Ziel ist neben der Vertiefung der praktischen Erfahrungen auch der Ausbau der internationalen Erfahrung und Kompetenz der Student:innen.
+Absatz: Die Praxisbegleitung soll die Praxisphase vor- und nachbereiten. Die Vorbereitung soll es ermöglichen, die eigene Praxiszeit gewinnbringend zu gestalten und die Lernfortschritte aus dieser Praxisphase im Vorfeld zu identifizieren, zu definieren und den eigenen Lernerfolg zu dokumentieren. Die Nachbereitung soll die gesammelten Erfahrungen auf der Grundlage der Praxiszeit und der zuvor definierten Lernziele reflektieren. Das Modul wird in der Regel in Blöcken angeboten.
+Absatz: Die Veranstaltung dient der Vertiefung der bereits gewonnenen Kompetenzen im Umgang mit wissenschaftlichem Arbeiten und der eigenen Erstellung wissenschaftlicher Arbeiten und Präsentationen. Das Modul dient insbesondere als Vorbereitung der Bachelorthesis. Im Rahmen des Bachelorprojekts soll der Prozess der Erarbeitung der konkret geplanten Bachelorthesis strukturiert und dem Betreuer/der Betreuerin in der Berichtform eines Exposés vorgelegt werden. Das Thema kann im Zusammenhang mit der zuvor absolvierten Intensivpraxisphase stehen oder ein frei gewähltes Thema sein.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: Den Studierenden wird empfohlen, den:die Betreuer:in einerseits nach fachlich thematischen Gesichtspunkten und andererseits im Hinblick auf die gewünschte Betreuung bei der Erstellung der Bachelorthesis zu wählen. Sowohl Zwischenstände als auch das abschließende Ergebnis sind im Verlauf des Moduls zu präsentieren. In der darauf aufbauenden Diskussion mit dem:der Dozent:in und den Mitstudierenden sollen die Studierenden weitere Anregungen für die eigene wissenschaftliche Arbeit sowohl im Rahmen des laufenden Bachelorprojekts als auch in der sich anschließenden Bachelorthesis bekommen. In der modulbezogenen Übung werden im angeleiteten Selbststudium die gewonnenen Erkenntnisse vertieft – bspw. anhand von Best-Practise- bzw. misslungenen Beispielen wissenschaftlichen Arbeitens und durch intensiven Austausch über wissenschaftliche Recherchemethoden.
+Absatz: Im Rahmen dieses Moduls befinden sich die Studierenden in Ihrem Unternehmen.
+Absatz: Während der Praxisphasen haben die Studierenden die Möglichkeit, die in den Theoriephasen gewonnenen Erkenntnisse unmittelbar anzuwenden und zu reflektieren. Dies hat zweifellos einen äußerst günstigen Einfluss auf den Erwerb insbesondere derjenigen Kompetenzen, die sich auf Wissenstransfer und Analysefähigkeit beziehen.
+Absatz: Gleichzeitig werden die Studierenden während der Praxisphasen mit Fragestellungen konfrontiert, die noch nicht Gegenstand des theoretischen Studiums waren. Auf diese Weise gewinnen sie Anregungen für die Erschließung noch unbekannter Stoffgebiete. Insbesondere fördert dies auch die Motivation, sich in späteren Theoriephasen mit solchen Stoffgebieten aktiv auseinanderzusetzen. Zudem nehmen die Studierenden ihre Erfahrungen aus dem Praxisumfeld mit in das nachfolgende Präsenzstudium, wo sie mit Studierenden zusammentreffen, die Erfahrungen aus Unternehmen anderer Branchen und anderer Größen mitbringen. Dieses Aufeinandertreffen von Akteuren aus unterschiedlichen Ausbildungskontexten erzeugt, geleitet von Lehrenden, ein besonders effizientes Lernumfeld mit hohem Lerneffekt. Es entsteht also aus dem Theorie-Praxis-Transfer-Modul ein Transfer sowohl von den Theorie- in die Praxisphasen als auch einen Transfer in umgekehrter Richtung.
+Absatz: In diesem Modul sollen sich die Lerninhalte vorwiegend auf die vorangehenden Module desselben Semesters beziehen.
+Absatz: Neben den festen Modulen "Beachelorprojekt" und "Theorie-Praxis-Transfer" müssen 4 weitere Module aus dem Bereich "Wahlpflichtfach" gewählt werden. Einige der Module werden im 7. Semester fortgesetzt.
+Absatz: Dieses Modul ist in zwei Units unterteilt.
+Absatz: In der Unit "Informationszugangsrecht und Datenschutz" werden folgende Schwerpunkte bearbeitet:
+Absatz: In der Unit "Digitale Teilhabe und Barrierefreiheit" werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt und auf die betriebliche Praxis übertragen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: Dieses Modul ist in zwei Units unterteilt.
+Absatz: In der Unit "Souveränität im Mehrebenensystem einer globalen Welt" werden folgende Schwerpunkte bearbeitet:
+Absatz: In der Unit "Digitale Souveränität" werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt und auf die betriebliche Praxis übertragen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: Im Rahmen dieses Moduls sollen die Studierenden durch die Anfertigung der Bachelorthesis zeigen, dass sie in der Lage sind, innerhalb einer vorgegebenen Frist ein Problem selbstständig und fachgerecht zu bearbeiten. Die Bachelorthesis wird in einer von den Studierenden zu wählenden Fachwissenschaft geschrieben.
+Absatz: Auf Basis einer vorgegebenen Fragestellung soll die:der Studierende das Thema selbstständig sinnvoll strukturieren und wissenschaftlich bearbeiten. Dies geschieht neben dem Selbststudium auch in Beratungsgesprächen mit der:dem Prüfenden.
+Absatz: Neben dem Pflichtmodul "Bachelorthesis" müssen weitere 4 Module aus dem Bereich "Wahlpflichtfach" gewählt werden.
+Absatz: Die Module "Einführung betrieblicher ERP-Anwendungssysteme II" und "Architektur und Entwicklung betrieblicher ERP-Anwendungssysteme II" können nur gewählt werden, wenn im 6. Semester bereits die entsprechenden Wahlpflichtfächer belegt wurden
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: Dieses Modul ist in zwei Units unterteilt.
+Absatz: In der Unit "Vertragsrecht" werden folgende Schwerpunkte bearbeitet:
+Absatz: In der Unit "Vergaberecht" werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt und auf die betriebliche Praxis übertragen.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: In der Veranstaltung werden folgende Schwerpunkte bearbeitet:
+Absatz: In einer modulbezogenen Übung werden den Studierenden die Inhalte der Lehrveranstaltung als angeleitetes Selbststudium weiter verdeutlicht. Übungen und Fallbeispiele sind dem Lernfortschritt der Student:innen entsprechend in die Veranstaltung integriert. Die beschriebenen Inhalte des Moduls werden zur Sicherstellung des Kompetenzerwerbs geübt.
+Absatz: Die HSB betreibt den Dualen Studiengang Wirtschafts- und Verwaltungsinformatik B. A. in Kooperation mit Partnerunternehmen und Partnerbehörden der Region. Diese finanzieren die Studienplätze dieses Studienganges.
+Absatz: Eine Übersicht unserer Partner und der freien Plätze für ein duales Studium zum kommenden Wintersemester finden Sie hier:
+Absatz: Unsere Partnerunternehmen und Partnerbehörden
+Absatz: Der Praxisbezug ist einem dualen Studiengang naturgemäß sehr hoch.
+Absatz: Im Anschluss an die Theorie- und Prüfungsphase in der Hochschule schließt sich die Praxisphase bei Ihrem Kooperationspartner an. Im 5. Semester sind Sie fast ausschließlich in Ihren Unternehmen oder Dienststelle.
+Absatz: Während des Studiums im 6. und 7. Semester ist eine durchgängige und intensive Einbindung in das Unternehmen/ die Dienststelle dadurch gewährleistet, dass Bachelorprojekt und -thesis in der Regel Aufgabenstellungen unmittelbar aus der Einsatzerfahrung behandeln, die Sie mit wissenschaftlichen Methoden lösen.
+Absatz: Durch diese Verzahnung von Theorie und Praxis wird Ihnen so nicht nur theo­re­ti­sches Wis­sen ver­mit­telt. Sie ler­nen auch, die­ses direkt in der Pra­xis an­zu­wen­den.
+Absatz: In allen Lehrveranstaltungen und Phasen des Studiums hat der Praxisbezug großen Stellenwert. Unsere Lehrkräfte bringen hochqualifizierte Berufserfahrung mit.
+Absatz: Der Bereich der IT ist seit Beginn international. Gerne können Sie das Intensivpraktikum im 5. Semester dazu nutzen, in Absprache mit Ihrem Praxispartner in einem internationalen Projekt oder bei internationalen Partnerunternehmen das Praktikum zu absolvieren.
+Absatz: Auch während des Studiums werden immer wieder internationale Best-Practice-Beispiele herangezogen oder Fachpersonen für Vorträge eingeladen.
+Absatz: Der Duale Studiengang Wirtschafts- und Verwaltungsinformatik begrüßt jederzeit neue Praxispartner. Interessierte Unternehmen und Behörden erhalten weitere Informationen über die Ansprechpartnerin des Studiengangs. Sprechen Sie uns an! Oder senden Sie uns eine Mail an die Adresse dswvi@hs-bremen.de!
+Absatz: Die Bewerbung erfolgt direkt bei einem der Praxispartner!
+Absatz: Der Bewerbungsschluss richtet sich daher nach den organisatorischen Erfordernissen des jeweiligen Unternehmens/ der jeweiligen Behörde. Beginn des Arbeitsverhältnisses ist in der Regel der 1. Oktober.
+Absatz: Selbstverständlich können Sie sich um ein duales Studium auch bei Unternehmen/Behörden bewerben, die nicht aufgeführt sind. Wir unterstützen Sie dabei gern!
+Absatz: Prüfen Sie die Bewerbungsfristen und Zulassungsvoraussetzungen für Ihren Wunsch-Studiengang.
+Absatz: Informieren Sie sich über verfügbare Plätze und Bewerbungsfristen bei einem Partnerunternehmen.
+Absatz: Fragen zum Studiengang beantworten die Ansprechpersonen auf den Studiengangsseiten. Bei weiteren Fragen rund um Ihre Entscheidung für ein Studium an der HSB helfen unsere Beratungs- und Serviceeinrichtungen weiter.
+Absatz: Sie bewerben sich zunächst beim Partnerunternehmen, mit welchem die Hochschule Bremen einen Kooperationsvertrag zur Durchführung des Studiums geschlossen hat. Danach melden Sie sich im Bewerbungsportal der HSB an.
+Absatz: Prof. Dr. Jens Eschenbächer +49 421 5905 4433 E-Mail
+Absatz: Miriam Stamm Programmkoordination +49 421 5905 4857 +49 176 15140377 E-Mail
+Absatz: Nutzen Sie auch gerne die allgemeine Mailadresse des Studiengangs dswvi@hs-bremen.de!
+Absatz: Hanno Feidicker +49 421 5905 4113 / -2294 +49 176 15140 190 E-Mail
+Absatz: Dual Studieren
+Absatz: StudiumPlus - Workshop
+Absatz: Gesund durchs Studium
+Absatz: © HSB - Hochschule Bremen 2024
+Absatz: 
+Absatz: Um unsere Website in Sachen Nutzer:innenfreundlichkeit, Effektivität und Sicherheit zu optimieren, verwenden wir Cookies. Das sind kleine Textdateien, die auf Ihrem Endgerät abgelegt und in Ihrem Browser gespeichert werden. Darunter sind Cookies, die technisch für den Betrieb unserer Website notwendig sind, sowie Cookies zur anonymen Webanalyse oder für erweiterte Funktionen und Services. Weitere Informationen dazu finden Sie in unserer Datenschutzerklärung.Sie entscheiden, für welche Kategorien Sie dem Einsatz von Cookies zustimmen möchten und für welche nicht. Bitte berücksichtigen Sie, dass Ihnen je nach Auswahl ggf. nicht mehr alle Funktionen unserer Website zur Verfügung stehen.
+Absatz: Notwendige Cookies ermöglichen grundlegende Funktionen und sind für die einwandfreie Funktion der Website erforderlich.
+Absatz: Wir nutzen auf unserer Website das Open-Source-Software-Tool Matomo (ehemals Piwik) zur Analyse des Nutzungsverhaltens. Über die gewonnenen Statistiken können wir unser Angebot verbessern und für nutzende Personen interessanter ausgestalten.Die Software setzt ein Cookie auf dem Rechner der nutzenden Person. Die IP-Adresse wird bei diesem Vorgang anonymisiert, so dass die nutzende Person für uns anonym bleibt. Die Software läuft dabei ausschließlich auf den Servern unserer Webseite. Eine Speicherung der personenbezogenen Daten der nutzenden Person findet nur dort statt. Eine Weitergabe der Daten an Dritte erfolgt nicht.
+Absatz: Rechtsgrundlage für die Nutzung von Matomo ist Art. 6 Abs.1 lit. f DS-GVO.
+Absatz: Werden Einzelseiten unserer Website aufgerufen, so werden folgende Daten gespeichert:
+Absatz: Auf einigen Seiten binden wir Videos der Plattform YouTube des Anbieters Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, ein.Beim Abspielen der Videos wird eine Verbindung zum Server von YouTube hergestellt. Wenn Sie in Ihrem YouTube-Account eingeloggt sind, kann YouTube Ihr Surfverhalten Ihnen persönlich zuordnen. Dies verhindern Sie, indem Sie sich vorher aus Ihrem Account ausloggen.Weitere Informationen zum Datenschutz bei YouTube finden Sie in der Datenschutzerklärung des Anbieters: https://policies.google.com/privacy?hl=de
+Absatz: Auf einigen Seiten binden wir Beiträge der Plattform Facebook des Anbieters Facebook Ireland Limited, 4 Grand Canal Square, Dublin 2, Ireland, ein.Beim Aufrufen der Beiträge wird eine Verbindung zum Server von Facebook hergestellt. Wenn Sie in Ihrem Facebook-Account eingeloggt sind, kann Facebook Ihr Surfverhalten Ihnen persönlich zuordnen. Dies verhindern Sie, indem Sie sich vorher aus Ihrem Account ausloggen.Weitere Informationen zum Datenschutz bei Facebook finden Sie in der Datenschutzerklärung des Anbieters: https://de-de.facebook.com/privacy/explanation
+Absatz: Auf einigen Seiten binden wir Beiträge der Plattform Twitter des Anbieters Twitter International Company, One Cumberland Place, Fenian Street, Dublin 2, Ireland, ein.Beim Aufrufen der Beiträge wird eine Verbindung zum Server von Twitter hergestellt. Wenn Sie in Ihrem Twitter-Account eingeloggt sind, kann Twitter Ihr Surfverhalten Ihnen persönlich zuordnen. Dies verhindern Sie, indem Sie sich vorher aus Ihrem Account ausloggen. Weitere Informationen zum Datenschutz bei Twitter finden Sie in der Datenschutzerklärung des Anbieters: https://twitter.com/privacy
+Link: Direkt zum Seiteninhalt springen URL: https://www.hs-bremen.de/studieren/studiengang/dualer-studiengang-wirtschafts-und-verwaltungsinformatik-b-a/#skip-link-target-main
+Link: AULIS URL: https://aulis.hs-bremen.de/
+Link: QIS-POS (Modulanmeldung) URL: https://qis.hs-bremen.de/
+Link: CampInO URL: https://campino.hs-bremen.de/
+Link: Webmail URL: https://webmail.hs-bremen.de/
+Link: WLAN (eduroam) URL: https://www.hs-bremen.de/studieren/im-studium/zugaenge-und-portale/
+Link: Passwort ändern URL: https://mis.rz.hs-bremen.de/account/pwd/login.php
+Link: Semestertermine URL: https://www.hs-bremen.de/studieren/im-studium/semestertermine/
+Link: Rückmeldung URL: https://www.hs-bremen.de/studieren/im-studium/formale-angelegenheiten/
+Link: Benutzerkonto-Aktivierung URL: https://mis.rz.hs-bremen.de/account/initAccount/login.php?lang=de
+Link: Studieninteressierte Für Studieninteressierte URL: https://www.hs-bremen.de/studieren/vor-dem-studium/schritt-fuer-schritt-ins-studium/
+Link: Erstsemester Für Erstsemester URL: https://www.hs-bremen.de/informationen-fuer/erstsemester/
+Link: Austauschstudierende Für Austauschstudierende URL: https://www.hs-bremen.de/informationen-fuer/austauschstudierende/
+Link: Unternehmen und Organisationen Für Unternehmen und Organisationen URL: https://www.hs-bremen.de/informationen-fuer/unternehmen-und-organisationen/
+Link: Presse und Medien Für Presse und Medien URL: https://www.hs-bremen.de/informationen-fuer/presse-und-medien/
+Link: Alumni Für Alumni URL: https://www.hs-bremen.de/informationen-fuer/alumni/
+Link: Beschäftigte Für Beschäftigte und Lehrbeauftragte URL: https://www.hs-bremen.de/informationen-fuer/beschaeftigte/
+Link:  URL: https://www.hs-bremen.de/
+Link: EN URL: https://www.hs-bremen.de/en/study/degree-programme/cooperative-degree-programme-business-and-administrative-informatics-ba/
+Link: Gebärdensprache URL: https://www.hs-bremen.de/gebaerdensprache/
+Link: Leichte Sprache URL: https://www.hs-bremen.de/leichte-sprache/
+Link: Dunkel-Modus URL: #
+Link:  URL: https://www.hs-bremen.de/
+Link: Studieren erleben URL: https://www.hs-bremen.de/studieren/
+Link: Studiengänge URL: https://www.hs-bremen.de/studieren/studiengaenge/
+Link: Bachelor URL: https://www.hs-bremen.de/studieren/studiengaenge/?search%5Bfilter%5D%5B0%5D=typeOfDegree%3ABachelor
+Link: Master URL: https://www.hs-bremen.de/studieren/studiengaenge/?search%5Bfilter%5D%5B0%5D=typeOfDegree%3AMaster
+Link: Dual studieren URL: https://www.hs-bremen.de/studieren/studiengaenge/dual-studieren/
+Link: Berufsbegleitend studieren URL: https://www.hs-bremen.de/weiterbilden/berufsbegleitende-mba-und-master/
+Link: Flexibel studieren URL: https://www.hs-bremen.de/studieren/studiengaenge/flexibel-studieren/
+Link: Summer School URL: https://www.hs-bremen.de/studieren/studiengaenge/summer-school/
+Link: Vor dem Studium URL: https://www.hs-bremen.de/studieren/vor-dem-studium/
+Link: Schritt für Schritt ins Studium URL: https://www.hs-bremen.de/studieren/vor-dem-studium/schritt-fuer-schritt-ins-studium/
+Link: Angebote für Studieninteressierte URL: https://www.hs-bremen.de/studieren/vor-dem-studium/studieninteressierte/
+Link: Termine Studienorientierung URL: https://www.hs-bremen.de/die-hsb/aktuelles/veranstaltungen/?search%5Bfilter%5D%5B0%5D=target%3AStudieninteressierte&search%5Bfilter%5D%5B1%5D=
+Link: Bewerbung und Zulassung URL: https://www.hs-bremen.de/studieren/vor-dem-studium/bewerbung-und-zulassung/
+Link: Internationale Bewerbungen URL: https://www.hs-bremen.de/studieren/vor-dem-studium/bewerbung-und-zulassung/internationale-bewerbungen/
+Link: Im Studium URL: https://www.hs-bremen.de/studieren/im-studium/
+Link: Infos für Erstsemester URL: https://www.hs-bremen.de/informationen-fuer/erstsemester/
+Link: Semestertermine und Fristen URL: https://www.hs-bremen.de/studieren/im-studium/semestertermine/
+Link: Zugänge und Portale für Studierende URL: https://www.hs-bremen.de/studieren/im-studium/zugaenge-und-portale/
+Link: Formales und Prüfungen URL: https://www.hs-bremen.de/studieren/im-studium/formale-angelegenheiten/
+Link: Ins Ausland gehen URL: https://www.hs-bremen.de/studieren/im-studium/ins-ausland-gehen/
+Link: Ergänzende Angebote: StudiumPlus, makeMINT, Sprachen URL: https://www.hs-bremen.de/studieren/im-studium/ergaenzende-angebote-zum-studium/
+Link: Nach dem Studium URL: https://www.hs-bremen.de/studieren/nach-dem-studium/
+Link: Masterstudium URL: https://www.hs-bremen.de/studieren/studiengaenge/?search%5Bfilter%5D%5B0%5D=typeOfDegree%3AMaster
+Link: Bewerbung und Berufseinstieg URL: https://www.hs-bremen.de/studieren/nach-dem-studium/bewerbung-und-berufseinstieg/
+Link: Gründung und Selbstständigkeit URL: https://www.hs-bremen.de/forschen/gruendungsservice/
+Link: Berufliche Weiterbildung URL: https://www.hs-bremen.de/weiterbilden/
+Link: Infos für Alumni und Alumnae URL: https://www.hs-bremen.de/informationen-fuer/alumni/
+Link: Promotionen URL: https://www.hs-bremen.de/forschen/wissenschaftlicher-nachwuchs/
+Link: Rund ums Studium URL: https://www.hs-bremen.de/studieren/rund-ums-studium/
+Link: Studierendenleben URL: https://www.hs-bremen.de/studieren/rund-ums-studium/studierendenleben/
+Link: Mitbestimmen & Gestalten URL: https://www.hs-bremen.de/studieren/rund-ums-studium/studierendenleben/mitbestimmen-und-gestalten/
+Link: Gesund durchs Studium URL: https://www.hs-bremen.de/studieren/rund-ums-studium/sgm/
+Link: Mensa & Co. URL: https://www.hs-bremen.de/die-hsb/organisation/hochschuluebergreifende-einheiten/mensa/
+Link: Bibliothek URL: https://www.hs-bremen.de/die-hsb/organisation/hochschuluebergreifende-einheiten/bibliothek/
+Link: Kultur URL: https://www.hs-bremen.de/studieren/rund-ums-studium/studierendenleben/kultur/
+Link: Sport URL: https://www.hs-bremen.de/studieren/rund-ums-studium/studierendenleben/sport-und-aktivitaeten/
+Link: Glossar URL: https://www.hs-bremen.de/studieren/rund-ums-studium/glossar/
+Link: Beratung und Unterstützung URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/
+Link: Zentrale Studienberatung URL: https://www.hs-bremen.de/die-hsb/organisation/verwaltung/zentrale-studienberatung/
+Link: Persönliche Themen URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/#c18022
+Link: Lernschwierigkeiten URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/#c18022
+Link: Zweifel am Studium URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/zweifel-am-studium/
+Link: Konflikte im Studium URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/#c18022
+Link: Ihr Beratungsnetzwerk an der HSB URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/#c18033
+Link: Studienfinanzierung URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/studienfinanzierung/
+Link: Forschen erleben URL: https://www.hs-bremen.de/forschen/
+Link: Forschungs- und Transferprofil URL: https://www.hs-bremen.de/forschen/forschungs-und-transferprofil/
+Link: Strategische Partnerschaften URL: https://www.hs-bremen.de/forschen/forschungs-und-transferprofil/strategische-partnerschaften/
+Link: Forschungseinrichtungen URL: https://www.hs-bremen.de/forschen/forschungs-und-transferprofil/#c4403
+Link: Forschungsprojekte URL: https://www.hs-bremen.de/forschen/forschungs-und-transferprofil/forschungsprojekte/
+Link: Patente URL: https://www.hs-bremen.de/forschen/forschungs-und-transferprofil/patente/
+Link: Forschungscluster URL: https://www.hs-bremen.de/forschen/forschungscluster/
+Link: Blue Sciences URL: https://www.hs-bremen.de/forschen/forschungscluster/blue-sciences/
+Link: Digitale Transformation URL: https://www.hs-bremen.de/forschen/forschungscluster/digitale-transformation/
+Link: Dynamics, Tension and Xtreme Events URL: https://www.hs-bremen.de/forschen/forschungscluster/dynamics-tension-and-xtreme-events/
+Link: Lebensqualität URL: https://www.hs-bremen.de/forschen/forschungscluster/lebensqualitaet/
+Link: Luft- und Raumfahrt URL: https://www.hs-bremen.de/forschen/forschungscluster/luft-und-raumfahrt/
+Link: Region im Wandel URL: https://www.hs-bremen.de/forschen/forschungscluster/region-im-wandel/
+Link: Wissenschaftlicher Nachwuchs URL: https://www.hs-bremen.de/forschen/wissenschaftlicher-nachwuchs/
+Link: Transfer und Kooperation URL: https://www.hs-bremen.de/forschen/transfer-und-kooperation/
+Link: Forschungsservice URL: https://www.hs-bremen.de/forschen/forschungsservice/
+Link: Gründungsservice URL: https://www.hs-bremen.de/forschen/gruendungsservice/
+Link: Weiterbilden erleben URL: https://www.hs-bremen.de/weiterbilden/
+Link: Themen URL: https://www.hs-bremen.de/weiterbilden/weiterbildungsthemen/
+Link: Wirtschaft & Management URL: https://www.hs-bremen.de/weiterbilden/weiterbildungsthemen/wirtschaft-management/
+Link: Digitalisierung URL: https://www.hs-bremen.de/weiterbilden/digitalisierung/
+Link: Gesundheit & Soziales URL: https://www.hs-bremen.de/weiterbilden/gesundheit-soziales/
+Link: Seminare und Zertifikatskurse URL: https://www.hs-bremen.de/weiterbilden/seminare-und-zertifikatskurse/
+Link: Weiterbildende MBA und Master URL: https://www.hs-bremen.de/weiterbilden/weiterbildende-mba-und-master/
+Link: Interne Weiterbildung im Studium und in der Lehre URL: https://www.hs-bremen.de/die-hsb/organisation/zentrale-einheiten/zentrum-fuer-lehren-und-lernen/
+Link: Die HSB erleben URL: https://www.hs-bremen.de/die-hsb/
+Link: Aktuelles URL: https://www.hs-bremen.de/die-hsb/aktuelles/
+Link: Pressemitteilungen URL: https://www.hs-bremen.de/die-hsb/aktuelles/pressemitteilungen/
+Link: News URL: https://www.hs-bremen.de/die-hsb/aktuelles/news/
+Link: Veranstaltungen URL: https://www.hs-bremen.de/die-hsb/aktuelles/veranstaltungen/
+Link: Projekte URL: https://www.hs-bremen.de/die-hsb/aktuelles/projekte/
+Link: Corona URL: https://www.hs-bremen.de/die-hsb/aktuelles/corona/
+Link: Ukrainekrieg URL: https://www.hs-bremen.de/die-hsb/aktuelles/ukraine/
+Link: Fakultäten URL: https://www.hs-bremen.de/die-hsb/fakultaeten/
+Link: Fakultät Wirtschaftswissenschaften URL: https://www.hs-bremen.de/die-hsb/fakultaeten/wirtschaftswissenschaften/
+Link: Fakultät Architektur, Bau und Umwelt URL: https://www.hs-bremen.de/die-hsb/fakultaeten/architektur-bau-und-umwelt/
+Link: Fakultät Gesellschaftswissenschaften URL: https://www.hs-bremen.de/die-hsb/fakultaeten/gesellschaftswissenschaften/
+Link: Fakultät Elektrotechnik und Informatik URL: https://www.hs-bremen.de/die-hsb/fakultaeten/elektrotechnik-und-informatik/
+Link: Fakultät Natur und Technik URL: https://www.hs-bremen.de/die-hsb/fakultaeten/natur-und-technik/
+Link: Organisation URL: https://www.hs-bremen.de/die-hsb/organisation/
+Link: Rektorat URL: https://www.hs-bremen.de/die-hsb/organisation/rektorat/
+Link: Verwaltung URL: https://www.hs-bremen.de/die-hsb/organisation/verwaltung/
+Link: Zentrale Einheiten URL: https://www.hs-bremen.de/die-hsb/organisation/zentrale-einheiten/
+Link: Hochschulübergreifende Einheiten URL: https://www.hs-bremen.de/die-hsb/organisation/hochschuluebergreifende-einheiten/
+Link: Gremien und Interessenvertretungen URL: https://www.hs-bremen.de/die-hsb/organisation/gremien-und-interessenvertretungen/
+Link: Kultur URL: https://www.hs-bremen.de/studieren/rund-ums-studium/studierendenleben/kultur/
+Link: Sport URL: https://www.hs-bremen.de/studieren/rund-ums-studium/studierendenleben/sport-und-aktivitaeten/
+Link: Profil der HSB URL: https://www.hs-bremen.de/die-hsb/profil/
+Link: Unser Leitbild URL: https://www.hs-bremen.de/die-hsb/profil/leitbild/
+Link: Qualität in Studium und Lehre URL: https://www.hs-bremen.de/die-hsb/profil/qualitaetsmanagement/
+Link: Internationalität URL: https://www.hs-bremen.de/die-hsb/profil/internationalitaet/
+Link: Gleichstellung URL: https://www.hs-bremen.de/die-hsb/profil/gleichstellung/
+Link: Diversity URL: https://www.hs-bremen.de/die-hsb/profil/diversity/
+Link: Nachhaltigkeit URL: https://www.hs-bremen.de/die-hsb/profil/nachhaltigkeit/
+Link: Jahresbericht URL: https://www.hs-bremen.de/die-hsb/profil/jahresbericht/
+Link: Geschichte URL: https://www.hs-bremen.de/die-hsb/profil/geschichte/
+Link: Arbeiten und Karriere an der HSB URL: https://www.hs-bremen.de/die-hsb/arbeiten-und-karriere-an-der-hsb/
+Link: Personensuche URL: https://www.hs-bremen.de/die-hsb/personensuche/
+Link: Merchandise URL: https://www.hs-bremen.de/die-hsb/merchandise/
+Link: AULIS URL: https://aulis.hs-bremen.de/
+Link: QIS-POS (Modulanmeldung) URL: https://qis.hs-bremen.de/
+Link: CampInO URL: https://campino.hs-bremen.de/
+Link: Webmail URL: https://webmail.hs-bremen.de/
+Link: WLAN (eduroam) URL: https://www.hs-bremen.de/studieren/im-studium/zugaenge-und-portale/
+Link: Passwort ändern URL: https://mis.rz.hs-bremen.de/account/pwd/login.php
+Link: Semestertermine URL: https://www.hs-bremen.de/studieren/im-studium/semestertermine/
+Link: Rückmeldung URL: https://www.hs-bremen.de/studieren/im-studium/formale-angelegenheiten/
+Link: Benutzerkonto-Aktivierung URL: https://mis.rz.hs-bremen.de/account/initAccount/login.php?lang=de
+Link: Studieninteressierte Für Studieninteressierte URL: https://www.hs-bremen.de/studieren/vor-dem-studium/schritt-fuer-schritt-ins-studium/
+Link: Erstsemester Für Erstsemester URL: https://www.hs-bremen.de/informationen-fuer/erstsemester/
+Link: Austauschstudierende Für Austauschstudierende URL: https://www.hs-bremen.de/informationen-fuer/austauschstudierende/
+Link: Unternehmen und Organisationen Für Unternehmen und Organisationen URL: https://www.hs-bremen.de/informationen-fuer/unternehmen-und-organisationen/
+Link: Presse und Medien Für Presse und Medien URL: https://www.hs-bremen.de/informationen-fuer/presse-und-medien/
+Link: Alumni Für Alumni URL: https://www.hs-bremen.de/informationen-fuer/alumni/
+Link: Beschäftigte Für Beschäftigte und Lehrbeauftragte URL: https://www.hs-bremen.de/informationen-fuer/beschaeftigte/
+Link: EN URL: https://www.hs-bremen.de/en/study/degree-programme/cooperative-degree-programme-business-and-administrative-informatics-ba/
+Link: Gebärdensprache URL: https://www.hs-bremen.de/gebaerdensprache/
+Link: Leichte Sprache URL: https://www.hs-bremen.de/leichte-sprache/
+Link: Dunkel-Modus URL: #
+Link: Studieren erleben URL: https://www.hs-bremen.de/studieren/
+Link: Studiengänge URL: https://www.hs-bremen.de/studieren/studiengaenge/
+Link: Bachelor URL: https://www.hs-bremen.de/studieren/studiengaenge/?search%5Bfilter%5D%5B0%5D=typeOfDegree%3ABachelor
+Link: Master URL: https://www.hs-bremen.de/studieren/studiengaenge/?search%5Bfilter%5D%5B0%5D=typeOfDegree%3AMaster
+Link: Dual studieren URL: https://www.hs-bremen.de/studieren/studiengaenge/dual-studieren/
+Link: Berufsbegleitend studieren URL: https://www.hs-bremen.de/weiterbilden/berufsbegleitende-mba-und-master/
+Link: Flexibel studieren URL: https://www.hs-bremen.de/studieren/studiengaenge/flexibel-studieren/
+Link: Summer School URL: https://www.hs-bremen.de/studieren/studiengaenge/summer-school/
+Link: Vor dem Studium URL: https://www.hs-bremen.de/studieren/vor-dem-studium/
+Link: Schritt für Schritt ins Studium URL: https://www.hs-bremen.de/studieren/vor-dem-studium/schritt-fuer-schritt-ins-studium/
+Link: Angebote für Studieninteressierte URL: https://www.hs-bremen.de/studieren/vor-dem-studium/studieninteressierte/
+Link: Termine Studienorientierung URL: https://www.hs-bremen.de/die-hsb/aktuelles/veranstaltungen/?search%5Bfilter%5D%5B0%5D=target%3AStudieninteressierte&search%5Bfilter%5D%5B1%5D=
+Link: Bewerbung und Zulassung URL: https://www.hs-bremen.de/studieren/vor-dem-studium/bewerbung-und-zulassung/
+Link: Internationale Bewerbungen URL: https://www.hs-bremen.de/studieren/vor-dem-studium/bewerbung-und-zulassung/internationale-bewerbungen/
+Link: Im Studium URL: https://www.hs-bremen.de/studieren/im-studium/
+Link: Infos für Erstsemester URL: https://www.hs-bremen.de/informationen-fuer/erstsemester/
+Link: Semestertermine und Fristen URL: https://www.hs-bremen.de/studieren/im-studium/semestertermine/
+Link: Zugänge und Portale für Studierende URL: https://www.hs-bremen.de/studieren/im-studium/zugaenge-und-portale/
+Link: Formales und Prüfungen URL: https://www.hs-bremen.de/studieren/im-studium/formale-angelegenheiten/
+Link: Ins Ausland gehen URL: https://www.hs-bremen.de/studieren/im-studium/ins-ausland-gehen/
+Link: Ergänzende Angebote: StudiumPlus, makeMINT, Sprachen URL: https://www.hs-bremen.de/studieren/im-studium/ergaenzende-angebote-zum-studium/
+Link: Nach dem Studium URL: https://www.hs-bremen.de/studieren/nach-dem-studium/
+Link: Masterstudium URL: https://www.hs-bremen.de/studieren/studiengaenge/?search%5Bfilter%5D%5B0%5D=typeOfDegree%3AMaster
+Link: Bewerbung und Berufseinstieg URL: https://www.hs-bremen.de/studieren/nach-dem-studium/bewerbung-und-berufseinstieg/
+Link: Gründung und Selbstständigkeit URL: https://www.hs-bremen.de/forschen/gruendungsservice/
+Link: Berufliche Weiterbildung URL: https://www.hs-bremen.de/weiterbilden/
+Link: Infos für Alumni und Alumnae URL: https://www.hs-bremen.de/informationen-fuer/alumni/
+Link: Promotionen URL: https://www.hs-bremen.de/forschen/wissenschaftlicher-nachwuchs/
+Link: Rund ums Studium URL: https://www.hs-bremen.de/studieren/rund-ums-studium/
+Link: Studierendenleben URL: https://www.hs-bremen.de/studieren/rund-ums-studium/studierendenleben/
+Link: Mitbestimmen & Gestalten URL: https://www.hs-bremen.de/studieren/rund-ums-studium/studierendenleben/mitbestimmen-und-gestalten/
+Link: Gesund durchs Studium URL: https://www.hs-bremen.de/studieren/rund-ums-studium/sgm/
+Link: Mensa & Co. URL: https://www.hs-bremen.de/die-hsb/organisation/hochschuluebergreifende-einheiten/mensa/
+Link: Bibliothek URL: https://www.hs-bremen.de/die-hsb/organisation/hochschuluebergreifende-einheiten/bibliothek/
+Link: Kultur URL: https://www.hs-bremen.de/studieren/rund-ums-studium/studierendenleben/kultur/
+Link: Sport URL: https://www.hs-bremen.de/studieren/rund-ums-studium/studierendenleben/sport-und-aktivitaeten/
+Link: Glossar URL: https://www.hs-bremen.de/studieren/rund-ums-studium/glossar/
+Link: Beratung und Unterstützung URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/
+Link: Zentrale Studienberatung URL: https://www.hs-bremen.de/die-hsb/organisation/verwaltung/zentrale-studienberatung/
+Link: Persönliche Themen URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/#c18022
+Link: Lernschwierigkeiten URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/#c18022
+Link: Zweifel am Studium URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/zweifel-am-studium/
+Link: Konflikte im Studium URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/#c18022
+Link: Ihr Beratungsnetzwerk an der HSB URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/#c18033
+Link: Studienfinanzierung URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/studienfinanzierung/
+Link: Forschen erleben URL: https://www.hs-bremen.de/forschen/
+Link: Forschungs- und Transferprofil URL: https://www.hs-bremen.de/forschen/forschungs-und-transferprofil/
+Link: Strategische Partnerschaften URL: https://www.hs-bremen.de/forschen/forschungs-und-transferprofil/strategische-partnerschaften/
+Link: Forschungseinrichtungen URL: https://www.hs-bremen.de/forschen/forschungs-und-transferprofil/#c4403
+Link: Forschungsprojekte URL: https://www.hs-bremen.de/forschen/forschungs-und-transferprofil/forschungsprojekte/
+Link: Patente URL: https://www.hs-bremen.de/forschen/forschungs-und-transferprofil/patente/
+Link: Forschungscluster URL: https://www.hs-bremen.de/forschen/forschungscluster/
+Link: Blue Sciences URL: https://www.hs-bremen.de/forschen/forschungscluster/blue-sciences/
+Link: Digitale Transformation URL: https://www.hs-bremen.de/forschen/forschungscluster/digitale-transformation/
+Link: Dynamics, Tension and Xtreme Events URL: https://www.hs-bremen.de/forschen/forschungscluster/dynamics-tension-and-xtreme-events/
+Link: Lebensqualität URL: https://www.hs-bremen.de/forschen/forschungscluster/lebensqualitaet/
+Link: Luft- und Raumfahrt URL: https://www.hs-bremen.de/forschen/forschungscluster/luft-und-raumfahrt/
+Link: Region im Wandel URL: https://www.hs-bremen.de/forschen/forschungscluster/region-im-wandel/
+Link: Wissenschaftlicher Nachwuchs URL: https://www.hs-bremen.de/forschen/wissenschaftlicher-nachwuchs/
+Link: Transfer und Kooperation URL: https://www.hs-bremen.de/forschen/transfer-und-kooperation/
+Link: Forschungsservice URL: https://www.hs-bremen.de/forschen/forschungsservice/
+Link: Gründungsservice URL: https://www.hs-bremen.de/forschen/gruendungsservice/
+Link: Weiterbilden erleben URL: https://www.hs-bremen.de/weiterbilden/
+Link: Themen URL: https://www.hs-bremen.de/weiterbilden/weiterbildungsthemen/
+Link: Wirtschaft & Management URL: https://www.hs-bremen.de/weiterbilden/weiterbildungsthemen/wirtschaft-management/
+Link: Digitalisierung URL: https://www.hs-bremen.de/weiterbilden/digitalisierung/
+Link: Gesundheit & Soziales URL: https://www.hs-bremen.de/weiterbilden/gesundheit-soziales/
+Link: Seminare und Zertifikatskurse URL: https://www.hs-bremen.de/weiterbilden/seminare-und-zertifikatskurse/
+Link: Weiterbildende MBA und Master URL: https://www.hs-bremen.de/weiterbilden/weiterbildende-mba-und-master/
+Link: Interne Weiterbildung im Studium und in der Lehre URL: https://www.hs-bremen.de/die-hsb/organisation/zentrale-einheiten/zentrum-fuer-lehren-und-lernen/
+Link: Die HSB erleben URL: https://www.hs-bremen.de/die-hsb/
+Link: Aktuelles URL: https://www.hs-bremen.de/die-hsb/aktuelles/
+Link: Pressemitteilungen URL: https://www.hs-bremen.de/die-hsb/aktuelles/pressemitteilungen/
+Link: News URL: https://www.hs-bremen.de/die-hsb/aktuelles/news/
+Link: Veranstaltungen URL: https://www.hs-bremen.de/die-hsb/aktuelles/veranstaltungen/
+Link: Projekte URL: https://www.hs-bremen.de/die-hsb/aktuelles/projekte/
+Link: Corona URL: https://www.hs-bremen.de/die-hsb/aktuelles/corona/
+Link: Ukrainekrieg URL: https://www.hs-bremen.de/die-hsb/aktuelles/ukraine/
+Link: Fakultäten URL: https://www.hs-bremen.de/die-hsb/fakultaeten/
+Link: Fakultät Wirtschaftswissenschaften URL: https://www.hs-bremen.de/die-hsb/fakultaeten/wirtschaftswissenschaften/
+Link: Fakultät Architektur, Bau und Umwelt URL: https://www.hs-bremen.de/die-hsb/fakultaeten/architektur-bau-und-umwelt/
+Link: Fakultät Gesellschaftswissenschaften URL: https://www.hs-bremen.de/die-hsb/fakultaeten/gesellschaftswissenschaften/
+Link: Fakultät Elektrotechnik und Informatik URL: https://www.hs-bremen.de/die-hsb/fakultaeten/elektrotechnik-und-informatik/
+Link: Fakultät Natur und Technik URL: https://www.hs-bremen.de/die-hsb/fakultaeten/natur-und-technik/
+Link: Organisation URL: https://www.hs-bremen.de/die-hsb/organisation/
+Link: Rektorat URL: https://www.hs-bremen.de/die-hsb/organisation/rektorat/
+Link: Verwaltung URL: https://www.hs-bremen.de/die-hsb/organisation/verwaltung/
+Link: Zentrale Einheiten URL: https://www.hs-bremen.de/die-hsb/organisation/zentrale-einheiten/
+Link: Hochschulübergreifende Einheiten URL: https://www.hs-bremen.de/die-hsb/organisation/hochschuluebergreifende-einheiten/
+Link: Gremien und Interessenvertretungen URL: https://www.hs-bremen.de/die-hsb/organisation/gremien-und-interessenvertretungen/
+Link: Kultur URL: https://www.hs-bremen.de/studieren/rund-ums-studium/studierendenleben/kultur/
+Link: Sport URL: https://www.hs-bremen.de/studieren/rund-ums-studium/studierendenleben/sport-und-aktivitaeten/
+Link: Profil der HSB URL: https://www.hs-bremen.de/die-hsb/profil/
+Link: Unser Leitbild URL: https://www.hs-bremen.de/die-hsb/profil/leitbild/
+Link: Qualität in Studium und Lehre URL: https://www.hs-bremen.de/die-hsb/profil/qualitaetsmanagement/
+Link: Internationalität URL: https://www.hs-bremen.de/die-hsb/profil/internationalitaet/
+Link: Gleichstellung URL: https://www.hs-bremen.de/die-hsb/profil/gleichstellung/
+Link: Diversity URL: https://www.hs-bremen.de/die-hsb/profil/diversity/
+Link: Nachhaltigkeit URL: https://www.hs-bremen.de/die-hsb/profil/nachhaltigkeit/
+Link: Jahresbericht URL: https://www.hs-bremen.de/die-hsb/profil/jahresbericht/
+Link: Geschichte URL: https://www.hs-bremen.de/die-hsb/profil/geschichte/
+Link: Arbeiten und Karriere an der HSB URL: https://www.hs-bremen.de/die-hsb/arbeiten-und-karriere-an-der-hsb/
+Link: Personensuche URL: https://www.hs-bremen.de/die-hsb/personensuche/
+Link: Merchandise URL: https://www.hs-bremen.de/die-hsb/merchandise/
+Link: Startseite URL: https://www.hs-bremen.de/
+Link: Studieren URL: https://www.hs-bremen.de/studieren/
+Link: Alle Infos URL: https://www.hs-bremen.de/die-hsb/aktuelles/veranstaltung/expedition-studium-24-studieninfotag/
+Link: Aktuelle Stellenausschreibung - Jetzt bewerben! URL: https://www.hs-bremen.de/studieren/dualer-studiengang-wirtschafts-und-verwaltungsinformatik-b-a-partnerunternehmen/
+Link: Modulhandbuch (PDF, 1 MB, Datei ist nicht barrierefrei) URL: https://www.hs-bremen.de/assets/hsb/de/Dokumente/Fakult%C3%A4ten/Fakult%C3%A4t_1/DSWVI/Modulhandbuch/DSWVI_Modulhandbuch_-_V_0_5.pdf
+Link: BPO DSWVI 2023 (PDF, 601 KB, Datei ist nicht barrierefrei) URL: https://www.hs-bremen.de/assets/hsb/de/Dokumente/Fakult%C3%A4ten/Fakult%C3%A4t_1/DSWVI/Pr%C3%BCfungsordnung/2023_11_17_ABl_Nr_0242_signed-BPO_DSWVI-2023.pdf
+Link: Allgemeiner Teil der Bachelorprüfungsordnungen URL: https://www.hs-bremen.de/studieren/im-studium/formale-angelegenheiten/#c1677
+Link: Unsere Partnerunternehmen und Partnerbehörden URL: https://www.hs-bremen.de/studieren/dualer-studiengang-wirtschafts-und-verwaltungsinformatik-b-a-partnerunternehmen/
+Link: dswvi@hs-bremen.de URL: javascript:linkTo_UnCryptMailto(%27ocknvq%2CfuyxkBju%5C%2Fdtgogp0fg%27);
+Link: Bewerbungsfristen URL: https://www.hs-bremen.de/studieren/vor-dem-studium/bewerbung-und-zulassung/
+Link: Zulassungsvoraussetzungen URL: https://www.hs-bremen.de/studieren/vor-dem-studium/bewerbung-und-zulassung/zulassungsvoraussetzungen/
+Link: Beratung & Service an der HSB URL: https://www.hs-bremen.de/studieren/beratung-und-unterstuetzung/
+Link: Online-Bewerbung URL: https://www.hs-bremen.de/studieren/vor-dem-studium/bewerbung-und-zulassung/
+Link: Internationale Bewerbungen URL: https://www.hs-bremen.de/studieren/vor-dem-studium/bewerbung-und-zulassung/internationale-bewerbungen/
+Link: Immatrikulation URL: https://www.hs-bremen.de/studieren/vor-dem-studium/bewerbung-und-zulassung/immatrikulieren/
+Link: Informationen zum Studienstart URL: https://www.hs-bremen.de/informationen-fuer/erstsemester/
+Link: Prof. Dr. Jens Eschenbächer URL: https://www.hs-bremen.de/person/jeschenbaecher/
+Link: +49 421 5905 4433 URL: tel:+4942159054433
+Link: E-Mail URL: javascript:linkTo_UnCryptMailto(%27ocknvq%2CLgpu0GuejgpdcgejgtBju%5C%2Fdtgogp0fg%27);
+Link: Miriam Stamm URL: https://www.hs-bremen.de/person/mistamm/
+Link: +49 421 5905 4857 URL: tel:+4942159054857
+Link: +49 176 15140377 URL: tel:+4917615140377
+Link: E-Mail URL: javascript:linkTo_UnCryptMailto(%27ocknvq%2COktkco0UvcooBju%5C%2Fdtgogp0fg%27);
+Link: dswvi@hs-bremen.de URL: javascript:linkTo_UnCryptMailto(%27ocknvq%2CfuyxkBju%5C%2Fdtgogp0fg%27);
+Link: Hanno Feidicker URL: https://www.hs-bremen.de/person/hfeidicker/
+Link: +49 421 5905 4113 / -2294 URL: tel:+49421590541132294
+Link: +49 176 15140 190 URL: tel:+4917615140190
+Link: E-Mail URL: javascript:linkTo_UnCryptMailto(%27ocknvq%2CJcppq0HgkfkemgtBju%5C%2Fdtgogp0fg%27);
+Link: Dual Studieren URL: https://www.hs-bremen.de/studieren/studiengaenge/dual-studieren/
+Link: StudiumPlus - Workshop URL: https://www.hs-bremen.de/studieren/im-studium/ergaenzende-angebote-zum-studium/studiumplus/
+Link: Gesund durchs Studium URL: https://www.hs-bremen.de/studieren/rund-ums-studium/sgm/
+Link: zurück URL: https://www.hs-bremen.de/studieren/studiengaenge/
+Link: Zu unserer Instagram Seite URL: https://www.instagram.com/hsb.hochschulebremen/
+Link: Zu unserer Facebook Seite URL: https://de-de.facebook.com/HSB.HochschuleBremen/
+Link: Zu unserer YouTube Seite URL: https://www.youtube.com/channel/UCD1Qd3zJGBaTVHO06UgXmgA
+Link: Zu unserer Xing Seite URL: https://www.xing.com/companies/hochschulebremen
+Link: Zu unserer LinkedIn Seite URL: https://www.linkedin.com/school/hsbremen/
+Link: Kontakt URL: https://www.hs-bremen.de/kontakt/
+Link: Cookies URL: https://www.hs-bremen.de/studieren/studiengang/dualer-studiengang-wirtschafts-und-verwaltungsinformatik-b-a/
+Link: Raumfinder URL: https://www.hs-bremen.de/raumfinder/
+Link: Impressum URL: https://www.hs-bremen.de/impressum/
+Link: Datenschutz URL: https://www.hs-bremen.de/datenschutz/
+Link: Barrierefreiheit URL: https://www.hs-bremen.de/barrierefreiheit/
+Link: Datenschutzerklärung URL: https://www.hs-bremen.de/datenschutz
+Link: https://policies.google.com/privacy?hl=de URL: https://policies.google.com/privacy?hl=de
+Link: https://de-de.facebook.com/privacy/explanation URL: https://de-de.facebook.com/privacy/explanation
+Link: https://twitter.com/privacy URL: https://twitter.com/privacy
+Tabellenzeile: Abschluss | Bachelor of Arts
+Tabellenzeile: Studienbeginn | Wintersemester
+Tabellenzeile: Bewerbungszeitraum Wintersemester | 01. Juni bis 15. Juli
+Tabellenzeile: Regelstudienzeit | 7 Semester
+Tabellenzeile: Credits | 210
+Tabellenzeile: Akkreditiert | 2023
+Tabellenzeile: Zulassungsbeschränkt | Ja
+Tabellenzeile: Zulassungsvoraussetzungen | Allgemeine Hochschulreife, Fachhochschulreife oder fachgebundene Hochschulreife Studienvertrag mit einem Partnerunternehmen
+Tabellenzeile: Unterrichtssprache | Deutsch
+Tabellenzeile: Fakultät/Institution | Fakultät Wirtschaftswissenschaften
+Tabellenzeile: Integrierter Auslandsaufenthalt | Optional
+Tabellenzeile: Studienformat | duales Studium

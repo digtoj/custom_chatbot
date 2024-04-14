@@ -14,7 +14,7 @@ llm = ChatOpenAI()
 
 def get_context_retriever_chain(vector_store):
     
-    retriever = vector_store.as_retriever(search_kwargs={"k":3})
+    retriever = vector_store.as_retriever()
     
     prompt = ChatPromptTemplate.from_messages([
       MessagesPlaceholder(variable_name="chat_history"),
@@ -64,7 +64,7 @@ def app():
         # Use sidebar for embedding selection and dropdown
         embedding_type = st.sidebar.radio(
             "Wählen Sie den Embedding model:",
-            ("Prototyp A", "Prototyp B") # Prototyp A für openai & Prototyp B für bge-m3
+            (openai_embedding_text, alternative_embedding_text) # Prototyp A für openai & Prototyp B für bge-m3
         )
     
      # Check if embedding_type has changed, reset chat if it has
@@ -79,7 +79,7 @@ def app():
     st.sidebar.text('Die URLs stammen aus der Webseite der Hs Bremen ')
 
     texts = [
-        "- [481 HTML Seiten]  aus: https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ws23&team=4 ",
+       # "- [481 HTML Seiten]  aus: https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ws23&team=4 ",
         "- [76 HTML Seiten]  aus: https://www.hs-bremen.de/sitemap.xml?sitemap=studycourses&cHash=fd9afa2bc1b3673281c5cdc14ee21f1e ",
         "- Die folgende Modulbeschreibungen von jeden Studiengänge der Fakultät 4:",
         " ",

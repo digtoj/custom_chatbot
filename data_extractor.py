@@ -58,3 +58,5 @@ def extract_urls_from_courses():
         json_url = './data/courses.json'
         for value in faculty4:
             add_url_to_json(json_url, value)
+
+

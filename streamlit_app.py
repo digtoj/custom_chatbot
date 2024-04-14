@@ -64,7 +64,7 @@ def app():
         # Use sidebar for embedding selection and dropdown
         embedding_type = st.sidebar.radio(
             "Wählen Sie den Embedding model:",
-            (openai_embedding_text, alternative_embedding_text)
+            ("Prototyp A", "Prototyp B") # Prototyp A für openai & Prototyp B für bge-m3
         )
     
      # Check if embedding_type has changed, reset chat if it has

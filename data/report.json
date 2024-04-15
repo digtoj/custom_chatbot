@@ -33,5 +33,6 @@
     "on 2024-04-15 08:31:41.757142": "on 2024-04-15 08:31:41.757142 : create_pdf_embedding_by_embedding_type took 3.7930 seconds to execute.",
     "on 2024-04-15 08:33:17.055901": "on 2024-04-15 08:33:17.055901 : create_pdf_embedding_by_embedding_type took 4.0965 seconds to execute.",
     "on 2024-04-15 08:33:48.280939": "on 2024-04-15 08:33:48.280939 : create_pdf_embedding_by_embedding_type took 2.5766 seconds to execute.",
-    "on 2024-04-15 08:40:32.767960": "on 2024-04-15 08:40:32.767960 : create_openai_embeddings took 394.4087 seconds to execute."
+    "on 2024-04-15 08:40:32.767960": "on 2024-04-15 08:40:32.767960 : create_openai_embeddings took 394.4087 seconds to execute.",
+    "on 2024-04-15 09:51:47.970977": "on 2024-04-15 09:51:47.970977 : create_huggingface_embeddings took 780.7267 seconds to execute."
 }

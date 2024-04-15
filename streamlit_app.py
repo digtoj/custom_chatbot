@@ -30,7 +30,7 @@ def get_conversational_rag_chain(retriever_chain):
     
     
     prompt = ChatPromptTemplate.from_messages([
-      ("system", "Answer the user's questions based only on the below context:\n\n{context}"),
+      ("system", "Answer the user's questions in german based on the below context:\n\n{context}"),
       MessagesPlaceholder(variable_name="chat_history"),
       ("user", "{input}"),
     ])

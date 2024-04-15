@@ -1,4 +1,4 @@
-FROM python-chatbot:latest
+FROM python-chatbot_em:latest
 
 WORKDIR /user/src/app
 

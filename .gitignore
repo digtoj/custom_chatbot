@@ -1,8 +1,8 @@
 #Environment
 .env
 openai_store
-#openai_db
-#alternative_db
+openai_db
+alternative_db
 data\documents
 e5-base-sts-en-de
 #lokale embedding

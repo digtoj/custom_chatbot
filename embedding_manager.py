@@ -133,7 +133,7 @@ def create_embedding_from_pdf_file(pdf_directory, embeddings, persist_directory)
 
             data = loader.load()
              # Split  data up into smaller documents with Chunks
-            text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
+            text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=150)
 
             documents = text_splitter.split_documents(data)
 

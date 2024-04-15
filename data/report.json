@@ -26,5 +26,12 @@
     "on 2024-04-14 21:07:22.391969": "on 2024-04-14 21:07:22.391969 : create_pdf_embedding_by_embedding_type took 110.5716 seconds to execute.",
     "on 2024-04-14 21:15:46.914566": "on 2024-04-14 21:15:46.914566 : create_pdf_embedding_by_embedding_type took 219.6726 seconds to execute.",
     "on 2024-04-14 21:18:48.061732": "on 2024-04-14 21:18:48.061732 : create_pdf_embedding_by_embedding_type took 174.6796 seconds to execute.",
-    "on 2024-04-14 21:25:14.458029": "on 2024-04-14 21:25:14.458029 : create_pdf_embedding_by_embedding_type took 367.6417 seconds to execute."
+    "on 2024-04-14 21:25:14.458029": "on 2024-04-14 21:25:14.458029 : create_pdf_embedding_by_embedding_type took 367.6417 seconds to execute.",
+    "on 2024-04-15 08:30:58.513984": "on 2024-04-15 08:30:58.513984 : create_pdf_embedding_by_embedding_type took 26.9423 seconds to execute.",
+    "on 2024-04-15 08:31:07.970250": "on 2024-04-15 08:31:07.970250 : create_pdf_embedding_by_embedding_type took 5.4153 seconds to execute.",
+    "on 2024-04-15 08:31:32.354979": "on 2024-04-15 08:31:32.354979 : create_pdf_embedding_by_embedding_type took 7.8700 seconds to execute.",
+    "on 2024-04-15 08:31:41.757142": "on 2024-04-15 08:31:41.757142 : create_pdf_embedding_by_embedding_type took 3.7930 seconds to execute.",
+    "on 2024-04-15 08:33:17.055901": "on 2024-04-15 08:33:17.055901 : create_pdf_embedding_by_embedding_type took 4.0965 seconds to execute.",
+    "on 2024-04-15 08:33:48.280939": "on 2024-04-15 08:33:48.280939 : create_pdf_embedding_by_embedding_type took 2.5766 seconds to execute.",
+    "on 2024-04-15 08:40:32.767960": "on 2024-04-15 08:40:32.767960 : create_openai_embeddings took 394.4087 seconds to execute."
 }

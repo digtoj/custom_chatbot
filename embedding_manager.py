@@ -1,5 +1,5 @@
 #This script is created to init, create and save the vector from the embedding model.
-from langchain_community.document_loaders import WebBaseLoader
+from langchain_community.document_loaders import WebBaseLoader, BSHTMLLoader
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
@@ -11,7 +11,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter, CharacterTex
 from dotenv import load_dotenv
 from datetime import datetime
 from const import *
-
+from langchain_community.document_loaders import FireCrawlLoader
 
 import logging
 import time
@@ -40,13 +40,14 @@ alternative_Embeddings = HuggingFaceEmbeddings(
     encode_kwargs=encode_kwargs
 )
 
-#Function to save vector from a url.
+
 def get_data_from_url(url):
     try:
          # get the text in document form
         logging.info('Starting embedding creation for '+url)
         loader = WebBaseLoader(url)
         document = loader.load()
+        print(document)
 
         # split the document into chunks
         text_splitter = RecursiveCharacterTextSplitter()
@@ -156,3 +157,17 @@ def create_pdf_embedding_with_alternative(pdf_directory):
             create_embedding_from_pdf_file(pdf_directory, alternative_Embeddings, alternative_vectordb_directory)
         else:
             logging.error(pdf_directory+"is not correct")
+
+
+
+def tesazure():
+    #'./data/html/dual.html'
+    
+    loader = FireCrawlLoader(
+    api_key="fc-0455fd1b498d46bba2036393571dd5aa", url="https://www.hs-bremen.de/studieren/studiengang/master-of-business-administration/", mode="scrape"
+)
+
+    documents = loader.load()
+    print(documents)
+ 
+tesazure()

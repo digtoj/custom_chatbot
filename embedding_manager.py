@@ -1,5 +1,5 @@
 #This script is created to init, create and save the vector from the embedding model.
-from langchain_community.document_loaders import WebBaseLoader, BSHTMLLoader
+from langchain_community.document_loaders import WebBaseLoader
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
@@ -7,11 +7,10 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter, CharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
 from datetime import datetime
 from const import *
-from langchain_community.document_loaders import FireCrawlLoader
 
 import logging
 import time
@@ -158,14 +157,3 @@ def create_pdf_embedding_with_alternative(pdf_directory):
 
 
 
-def tesazure():
-    #'./data/html/dual.html'
-    
-    loader = FireCrawlLoader(
-    api_key="fc-0455fd1b498d46bba2036393571dd5aa", url="https://www.hs-bremen.de/studieren/studiengang/master-of-business-administration/", mode="scrape"
-)
-
-    documents = loader.load()
-    print(documents)
- 
-tesazure()

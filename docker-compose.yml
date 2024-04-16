@@ -9,3 +9,12 @@ services:
       - ./model:/user/src/app/model
       - ./openai_db:/user/src/app/openai_db
       - ./alternative_db:/user/src/app/alternative_db
+  nginx:
+    image: mysslconfig:latest
+    volumes:
+      - ~/conf/nginxconf/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ~/conf/nginxconf/certs:/etc/nginx/ssl:ro
+    ports:
+      - "443:443"
+    depends_on:
+      - customchatbot

@@ -77,9 +77,9 @@ def app():
         st.session_state.previous_embedding_type = embedding_type
     
     st.sidebar.text('Die URLs stammen aus der Webseite der Hs Bremen ')
-    st.sidebar.write('- [76 HTML Seiten]  aus: [link](https://www.hs-bremen.de/sitemap.xml?sitemap=studycourses&cHash=fd9afa2bc1b3673281c5cdc14ee21f1e)')
+    st.sidebar.write('- [481 HTML Seiten aus dem ]  : [Vorlesungverzeichniss Sommersemester Fakultät 4](https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ss24&team=4)')
     texts = [
-       # "- [481 HTML Seiten]  aus: https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ws23&team=4 ",
+       # "-   ",
         "- Die folgende Modulbeschreibungen von jeden Studiengänge der Fakultät 4:",
         " ",
         

@@ -12,8 +12,8 @@ services:
   nginx:
     image: mysslconfig:latest
     volumes:
-      - ~/conf/nginx.conf:/etc/nginx/conf.d/nginx.conf
-      - ~/conf/certs:/etc/nginx/ssl:ro
+      - ~/conf/nginxconf/nginx.conf:/etc/nginx/conf.d/nginx.conf
+      - ~/conf/nginxconf/certs:/etc/nginx/ssl:ro
     ports:
       - "443:443"
     depends_on:

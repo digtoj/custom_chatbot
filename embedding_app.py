@@ -1,11 +1,8 @@
 import streamlit as st
-import requests
 import os
 import base64
 from const import *
-from utils_function import add_or_update_entry_in_json
 from embedding_app_function import list_pdf_files
-import validators
 from embedding_app_function import create_embeddings, create_pdf_embedding_by_embedding_type, list_pdf_files
 
 st.set_page_config(layout="wide", page_title="Embedding Erstellen", page_icon="⚙️")

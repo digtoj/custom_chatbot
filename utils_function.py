@@ -111,7 +111,6 @@ def add_url_to_json(file_path, new_url):
         print("File is not a valid JSON. Starting fresh.")
     # Check if the URL already exists in the list
     if new_url in urls:
-        print("URL already exists in the file.")
         return False
     # Add the new URL to the list
     urls.append(new_url)
@@ -119,7 +118,6 @@ def add_url_to_json(file_path, new_url):
     with open(file_path, 'w') as file:
         json.dump(urls, file, indent=4)
 
-    print("URL added successfully.")
     return True
 
 

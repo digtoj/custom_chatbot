@@ -10,7 +10,7 @@ services:
       - ./openai_db:/user/src/app/openai_db
       - ./alternative_db:/user/src/app/alternative_db
   nginx:
-    build: ./nginx
+    image: mysslconfig:latest
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
       - ./certs:/etc/nginx/ssl:ro

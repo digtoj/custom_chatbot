@@ -47,8 +47,6 @@ def get_data_from_url(url):
         logging.info('Starting embedding creation for '+url)
         loader = WebBaseLoader(url)
         document = loader.load()
-        print(document)
-
         # split the document into chunks
         text_splitter = RecursiveCharacterTextSplitter()
         document_chunks = text_splitter.split_documents(document)

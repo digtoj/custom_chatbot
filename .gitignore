@@ -13,5 +13,5 @@ venv
 chroma_db
 #pycaches
 _pycache_
-openai_db
-alternative_db
+
+report.json

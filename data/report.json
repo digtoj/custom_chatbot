@@ -34,5 +34,19 @@
     "on 2024-04-15 08:33:17.055901": "on 2024-04-15 08:33:17.055901 : create_pdf_embedding_by_embedding_type took 4.0965 seconds to execute.",
     "on 2024-04-15 08:33:48.280939": "on 2024-04-15 08:33:48.280939 : create_pdf_embedding_by_embedding_type took 2.5766 seconds to execute.",
     "on 2024-04-15 08:40:32.767960": "on 2024-04-15 08:40:32.767960 : create_openai_embeddings took 394.4087 seconds to execute.",
-    "on 2024-04-15 09:51:47.970977": "on 2024-04-15 09:51:47.970977 : create_huggingface_embeddings took 780.7267 seconds to execute."
+    "on 2024-04-15 09:51:47.970977": "on 2024-04-15 09:51:47.970977 : create_huggingface_embeddings took 780.7267 seconds to execute.",
+    "OpenAI Embedding model": "./data/documents/Teil_E_MScEE_Modulhandbuch_engl_V20220623.pdf",
+    "on 2024-04-16 13:25:12.543153": "on 2024-04-16 13:25:12.543153 : create_pdf_embedding_by_embedding_type took 12.1247 seconds to execute.",
+    "on 2024-04-16 13:25:22.707327": "on 2024-04-16 13:25:22.707327 : create_pdf_embedding_by_embedding_type took 5.0888 seconds to execute.",
+    "on 2024-04-16 13:25:31.691138": "on 2024-04-16 13:25:31.691138 : create_pdf_embedding_by_embedding_type took 7.1218 seconds to execute.",
+    "on 2024-04-16 13:25:39.673017": "on 2024-04-16 13:25:39.673017 : create_pdf_embedding_by_embedding_type took 3.4705 seconds to execute.",
+    "on 2024-04-16 13:25:50.559335": "on 2024-04-16 13:25:50.559335 : create_pdf_embedding_by_embedding_type took 4.7436 seconds to execute.",
+    "on 2024-04-16 13:26:01.439623": "on 2024-04-16 13:26:01.439623 : create_pdf_embedding_by_embedding_type took 2.7360 seconds to execute.",
+    "bge-m3": "./data/documents/Teil_E_MScEE_Modulhandbuch_engl_V20220623.pdf",
+    "on 2024-04-16 13:33:11.296493": "on 2024-04-16 13:33:11.296493 : create_pdf_embedding_by_embedding_type took 405.7852 seconds to execute.",
+    "on 2024-04-16 13:36:55.860661": "on 2024-04-16 13:36:55.860661 : create_pdf_embedding_by_embedding_type took 189.5636 seconds to execute.",
+    "on 2024-04-16 13:43:03.901168": "on 2024-04-16 13:43:03.901168 : create_pdf_embedding_by_embedding_type took 249.5427 seconds to execute.",
+    "on 2024-04-16 13:46:18.499273": "on 2024-04-16 13:46:18.499273 : create_pdf_embedding_by_embedding_type took 116.0554 seconds to execute.",
+    "on 2024-04-16 14:01:17.095722": "on 2024-04-16 14:01:17.095722 : create_pdf_embedding_by_embedding_type took 119.6527 seconds to execute.",
+    "on 2024-04-16 14:27:38.938847": "on 2024-04-16 14:27:38.938847 : create_pdf_embedding_by_embedding_type took 81.9292 seconds to execute."
 }

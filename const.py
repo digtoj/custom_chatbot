@@ -4,7 +4,7 @@ from utils_function import load_urls_from_json
 
 report_json = './data/report.json'
 
-data_origin = "'- [108 HTML Seiten aus dem ]  : [Vorlesungverzeichniss (Semesterverbände) Sommersemester 24 Fakultät 4](https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ss24&team=4)'"
+data_origin = "-[108 HTML Seiten aus dem ]  : [Vorlesungverzeichniss (Semesterverbände) Sommersemester 24 Fakultät 4](https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ss24&team=4)'"
 
 
 

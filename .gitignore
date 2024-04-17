@@ -13,6 +13,8 @@ venv
 
 #Chromadatabase
 chroma_db
+openai_db
+alternative_db
 #pycaches
 _pycache_
 

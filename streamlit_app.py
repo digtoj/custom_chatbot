@@ -79,9 +79,9 @@ def app():
         ]
         st.session_state.previous_embedding_type = embedding_type
     
-    st.write("Datenquellen: ")
+    st.sidebar.write("Datenquellen: ")
     st.sidebar.text('Die folgende URLs stammen alle aus der Webseite der Hs Bremen.')
-    st.sidebar.write(data_origin)
+    #st.sidebar.write(data_origin)
     texts = [
        # "-   ",
         "- Die folgende Modulbeschreibungen von jeden Studiengänge der Fakultät 4:",

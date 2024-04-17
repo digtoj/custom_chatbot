@@ -30,7 +30,7 @@ def app():
     
     category = st.sidebar.selectbox(
         "Wählen Sie die URLs Quelle:",
-        ("--",study_program_text, courses_planning_text)
+        ("--",study_program_text)
     )
 
     #URL:
@@ -44,7 +44,7 @@ def app():
 
     # Texts
     st.text('Durch dieses App können sie die Embedding aus der Website der Hochschule Bremen erstellen.')
-    st.write("Datenquellen:")
+    
     texts = [
         "",
     ]
@@ -95,7 +95,9 @@ def app():
                     else:
                         st.error("Fehler bei der Erstellung des Embeddings")
                 else:
-                    st.error("Error by file directory path")      
+                    st.error("Error by file directory path")     
+
+    st.sidebar.write("Datenquellen:") 
 
     for url in urls_value:
         st.sidebar.write(url)

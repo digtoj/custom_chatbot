@@ -98,7 +98,7 @@ def app():
                     st.error("Error by file directory path")      
 
     for url in urls_value:
-        st.write(url)
+        st.sidebar.write(url)
     
 
     if uploaded_file is not None:

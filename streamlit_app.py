@@ -97,9 +97,9 @@ def app():
   
 
     # Display the text area with a scrollbar
-    st.sidebar.text_area( text_to_display, height=400, disabled=True)
+    st.sidebar.text_area("Modulhandbücher", text_to_display, height=150, disabled=True)
 
-
+    st.sidebar.write('Studiengänge :')
     #URL:
     for url in url_course_faculty4:
         value = "["+url+"]("+url+")"

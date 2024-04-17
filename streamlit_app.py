@@ -10,7 +10,10 @@ from const import *
 
 load_dotenv()
 
-llm = ChatOpenAI()
+llm = ChatOpenAI() #LLM GPT-3.5 Turbo
+
+
+
 
 def get_context_retriever_chain(vector_store):
     
@@ -76,7 +79,8 @@ def app():
         ]
         st.session_state.previous_embedding_type = embedding_type
     
-    st.sidebar.text('Die URLs stammen aus der Webseite der Hs Bremen ')
+    st.write("Datenquellen: ")
+    st.sidebar.text('Die folgende URLs stammen alle aus der Webseite der Hs Bremen.')
     st.sidebar.write(data_origin)
     texts = [
        # "-   ",
@@ -90,8 +94,16 @@ def app():
      # Display each text in the list
     text_to_display = "\n".join(texts)
 
+  
+
     # Display the text area with a scrollbar
-    st.sidebar.text_area("Datenquellen: ", text_to_display, height=400, disabled=True)
+    st.sidebar.write(text_to_display)
+
+    #URL:
+    for url in url_course_faculty4:
+        value = "["+url+"]("+url+")"
+        st.sidebar.write(value)
+    
 
     # session state
     if "chat_history" not in st.session_state:

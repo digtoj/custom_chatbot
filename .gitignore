@@ -2,6 +2,8 @@
 .env
 openai_store
 data\documents
+data\courses
+data\html
 e5-base-sts-en-de
 #lokale embedding
 model

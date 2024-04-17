@@ -2,8 +2,6 @@ import requests
 import os
 import re
 import xml.etree.ElementTree as ET
-from bs4 import BeautifulSoup
-from urllib.parse import urlparse, urljoin
 from utils_function import *
 from const import  *
 
@@ -21,12 +19,13 @@ def extract_courses_plan_html():
    try:
         cookie_name = "plan"
         cookie_value = "zeiten=True&bemerkungen=True&langnamen=True"
+        
+        new_html_content = get_html_with_cookie(url_course_faculty4, cookie_name, cookie_value)
+        save_html_to_file(new_html_content, './data/courses/value.html')
         extracted_urls = extract_urls_from_html('./data/courses/value.html')
         for url in extracted_urls:
-            new_html_content = get_html_with_cookie(url, cookie_name, cookie_value)
-            file_name=extract_parameter_value(url, 'code')
-            save_html_to_file(new_html_content, './data/courses/'+file_name+'.html')
-           
+            newurl = prefix_course_plan+url
+            add_url_to_json(study_course_file, newurl)
    except Exception as e:
        print(e)
 
@@ -78,28 +77,7 @@ def read_html_files_in_directory(directory_path):
 
     return html_contents
 
-def extract_urls_with_pattern(url, pattern):
-    # Fetch HTML content
-    response = requests.get(url)
-    if response.status_code == 200:
-        # Parse HTML
-        soup = BeautifulSoup(response.text, 'html.parser')
-        # Find all anchor tags (links)
-        links = soup.find_all('a', href=True)
-        # Extract URLs matching the pattern
-        matching_urls = [link['href'] for link in links if re.search(pattern, link['href'])]
-        return matching_urls
-    else:
-        print("Failed to fetch page:", response.status_code)
-        return []
 
-def get_and_save_faculty4_courses():
-    url = "https://www.hs-bremen.de/die-hsb/fakultaeten/elektrotechnik-und-informatik/"  
-    pattern = r"studieren/studiengang"
-    matching_urls = extract_urls_with_pattern(url, pattern)
-        # Print the matching URLs
-    for url in matching_urls:
-        newurl=hs_website+url
-        add_url_to_json(courses_file, newurl)
+
 
 

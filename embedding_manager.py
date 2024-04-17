@@ -54,23 +54,6 @@ def timeit(func):
         return result
     return wrapper
 
-
-def get_data_from_html(html_path):
-    try:
-         # get the text in document form
-        logging.info('Starting embedding creation for '+html_path)
-        loader = UnstructuredHTMLLoader(html_path)
-        document = loader.load()
-        # split the document into chunks
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=200)
-
-        document_chunks = text_splitter.split_documents(document)
-        
-    except:
-        logging.error("Error by getting data on the html : "+html_path)
-    
-    return document_chunks
-
 def get_data_from_url(url):
     try:
          # get the text in document form
@@ -78,7 +61,7 @@ def get_data_from_url(url):
         loader = WebBaseLoader(url)
         document = loader.load()
         # split the document into chunks
-        text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=200)
+        text_splitter = RecursiveCharacterTextSplitter()
 
         document_chunks = text_splitter.split_documents(document)
         
@@ -89,16 +72,13 @@ def get_data_from_url(url):
 
 #Create and save the vector by using openai embedding
 @timeit
-def create_vector_with_openai(urls, doc_type):
+def create_vector_with_openai(urls):
     try:
         if urls:
             for url in urls:
                 logging.info('Start Openai Embedding for the page:'+url)
                 print('Start for '+url)
-                if doc_type==doc_type_html:
-                    document_chunks = get_data_from_html(url)
-                else:
-                     document_chunks = get_data_from_url(url)
+                document_chunks = get_data_from_url(url)
                  # create a vectorstore from the chunks
                 vector_store = Chroma.from_documents(document_chunks, openai_embeddings, persist_directory=openai_vectordb_directory)
                 vector_store.persist()
@@ -109,16 +89,13 @@ def create_vector_with_openai(urls, doc_type):
 
 #Create and save the vector by using HuggingfaceEmbedding
 @timeit
-def create_vector_with_huggingface(urls, doc_type):
+def create_vector_with_huggingface(urls):
     try:
       if urls:
          for url in urls:
             logging.info('Start Alternative Embedding for the page:'+url)
             print('Start for '+url)
-            if doc_type==doc_type_html:
-                document_chunks = get_data_from_html(url)
-            else:
-                document_chunks = get_data_from_url(url)
+            document_chunks = get_data_from_url(url)
             # create a vectorstore from the chunks
             vector_store = Chroma.from_documents(document_chunks, alternative_Embeddings, persist_directory=alternative_vectordb_directory)
             vector_store.persist()

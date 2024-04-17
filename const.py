@@ -1,4 +1,5 @@
 import os
+from utils_function import load_urls_from_json
 
 
 report_json = './data/report.json'
@@ -7,16 +8,18 @@ data_origin = "'- [108 HTML Seiten aus dem ]  : [Vorlesungverzeichniss (Semester
 
 
 
+
 #site map information
 hs_website = "https://www.hs-bremen.de/"
-sitemap_name_file='sitemap.xml'
-sitemaps_dir = './data/sitemaps/'
-sitemap_file_dir = sitemaps_dir+sitemap_name_file
-sitemap_url='https://www.hs-bremen.de/sitemap.xml'
+
+study_course='studycourses'
+study_course_file="./data/studycourses.json"
 
 
 course_catalog='course_catalog'
 courses_file='./data/courses.json'
+
+url_course_faculty4 = load_urls_from_json(courses_file)
 
 #pdf documents information
 pdf_docs_url = './data/documents_url.json'

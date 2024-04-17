@@ -10,7 +10,7 @@ st.set_page_config(layout="wide", page_title="Embedding Erstellen", page_icon="â
 
 message=""
 
-url_course_faculty4 = load_urls_from_json(courses_file)
+
 
 # Function to read and display the selected PDF file
 def read_pdf_file(pdf_path):
@@ -98,7 +98,7 @@ def app():
                     st.error("Error by file directory path")      
 
     for url in urls_value:
-        st.sidebar.write(url)
+        st.write(url)
     
 
     if uploaded_file is not None:

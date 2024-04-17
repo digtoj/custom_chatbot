@@ -1,60 +1,24 @@
 
 from data_extractor import *
 from embedding_manager import *
-from const import study_course_file, courses_file
-
-
 
 #Get the saved url on the json file
 courses_urls = load_urls_from_json(courses_file)
 
-studycourses_urls = load_urls_from_json(study_course_file)
+studycourses_htmls = read_html_files_in_directory('./data/courses/')
 #project_urls = load_urls_from_json(project_json)
 
-
-
-
-def openai_create_vect_courses():
-    print('Start courses urls embedding process with openai embedding')
-    create_vector_with_openai(courses_urls)
-def openai_create_vect_contact():
-    print('Start contact urls embedding process with openai embedding')
-  #  create_vector_with_openai(contact_urls)
-def openai_create_vect_glossar():
-    print('Start glossar urls embedding process with openai embedding')
-   # create_vector_with_openai(glossar_urls)
-def openai_create_vect_news():
-    print('Start news urls embedding process with openai embedding')
-   # create_vector_with_openai(news_urls)
-def openai_create_vect_press():
-    print('Start press urls embedding process with openai embedding')
-   # create_vector_with_openai(press_urls)
 def openai_create_vect_studycourses():
-    print('Start studycourses urls embedding process with openai embedding')
-    create_vector_with_openai(studycourses_urls)
-def openai_create_vect_project():
+    print('Start studycourses html embedding process with openai embedding')
+    create_vector_with_openai(studycourses_htmls, doc_type_html)
+def openai_create_vect_courses():
     print('Start project urls embedding process with openai embedding')
-   # create_vector_with_openai(project_urls)
+    create_vector_with_openai(courses_urls, doc_type_url)
     
 
-def hugging_create_vect_courses():
-    print('Start courses urls embedding process with HuggingFaceEmbedding')
-    create_vector_with_huggingface(courses_urls)
-def hugging_create_vect_contact():
-    print('Start contact urls embedding process with HuggingFaceEmbedding')
-   # create_vector_with_huggingface(contact_urls)
-def hugging_create_vect_glossar():
-    print('Start glossar urls embedding process with HuggingFaceEmbedding')
-   # create_vector_with_huggingface(glossar_urls)
-def  hugging_create_vec_news():
-    print('Start news urls embedding process with HuggingFaceEmbedding')
-   # create_vector_with_huggingface(news_urls)
-def  hugging_create_vec_press():
-    print('Start press urls embedding process with HuggingFaceEmbedding')
-    #create_vector_with_huggingface(press_urls)
 def hugging_create_vec_studycourses():
-    print('Start studycourses urls embedding process with HuggingFaceEmbedding')
-    create_vector_with_huggingface(studycourses_urls)
-def hugging_create_vec_project():
+    print('Start studycourses html  embedding process with HuggingFaceEmbedding')
+    create_vector_with_huggingface(studycourses_htmls, doc_type_html)
+def hugging_create_vect_courses():
     print('Start Project urls embedding process with HuggingFaceEmbedding')
-   # create_vector_with_huggingface(project_urls)
+    create_vector_with_huggingface(courses_urls, doc_type_url)

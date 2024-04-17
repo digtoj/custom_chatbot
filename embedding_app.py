@@ -2,21 +2,21 @@ import streamlit as st
 import os
 import base64
 from const import *
-from embedding_app_function import list_pdf_files
+
+from embedding_app_function import list_pdf_files, load_urls_from_json
 from embedding_app_function import create_embeddings, create_pdf_embedding_by_embedding_type, list_pdf_files
 
 st.set_page_config(layout="wide", page_title="Embedding Erstellen", page_icon="⚙️")
 
 message=""
 
-def  displayPDF(file):
-     # Opening the file from path
-     with open(file, "rb") as f:
-          base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-     
-     pdf_display = F'<iframe scr="data:application/pdf;base64,{base64_pdf}" width="100%" height="600" type="application/pdf"></iframe>'
+url_course_faculty4 = load_urls_from_json(courses_file)
 
-     st.markdown(pdf_display, unsafe_allow_html=True)
+# Function to read and display the selected PDF file
+def read_pdf_file(pdf_path):
+    with open(os.path.join(pdf_directory, pdf_path), "rb") as f:
+        pdf_bytes = f.read()
+    st.write(pdf_bytes)
 
 def app():
     pdf_files = list_pdf_files(pdf_directory)
@@ -33,25 +33,28 @@ def app():
         ("--",study_program_text, courses_planning_text)
     )
 
+    #URL:
+    urls_value=[]
+    for url in url_course_faculty4:
+        urls_value.append("["+url+"]("+url+")")
+        
     
     #Main page 
     st.title('Embedding Manager')
 
     # Texts
     st.text('Durch dieses App können sie die Embedding aus der Website der Hochschule Bremen erstellen.')
-    st.text('Die URLs wurden aus dem Sitemap Datei: https://www.hs-bremen.de/sitemap.xml extrahiert')
-
+    st.write("Datenquellen:")
     texts = [
-        "- [481 URLs] Die Vorlesungsverzeichnis der Fakultät 4 wurde aus: https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ss24&team=4 für den SoSe 2024 ",
-        "- [76 URLs] Die Studiengänge wurde aus: https://www.hs-bremen.de/sitemap.xml?sitemap=studycourses&cHash=fd9afa2bc1b3673281c5cdc14ee21f1e extrahiert.",
+        "",
     ]
+
+
 
     texts.extend(pdf_files)
     # Display each text in the list
     text_to_display = "\n".join(texts)
     
-    # Display the text area with a scrollbar
-    st.text_area("Datenquellen: ", text_to_display, height=200, disabled=True)
 
     # Placeholder for loading symbol and messages
     placeholder = st.empty()
@@ -75,6 +78,9 @@ def app():
       # SelectBox for uploaded PDFs, now reflecting the updated list
     selected_pdf = st.sidebar.selectbox("Wählen Sie ein PDF zur Erstellung des Embeddings:", pdf_files)
 
+    if st.button("PDF Öffnen"):
+         read_pdf_file(selected_pdf)
+
     if st.sidebar.button(f'Erstellen {embedding_type} Embedding des pdf'):
                 file_directory = os.path.join(pdf_directory, selected_pdf)
                 if file_directory:
@@ -91,7 +97,9 @@ def app():
                 else:
                     st.error("Error by file directory path")      
 
-
+    for url in urls_value:
+        st.sidebar.write(url)
+    
 
     if uploaded_file is not None:
         # Save PDF file to data/documents folder
@@ -111,8 +119,6 @@ def app():
       
         st.markdown("<h2 style='text-align:center; color: grey;'>PDF Details </h2>", unsafe_allow_html=True)
         st.write(files_details)
-        st.markdown("<h2 style='text-align:center; color: grey;'> PDF Preview </h2>", unsafe_allow_html=True)
-        displayPDF(os.path.join(pdf_directory, uploaded_file.name))
     
 
 if __name__ == '__main__':

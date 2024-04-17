@@ -30,7 +30,7 @@ def get_conversational_rag_chain(retriever_chain):
     
     
     prompt = ChatPromptTemplate.from_messages([
-      ("system", "Answer the user's questions in german based only on the below context:\n\n{context} if you dont have a response, just say that the data are not existing or not good declare in your database. take your time to search the information in the given context and ask some question on the user to help you."),
+      ("system", "Answer the user's questions in german based only on the below context:\n\n{context} if you dont have a response, declare that the data are not good or not given in your database. take your time to search the information with more detail as possible in the given context and ask some question to the user to have more information about it request."),
       MessagesPlaceholder(variable_name="chat_history"),
       ("user", "{input}"),
     ])
@@ -77,7 +77,7 @@ def app():
         st.session_state.previous_embedding_type = embedding_type
     
     st.sidebar.text('Die URLs stammen aus der Webseite der Hs Bremen ')
-    st.sidebar.write('- [481 HTML Seiten aus dem ]  : [Vorlesungverzeichniss Sommersemester Fakultät 4](https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ss24&team=4)')
+    st.sidebar.write(data_origin)
     texts = [
        # "-   ",
         "- Die folgende Modulbeschreibungen von jeden Studiengänge der Fakultät 4:",

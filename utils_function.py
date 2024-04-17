@@ -4,6 +4,23 @@ import json
 import os
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
+from urllib.parse import urlparse, parse_qs
+
+def extract_parameter_value(url, parameter_name):
+    # Parse the URL
+    parsed_url = urlparse(url)
+    
+    # Extract the query string and convert it into a dictionary
+    query_params = parse_qs(parsed_url.query)
+    
+    # Retrieve the value for the specified parameter
+    parameter_value = query_params.get(parameter_name, [None])[0]  # Returns None if the parameter does not exist
+    return parameter_value
+
+def save_html_to_file(html_content, file_path):
+    # Write the HTML content to a file
+    with open(file_path, 'w', encoding='utf-8') as file:
+        file.write(html_content)
 
 def load_urls_from_json(file_path):
     """

@@ -35,6 +35,6 @@ def save_study_courses_url():
              
 
 
-           
+     
 
 

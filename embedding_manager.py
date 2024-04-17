@@ -1,16 +1,16 @@
 #This script is created to init, create and save the vector from the embedding model.
-from langchain_community.document_loaders import WebBaseLoader
+from langchain_community.document_loaders import WebBaseLoader, UnstructuredHTMLLoader
 
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.text_splitter import CharacterTextSplitter, RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
 from datetime import datetime
 from const import *
+from utils_function import add_or_update_entry_in_json
 
 import logging
 import time
@@ -21,7 +21,6 @@ import os
 
 load_dotenv()
 
-#Report
 
 
 #Vector database directory
@@ -40,6 +39,38 @@ alternative_Embeddings = HuggingFaceEmbeddings(
 )
 
 
+def timeit(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()  # Start time
+        result = func(*args, **kwargs)  # Execute the function
+        end_time = time.time()  # End time
+        print(f"{func.__name__} took {end_time - start_time:.4f} seconds to execute.")
+        current_datetime = datetime.now()
+        timer_report = f"on {current_datetime} : {func.__name__} took {end_time - start_time:.4f} seconds to execute." 
+        valuetime = f"on {current_datetime}"
+        print(timer_report)
+        add_or_update_entry_in_json(report_json, valuetime, timer_report )
+    
+        return result
+    return wrapper
+
+
+def get_data_from_html(html_path):
+    try:
+         # get the text in document form
+        logging.info('Starting embedding creation for '+html_path)
+        loader = UnstructuredHTMLLoader(html_path)
+        document = loader.load()
+        # split the document into chunks
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=200)
+
+        document_chunks = text_splitter.split_documents(document)
+        
+    except:
+        logging.error("Error by getting data on the html : "+html_path)
+    
+    return document_chunks
+
 def get_data_from_url(url):
     try:
          # get the text in document form
@@ -47,21 +78,27 @@ def get_data_from_url(url):
         loader = WebBaseLoader(url)
         document = loader.load()
         # split the document into chunks
-        text_splitter = RecursiveCharacterTextSplitter()
+        text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=200)
+
         document_chunks = text_splitter.split_documents(document)
+        
     except:
         logging.error("Error by getting data on the url : "+url)
     
     return document_chunks
 
 #Create and save the vector by using openai embedding
-def create_vector_with_openai(urls):
+@timeit
+def create_vector_with_openai(urls, doc_type):
     try:
         if urls:
             for url in urls:
                 logging.info('Start Openai Embedding for the page:'+url)
                 print('Start for '+url)
-                document_chunks = get_data_from_url(url)
+                if doc_type==doc_type_html:
+                    document_chunks = get_data_from_html(url)
+                else:
+                     document_chunks = get_data_from_url(url)
                  # create a vectorstore from the chunks
                 vector_store = Chroma.from_documents(document_chunks, openai_embeddings, persist_directory=openai_vectordb_directory)
                 vector_store.persist()
@@ -71,13 +108,17 @@ def create_vector_with_openai(urls):
     return None
 
 #Create and save the vector by using HuggingfaceEmbedding
-def create_vector_with_huggingface(urls):
+@timeit
+def create_vector_with_huggingface(urls, doc_type):
     try:
       if urls:
          for url in urls:
             logging.info('Start Alternative Embedding for the page:'+url)
             print('Start for '+url)
-            document_chunks = get_data_from_url(url)
+            if doc_type==doc_type_html:
+                document_chunks = get_data_from_html(url)
+            else:
+                document_chunks = get_data_from_url(url)
             # create a vectorstore from the chunks
             vector_store = Chroma.from_documents(document_chunks, alternative_Embeddings, persist_directory=alternative_vectordb_directory)
             vector_store.persist()
@@ -123,6 +164,7 @@ def get_alternative_embeddings():
 
 
 #To create embedding from pdf file
+@timeit
 def create_embedding_from_pdf_file(pdf_directory, embeddings, persist_directory): 
     
         if os.path.exists(pdf_directory):
@@ -131,11 +173,16 @@ def create_embedding_from_pdf_file(pdf_directory, embeddings, persist_directory)
 
             data = loader.load()
              # Split  data up into smaller documents with Chunks
-            text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=150)
+            text_splitter = CharacterTextSplitter(
+                    separator="\n",
+                    chunk_size=1500, 
+                    chunk_overlap=200,
+                    length_function=len
+                )
 
-            documents = text_splitter.split_documents(data)
+            chunks = text_splitter.split_documents(data)
 
-            vectordb = Chroma.from_documents(documents=documents, embedding=embeddings, persist_directory=persist_directory)
+            vectordb = Chroma.from_documents(documents=chunks, embedding=embeddings, persist_directory=persist_directory)
             vectordb.persist()
         else:
             print("The Given path dont exist.")
@@ -154,6 +201,3 @@ def create_pdf_embedding_with_alternative(pdf_directory):
             create_embedding_from_pdf_file(pdf_directory, alternative_Embeddings, alternative_vectordb_directory)
         else:
             logging.error(pdf_directory+"is not correct")
-
-
-

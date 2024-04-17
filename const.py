@@ -1,15 +1,19 @@
 import os
 
+
 report_json = './data/report.json'
 
+data_origin = "'- [108 HTML Seiten aus dem ]  : [Vorlesungverzeichniss (Semesterverbände) Sommersemester 24 Fakultät 4](https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ss24&team=4)'"
+
+
+
 #site map information
+hs_website = "https://www.hs-bremen.de/"
 sitemap_name_file='sitemap.xml'
 sitemaps_dir = './data/sitemaps/'
 sitemap_file_dir = sitemaps_dir+sitemap_name_file
 sitemap_url='https://www.hs-bremen.de/sitemap.xml'
 
-study_course='studycourses'
-study_course_file="./data/studycourses.json"
 
 course_catalog='course_catalog'
 courses_file='./data/courses.json'
@@ -26,6 +30,10 @@ model_name = "./model/bge-m3"
 #Some value 
 study_program_text="Studiengangsbeschreibung"
 courses_planning_text="Vorlesungsverzeichnis"
+
+#File type
+doc_type_html = 'html'
+doc_type_url = 'url'
 
 def list_pdf_files(directory_path):
     """

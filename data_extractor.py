@@ -1,62 +1,105 @@
 import requests
-import logging
-import json
 import os
+import re
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, urljoin
 from utils_function import *
-from const import sitemap_url, pdf_docs_url, sitemaps_dir
+from const import  *
+
 
 
 json_file_path = './data/'
 
-site_map_files =['contact.xml', 'glossar.xml', 'news.xml', 'press.xml', 'project.xml', 'studycourses.xml']
 prefix_course_plan = 'https://m-server.fk5.hs-bremen.de/plan/'
+
 url_course_faculty4 = 'https://m-server.fk5.hs-bremen.de/plan/auswahl.aspx?semester=ss24&team=4'
 
-# Define a global variable
-global_extracted_urls = []
 
 
-def get_all_course_from_faculty(url):
-    complete_urls=[]
-    if url:
-        extracted_urls = extract_urls(url)
-        if extracted_urls:
-            logging.info('Extracted URLs:')
-            for extracted_url in extracted_urls:
-                # Use a different variable name here to avoid confusion
-                full_url = urljoin(prefix_course_plan, extracted_url)
-                complete_urls.append(full_url)
-        else:
-            logging.error('No URLs found or an error occurred.')
+def extract_courses_plan_html():
+   try:
+        cookie_name = "plan"
+        cookie_value = "zeiten=True&bemerkungen=True&langnamen=True"
+        extracted_urls = extract_urls_from_html('./data/courses/value.html')
+        for url in extracted_urls:
+            new_html_content = get_html_with_cookie(url, cookie_name, cookie_value)
+            file_name=extract_parameter_value(url, 'code')
+            save_html_to_file(new_html_content, './data/courses/'+file_name+'.html')
+           
+   except Exception as e:
+       print(e)
+
+
+def extract_urls_from_html(file_path):
+    # Reading the HTML file content
+    with open(file_path, 'r', encoding='utf-8') as file:
+        html_content = file.read()
+
+    urls = re.findall(r'<div id="Panel_verbaende_.*?">(.*?)</div>', html_content, re.DOTALL)
+    if urls:
+        all_urls = []
+        for section in urls:
+            found_urls = re.findall(r'href="(.*?)"', section)
+            # Cleaning up the URLs by replacing '&amp;' with '&'
+            cleaned_urls = [url.replace('&amp;', '&') for url in found_urls]
+            all_urls.extend(cleaned_urls)
+        return all_urls
     else:
-        logging.error('Please enter a URL.')
+        return []
+
+def get_html_with_cookie(url, cookie_name, cookie_value):
+    session = requests.Session()
+    session.cookies.set(cookie_name, cookie_value)
+    response = session.get(url)
     
-    return complete_urls
-
-def extract_urls_from_sitemap():
-    logging.info('Starting url extraction from sitemap.xml')
-    for value in site_map_files:
-        file_path=sitemaps_dir+''+value
-        # Parse the XML file
-        tree = ET.parse(file_path)
-        root = tree.getroot()
-        # Adjust for namespace
-        namespaces = {'ns': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
-        # Extract sitemap URLs
-        sitemap_urls = [loc.text for loc in root.findall('.//ns:loc', namespaces)]
-        name = value.split('.')[0]
-        json_url = json_file_path+name+'.json'
-        save_urls_on_json(json_url, sitemap_urls)
+   
+    if response.status_code == 200:
+        return response.text  
+    else:
+        return f"Failed to retrieve page: {response.status_code}"
 
 
-def extract_urls_from_courses():
-    faculty4 = get_all_course_from_faculty(url_course_faculty4)
-    if faculty4:
-        json_url = './data/courses.json'
-        for value in faculty4:
-            add_url_to_json(json_url, value)
+def read_html_files_in_directory(directory_path):
+    html_contents = []
+
+    if not os.path.exists(directory_path):
+        print(f"Directory {directory_path} does not exist.")
+        return html_contents
+
+    for filename in os.listdir(directory_path):
+        file_path = os.path.join(directory_path, filename)
+        
+        if filename.endswith('.html'):
+            # Read the HTML file
+            with open(file_path, 'r', encoding='utf-8') as file:
+                content = file.read()
+                html_contents.append(content)
+
+    return html_contents
+
+def extract_urls_with_pattern(url, pattern):
+    # Fetch HTML content
+    response = requests.get(url)
+    if response.status_code == 200:
+        # Parse HTML
+        soup = BeautifulSoup(response.text, 'html.parser')
+        # Find all anchor tags (links)
+        links = soup.find_all('a', href=True)
+        # Extract URLs matching the pattern
+        matching_urls = [link['href'] for link in links if re.search(pattern, link['href'])]
+        return matching_urls
+    else:
+        print("Failed to fetch page:", response.status_code)
+        return []
+
+def get_and_save_faculty4_courses():
+    url = "https://www.hs-bremen.de/die-hsb/fakultaeten/elektrotechnik-und-informatik/"  
+    pattern = r"studieren/studiengang"
+    matching_urls = extract_urls_with_pattern(url, pattern)
+        # Print the matching URLs
+    for url in matching_urls:
+        newurl=hs_website+url
+        add_url_to_json(courses_file, newurl)
 
 

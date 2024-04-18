@@ -33,7 +33,7 @@ def get_conversational_rag_chain(retriever_chain):
     
     
     prompt = ChatPromptTemplate.from_messages([
-      ("system", "Answer the user's questions in german based only on the below context:\n\n{context} if you dont have a response, declare that the data are not good or not given in your database. take your time to search the information with more detail as possible in the given context and ask some question to the user to have more information about it request."),
+      ("system", "Answer the user's questions based only on the below context:\n\n{context} if you dont have a response, declare that the data are not good or not given in your database. take your time to search the information with more detail as possible in the given context and ask some question to the user to have more information about it request."),
       MessagesPlaceholder(variable_name="chat_history"),
       ("user", "{input}"),
     ])

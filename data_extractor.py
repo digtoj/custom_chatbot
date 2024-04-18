@@ -77,6 +77,29 @@ def read_html_files_in_directory(directory_path):
 
     return html_contents
 
+def extract_urls_with_pattern(url, pattern):
+    # Fetch HTML content
+    response = requests.get(url)
+    if response.status_code == 200:
+        # Parse HTML
+        soup = BeautifulSoup(response.text, 'html.parser')
+        # Find all anchor tags (links)
+        links = soup.find_all('a', href=True)
+        # Extract URLs matching the pattern
+        matching_urls = [link['href'] for link in links if re.search(pattern, link['href'])]
+        return matching_urls
+    else:
+        print("Failed to fetch page:", response.status_code)
+        return []
+
+def get_and_save_faculty4_courses():
+    url = "https://www.hs-bremen.de/die-hsb/fakultaeten/elektrotechnik-und-informatik/"  
+    pattern = r"studieren/studiengang"
+    matching_urls = extract_urls_with_pattern(url, pattern)
+        # Print the matching URLs
+    for url in matching_urls:
+        newurl=hs_website+url
+        add_url_to_json(courses_file, newurl)
 
 
 

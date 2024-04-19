@@ -3,7 +3,7 @@ services:
     image: custom_chatbot:latest
     ports:
       - "8501:8501"
-      - "80:8502"
+      - "8080:8502"
     user: "0:0" 
     volumes:
       - ./model:/user/src/app/model

@@ -1,7 +1,7 @@
 import streamlit as st
 from embedding_manager import get_choised_vector
 from langchain_core.messages import AIMessage, HumanMessage
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
@@ -13,11 +13,9 @@ load_dotenv()
 llm = ChatOpenAI() #LLM GPT-3.5 Turbo
 
 
-
-
 def get_context_retriever_chain(vector_store):
     
-    retriever = vector_store.as_retriever()
+    retriever = vector_st1ore.as_retriever()
     
     prompt = ChatPromptTemplate.from_messages([
       MessagesPlaceholder(variable_name="chat_history"),
@@ -30,16 +28,12 @@ def get_context_retriever_chain(vector_store):
     return retriever_chain
     
 def get_conversational_rag_chain(retriever_chain): 
-    
-    
     prompt = ChatPromptTemplate.from_messages([
       ("system", "Answer the user's questions based only on the below context:\n\n{context} if you dont have a response, declare that the data are not good or not given in your database. take your time to search the information with more detail as possible in the given context and ask some question to the user to have more information about it request."),
       MessagesPlaceholder(variable_name="chat_history"),
       ("user", "{input}"),
     ])
-    
     stuff_documents_chain = create_stuff_documents_chain(llm,prompt)
-    
     return create_retrieval_chain(retriever_chain, stuff_documents_chain)
 
 def get_response(user_input):
@@ -67,7 +61,7 @@ def app():
         # Use sidebar for embedding selection and dropdown
         embedding_type = st.sidebar.radio(
             "Wählen Sie den Embedding model:",
-            (openai_embedding_text, alternative_embedding_text) # Prototyp A für openai & Prototyp B für bge-m3
+            (prototypA, prototypB) # Prototyp A für openai & Prototyp B für bge-m3
         )
     
      # Check if embedding_type has changed, reset chat if it has
@@ -86,7 +80,6 @@ def app():
        # "-   ",
         "- Die folgende Modulbeschreibungen von jeden Studiengänge der Fakultät 4:",
         " ",
-        
     ]
 
     texts.extend(pdf_files)
@@ -100,10 +93,7 @@ def app():
     st.sidebar.text_area("Modulhandbücher", text_to_display, height=150, disabled=True)
 
     st.sidebar.write('Studiengänge :')
-    #URL:
-    for url in url_course_faculty4:
-        value = "["+url+"]("+url+")"
-        st.sidebar.write(value)
+    st.sidebar.write("https://www.hs-bremen.de/die-hsb/fakultaeten/elektrotechnik-und-informatik/")
     
 
     # session state

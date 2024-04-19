@@ -1,5 +1,5 @@
 {
-    "OpenAI Embedding model": "Studiengangsbeschreibung",
+    "OpenAI Embedding model": "./data/documents/2022_03_10_Teil_E_ISS_ATMECH_Modulhandbuch_final.pdf",
     "on 2024-04-17 08:39:50.183090": "on 2024-04-17 08:39:50.183090 : create_openai_embeddings took 170.9806 seconds to execute.",
     "on 2024-04-17 08:57:50.868369": "on 2024-04-17 08:57:50.868369 : create_openai_embeddings took 453.4794 seconds to execute.",
     "on 2024-04-17 11:33:56.821428": "on 2024-04-17 11:33:56.821428 : create_openai_embeddings took 0.0000 seconds to execute.",
@@ -15,5 +15,7 @@
     "on 2024-04-17 13:56:06.009482": "on 2024-04-17 13:56:06.009482 : create_vector_with_openai took 0.9927 seconds to execute.",
     "on 2024-04-17 14:03:25.890342": "on 2024-04-17 14:03:25.890342 : create_vector_with_openai took 8.2808 seconds to execute.",
     "on 2024-04-17 14:05:08.856575": "on 2024-04-17 14:05:08.856575 : create_vector_with_openai took 53.3611 seconds to execute.",
-    "on 2024-04-17 14:39:58.873754": "on 2024-04-17 14:39:58.873754 : create_vector_with_openai took 7.0488 seconds to execute."
+    "on 2024-04-17 14:39:58.873754": "on 2024-04-17 14:39:58.873754 : create_vector_with_openai took 7.0488 seconds to execute.",
+    "on 2024-04-19 10:59:27.521301": "on 2024-04-19 10:59:27.521301 : create_embedding_from_pdf_file took 7.9338 seconds to execute.",
+    "on 2024-04-19 11:02:45.773258": "on 2024-04-19 11:02:45.773258 : create_embedding_from_pdf_file took 9.0584 seconds to execute."
 }

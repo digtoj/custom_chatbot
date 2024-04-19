@@ -113,9 +113,9 @@ def get_vector_from_directory(persist_directory, embeddings):
 
 def get_choised_vector(embedding_type):
     if embedding_type:
-        if embedding_type==openai_embedding_text:
+        if embedding_type==prototypA:
             return get_openai_embeddings()
-        elif embedding_type==alternative_embedding_text:
+        elif embedding_type==prototypB:
             return get_alternative_embeddings()
     else:
         logging.error("Give a existing value for the embedding typ.")

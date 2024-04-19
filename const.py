@@ -30,6 +30,9 @@ openai_embedding_text="OpenAI Embedding model"
 alternative_embedding_text="bge-m3"
 model_name = "./model/bge-m3"
 
+prototypA = "Model A"
+prototypB = "Model B"
+
 #Some value 
 study_program_text="Studiengangsbeschreibung"
 courses_planning_text="Vorlesungsverzeichnis"

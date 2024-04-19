@@ -43,7 +43,7 @@ def app():
     st.title('Embedding Manager')
 
     # Texts
-    st.text('Durch dieses App können sie die Embedding aus der Website der Hochschule Bremen erstellen.')
+    st.text('Durch dieses App können Sie die Embeddings von ausgewählte Dateien aus der Website der Hochschule Bremen erstellen.')
     
     texts = [
         "",
@@ -78,8 +78,6 @@ def app():
       # SelectBox for uploaded PDFs, now reflecting the updated list
     selected_pdf = st.sidebar.selectbox("Wählen Sie ein PDF zur Erstellung des Embeddings:", pdf_files)
 
-    if st.button("PDF Öffnen"):
-         read_pdf_file(selected_pdf)
 
     if st.sidebar.button(f'Erstellen {embedding_type} Embedding des pdf'):
                 file_directory = os.path.join(pdf_directory, selected_pdf)
@@ -98,9 +96,7 @@ def app():
                     st.error("Error by file directory path")     
 
     st.sidebar.write("Datenquellen:") 
-
-    for url in urls_value:
-        st.sidebar.write(url)
+    st.sidebar.write("https://www.hs-bremen.de/die-hsb/fakultaeten/elektrotechnik-und-informatik/")
     
 
     if uploaded_file is not None:

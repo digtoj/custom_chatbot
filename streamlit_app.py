@@ -15,7 +15,7 @@ llm = ChatOpenAI() #LLM GPT-3.5 Turbo
 
 def get_context_retriever_chain(vector_store):
     
-    retriever = vector_st1ore.as_retriever()
+    retriever = vector_store.as_retriever()
     
     prompt = ChatPromptTemplate.from_messages([
       MessagesPlaceholder(variable_name="chat_history"),

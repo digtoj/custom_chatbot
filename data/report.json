@@ -1,5 +1,5 @@
 {
-    "OpenAI Embedding model": "./data/documents/2022_03_10_Teil_E_ISS_ATMECH_Modulhandbuch_final.pdf",
+    "OpenAI Embedding model": "./data/documents/Modulhandbuch_ET_TAP_ab_WiSe_22_23.pdf",
     "on 2024-04-17 08:39:50.183090": "on 2024-04-17 08:39:50.183090 : create_openai_embeddings took 170.9806 seconds to execute.",
     "on 2024-04-17 08:57:50.868369": "on 2024-04-17 08:57:50.868369 : create_openai_embeddings took 453.4794 seconds to execute.",
     "on 2024-04-17 11:33:56.821428": "on 2024-04-17 11:33:56.821428 : create_openai_embeddings took 0.0000 seconds to execute.",
@@ -17,5 +17,15 @@
     "on 2024-04-17 14:05:08.856575": "on 2024-04-17 14:05:08.856575 : create_vector_with_openai took 53.3611 seconds to execute.",
     "on 2024-04-17 14:39:58.873754": "on 2024-04-17 14:39:58.873754 : create_vector_with_openai took 7.0488 seconds to execute.",
     "on 2024-04-19 10:59:27.521301": "on 2024-04-19 10:59:27.521301 : create_embedding_from_pdf_file took 7.9338 seconds to execute.",
-    "on 2024-04-19 11:02:45.773258": "on 2024-04-19 11:02:45.773258 : create_embedding_from_pdf_file took 9.0584 seconds to execute."
+    "on 2024-04-19 11:02:45.773258": "on 2024-04-19 11:02:45.773258 : create_embedding_from_pdf_file took 9.0584 seconds to execute.",
+    "bge-m3": "Studiengangsbeschreibung",
+    "on 2024-04-20 13:47:31.024123": "on 2024-04-20 13:47:31.024123 : create_vector_with_huggingface took 1017.9471 seconds to execute.",
+    "on 2024-04-20 14:02:27.641622": "on 2024-04-20 14:02:27.641622 : create_vector_with_openai took 28.3910 seconds to execute.",
+    "on 2024-04-20 14:10:53.462500": "on 2024-04-20 14:10:53.462500 : create_embedding_from_pdf_file took 9.6833 seconds to execute.",
+    "on 2024-04-20 14:12:12.306109": "on 2024-04-20 14:12:12.306109 : create_embedding_from_pdf_file took 5.9261 seconds to execute.",
+    "on 2024-04-20 14:12:36.947784": "on 2024-04-20 14:12:36.947784 : create_embedding_from_pdf_file took 7.7979 seconds to execute.",
+    "on 2024-04-20 14:29:49.426642": "on 2024-04-20 14:29:49.426642 : create_vector_with_huggingface took 1026.7243 seconds to execute.",
+    "on 2024-04-20 14:43:04.818506": "on 2024-04-20 14:43:04.818506 : create_embedding_from_pdf_file took 226.7010 seconds to execute.",
+    "on 2024-04-20 14:56:38.026169": "on 2024-04-20 14:56:38.026169 : create_embedding_from_pdf_file took 186.8216 seconds to execute.",
+    "on 2024-04-20 15:06:01.156319": "on 2024-04-20 15:06:01.156319 : create_embedding_from_pdf_file took 427.9466 seconds to execute."
 }

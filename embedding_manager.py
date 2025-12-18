@@ -5,7 +5,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.document_loaders import PyPDFLoader
-from langchain.text_splitter import CharacterTextSplitter, RecursiveCharacterTextSplitter
+from langchain_text_splitters import CharacterTextSplitter, RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
 from datetime import datetime
 from const import *
@@ -31,11 +31,6 @@ openai_embeddings = OpenAIEmbeddings()
 
 model_kwargs = {'device': 'cpu'}
 encode_kwargs = {'normalize_embeddings': False}
-alternative_Embeddings = HuggingFaceEmbeddings(
-    model_name=model_name,
-    model_kwargs=model_kwargs,
-    encode_kwargs=encode_kwargs
-)
 
 
 def timeit(func):
@@ -115,8 +110,7 @@ def get_choised_vector(embedding_type):
     if embedding_type:
         if embedding_type==prototypA:
             return get_openai_embeddings()
-        elif embedding_type==prototypB:
-            return get_alternative_embeddings()
+
     else:
         logging.error("Give a existing value for the embedding typ.")
  
@@ -128,16 +122,6 @@ def get_openai_embeddings():
     else:
       logging.error('The embedding database for openai dont exist.')
       return None
-
-def get_alternative_embeddings():
-    logging.info('Start get Huggingface embeddings vector.')
-    if alternative_vectordb_directory:
-       return get_vector_from_directory(alternative_vectordb_directory, alternative_Embeddings)
-    else:
-       logging.error('The embedding database for huggingface dont exist.')
-       return None
-
-
 
 #To create embedding from pdf file
 @timeit
@@ -168,12 +152,5 @@ def create_pdf_embedding_with_openai(pdf_directory):
         if pdf_directory:
             print("start "+openai_embedding_text+"embedding for "+ pdf_directory)
             create_embedding_from_pdf_file(pdf_directory, openai_embeddings, openai_vectordb_directory)
-        else:
-            logging.error(pdf_directory+"is not correct")
-
-def create_pdf_embedding_with_alternative(pdf_directory):
-        if pdf_directory:
-            print("start "+ alternative_embedding_text+" for "+ pdf_directory)
-            create_embedding_from_pdf_file(pdf_directory, alternative_Embeddings, alternative_vectordb_directory)
         else:
             logging.error(pdf_directory+"is not correct")

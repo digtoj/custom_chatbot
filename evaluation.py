@@ -18,7 +18,9 @@ import plotly.graph_objects as go
 
 load_dotenv()
 # Define LLM
-llm = ChatOpenAI( temperature=0)
+llm = ChatOpenAI(model="gpt-4o",  # ou "o1-mini" pour les modèles récents de 2025
+    temperature=0.7,
+    max_tokens=1000)
 
 
 def evaluate_by_vectore(prototyp , vector_store):

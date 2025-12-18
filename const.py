@@ -28,7 +28,7 @@ pdf_directory="./data/documents/"
 #Model tools information
 openai_embedding_text="OpenAI Embedding model"
 alternative_embedding_text="bge-m3"
-model_name = "./model/bge-m3"
+model_name = "text-embedding-3-smal"
 
 prototypA = "Model A"
 prototypB = "Model B"
